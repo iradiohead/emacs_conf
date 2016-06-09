@@ -1,0 +1,4 @@
+(fset 'macro-add-quotation-mark
+   [M-left ?\" M-right ?\"])
+
+(global-set-key [(f6)] 'dired-jump)

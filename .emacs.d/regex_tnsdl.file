@@ -1,0 +1,10 @@
+'Problem to be fix : New file can not be match with emacs_regex'
+'TNSDL regex'
+'#Function regex'
+/ *\(\(PROCEDURE\)\) *\([a-zA-Z_][a-zA-Z0-9_]+\) *;/
+'CONSTANT'
+/[\t ]*\([a-zA-Z_][a-zA-Z0-9_]*\)_[cC][\t ]*=[\t ]*[a-zA-Z0-9_]*;/
+'IN/OUT variable'
+/[\t ]*\(\(IN\)\|\(OUT\)\|\(IN.OUT\)\)[\t ]*[a-zA-Z0-9_]*[\t ]*[a-zA-Z0-9_]*[,;]/
+'From tnsdl.el'
+'/[ \t]*\(PROCEDURE\|\(ABSTRACT[ \t]+\)?TYPE\|STATE\|INPUT\)[ \t]+\([_a-zA-Z0-9_]+\)/'

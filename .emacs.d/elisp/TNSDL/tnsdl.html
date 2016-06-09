@@ -1,0 +1,941 @@
+<html lang="en">
+<head>
+<title>The GNU Emacs TNSDL Mode Manual (for version pre-2.0.1)</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="The GNU Emacs TNSDL Mode Manual (for version pre-2.0.1)">
+<meta name="generator" content="makeinfo 4.7">
+<link title="Top" rel="top" href="#Top">
+<link href="http://www.gnu.org/software/texinfo/" rel="generator-home" title="Texinfo Homepage">
+<!--
+This manual is for GNU Emacs' tnsdl-mode what is made
+to help programming in the TNSDL programming language.
+
+Copyright (C) 2007 NSN.
+
+     Copying and distribution of this file, with or without
+     modification, are permitted in any medium without royalty provided
+     the copyright notice and this notice are preserved.
+   -->
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+  pre.display { font-family:inherit }
+  pre.format  { font-family:inherit }
+  pre.smalldisplay { font-family:inherit; font-size:smaller }
+  pre.smallformat  { font-family:inherit; font-size:smaller }
+  pre.smallexample { font-size:smaller }
+  pre.smalllisp    { font-size:smaller }
+  span.sc { font-variant:small-caps }
+  span.roman { font-family: serif; font-weight: normal; } 
+--></style>
+</head>
+<body>
+<h1 class="settitle">The GNU Emacs TNSDL Mode Manual (for version pre-2.0.1)</h1>
+<div class="contents">
+<h2>Table of Contents</h2>
+<ul>
+<li><a name="toc_Top" href="#Top">The GNU Emacs TNSDL Mode Manual</a>
+<li><a name="toc_Preface" href="#Preface">1 Preface</a>
+<li><a name="toc_Getting-Started" href="#Getting-Started">2 Getting Started</a>
+<ul>
+<li><a href="#Set-up-GNU-Emacs">2.1 Set up GNU Emacs</a>
+<li><a href="#GNU-Emacs-Lifebelt">2.2 GNU Emacs Lifebelt</a>
+<ul>
+<li><a href="#Emacs-Key-Notation">2.2.1 Emacs Key Notation</a>
+<li><a href="#Emacs-Terminology">2.2.2 Emacs Terminology</a>
+<li><a href="#Getting-Help">2.2.3 Getting Help</a>
+<li><a href="#Useful-Commands">2.2.4 Useful Commands</a>
+</li></ul>
+<li><a href="#Set-up-tnsdl_002dmode">2.3 Set up tnsdl-mode</a>
+<ul>
+<li><a href="#Functionality">2.3.1 Functionality</a>
+<li><a href="#Documentation">2.3.2 Documentation</a>
+<li><a href="#Sources">2.3.3 Sources</a>
+</li></ul>
+</li></ul>
+<li><a name="toc_Everyday-Usage" href="#Everyday-Usage">3 Everyday Usage</a>
+<ul>
+<li><a href="#Syntax-Highlighting">3.1 Syntax Highlighting</a>
+<li><a href="#Indentation">3.2 Indentation</a>
+<li><a href="#Navigation">3.3 Navigation</a>
+<ul>
+<li><a href="#Nearby">3.3.1 Nearby</a>
+<li><a href="#Far">3.3.2 Far</a>
+<li><a href="#Away">3.3.3 Away</a>
+</li></ul>
+<li><a href="#Hide-and-Show">3.4 Hide and Show</a>
+<li><a href="#Compilation">3.5 Compilation</a>
+</li></ul>
+<li><a name="toc_Customization" href="#Customization">4 Customization</a>
+<li><a name="toc_Contribute" href="#Contribute">5 Contribute</a>
+<ul>
+<ul>
+<li><a href="#Contribute">5.0.1 Coding conventions</a>
+</li></ul>
+</li></ul>
+<li><a name="toc_Copying" href="#Copying">6 Copying</a>
+<li><a name="toc_Supported-Features" href="#Supported-Features">Appendix A Supported Features</a>
+<li><a name="toc_News" href="#News">Appendix B News</a>
+<li><a name="toc_Index" href="#Index">Index</a>
+</li></ul>
+</div>
+
+
+
+<div class="node">
+<p><hr>
+<a name="Top"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Preface">Preface</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#dir">(dir)</a>
+<br>
+</div>
+
+<h2 class="unnumbered">The GNU Emacs TNSDL Mode Manual</h2>
+
+<p>This manual is for GNU Emacs' tnsdl-mode what is made
+to help programming in the <acronym>TNSDL</acronym> programming language.
+
+   <p>Copyright &copy; 2007 NSN.
+
+   <blockquote>
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved. 
+</blockquote>
+
+<ul class="menu">
+<li><a accesskey="1" href="#Preface">Preface</a>:              How to read this manual. 
+<li><a accesskey="2" href="#Getting-Started">Getting Started</a>:      Set up tnsdl-mode: download, install, etc. 
+<li><a accesskey="3" href="#Everyday-Usage">Everyday Usage</a>:       Base functionalities. 
+<li><a accesskey="4" href="#Customization">Customization</a>:        How to custom-tailor this major mode to your needs. 
+<li><a accesskey="5" href="#Contribute">Contribute</a>:           How to modify, bug-report, etc. 
+<li><a accesskey="6" href="#Copying">Copying</a>:              Your rights and freedoms. 
+<li><a accesskey="7" href="#Supported-Features">Supported Features</a>:   What Emacs features are supported explicitly. 
+<li><a accesskey="8" href="#News">News</a>:                 History and news. 
+<li><a accesskey="9" href="#Index">Index</a>
+</ul>
+
+<div class="node">
+<p><hr>
+<a name="Preface"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Getting-Started">Getting Started</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="#Top">Top</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Top">Top</a>
+<br>
+</div>
+
+<h2 class="chapter">1 Preface</h2>
+
+<p>If reading off-Emacs (e.g. on printed paper or a <span class="file">.pdf</span> or <span class="file">.html</span> file(s))
+I recommend reading only <a href="#Set-up-GNU-Emacs">Set up GNU Emacs</a> and <a href="#Set-up-tnsdl_002dmode">Set up tnsdl-mode</a>: after the
+installations, reading this manual inside Emacs is much more convenient (e.g. all the
+crossreferences will work).
+
+   <p>If you're &ldquo;just interesting&rdquo; and don't want to install anything, then I suggest reading
+only <a href="#Everyday-Usage">Everyday Usage</a>.
+
+<p>If you are an experienced Emacs user, then <a href="#Everyday-Usage">Everyday Usage</a>: it
+is probably more than enough for you. If you have time for it, <a href="#Getting-Help">Getting Help</a> and
+<a href="#Useful-Commands">Useful Commands</a> also: you might find unknown useful Emacs utilities. If
+you haven't installed Info files previously, then <a href="#Documentation">Documentation</a> for instructions. 
+Also <a href="#Supported-Features">Supported Features</a>.
+
+<!-- node->why emacs -->
+<div class="node">
+<p><hr>
+<a name="Getting-Started"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Everyday-Usage">Everyday Usage</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="#Preface">Preface</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Top">Top</a>
+<br>
+</div>
+
+<h2 class="chapter">2 Getting Started</h2>
+
+<p>This tnsdl-mode is written for every <acronym>TNSDL</acronym> users. Some of them might be
+unfamiliar with GNU Emacs. In this chapter we summarize everything for a
+successful start.
+
+   <p>For other aspects See <a href="efaq.html#Top">Top (efaq)</a>.
+
+<p class="noindent">For help about <acronym>TNSDL</acronym> itself, go to the <a href="http://nwiki.nokia.com/TNSDL">TNSDL nwiki</a>.
+
+<ul class="menu">
+<li><a accesskey="1" href="#Set-up-GNU-Emacs">Set up GNU Emacs</a>:     Download and install. 
+<li><a accesskey="2" href="#GNU-Emacs-Lifebelt">GNU Emacs Lifebelt</a>:   Most basic commands for e.g. getting help. 
+<li><a accesskey="3" href="#Set-up-tnsdl_002dmode">Set up tnsdl-mode</a>:    Download and install. 
+</ul>
+
+<div class="node">
+<p><hr>
+<a name="Set-up-GNU-Emacs"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#GNU-Emacs-Lifebelt">GNU Emacs Lifebelt</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Getting-Started">Getting Started</a>
+<br>
+</div>
+
+<h3 class="section">2.1 Set up GNU Emacs</h3>
+
+<p>GNU Emacs is part of <acronym>DMXSee</acronym>. However, only an extremely old, outdated
+version, what is not supported by tnsdl-mode from version 2.0.0 onwards. 
+Thus you have to install another, newer Emacs for yourself. Here follows how.
+
+<p class="noindent">For general info see <a href="xxx">xxx</a>.
+
+<p class="noindent">For MS Windows installers, see <a href="xxx">xxx</a>.
+
+<p class="noindent">For MS Windows I recommend using the official precompiled binaries from
+<a href="xxx">xxx</a>. 
+Their &ldquo;installation&rdquo; means unzipping the downloaded file and manually setting
+some things in MS Windows:
+
+     <ol type=1 start=1>
+<li>Set <span class="env">HOME</span> environment variable to point e.g. <span class="file">C:\USERS\</span>. 
+Your <span class="file">.emacs</span> file will be here. Remember its location! 
+See <a href="emacs.html#Windows-HOME">Windows HOME (emacs)</a>. 
+<li>Associate <span class="file">.sdl</span>, <span class="file">.sdt</span>, <span class="file">.spd</span>, <span class="file">.sst</span> etc. files to Emacs.
+        </ol>
+
+<p class="noindent">Also See <a href="efaq.html#Help-installing-Emacs">Help installing Emacs (efaq)</a>,
+and <a href="efaq.html#Using-an-already-running-Emacs-process">Using an already running Emacs process (efaq)</a>.
+
+<p class="noindent">For info about starting and stopping Emacs See <a href="emacs.html#Entering-Emacs">Entering Emacs (emacs)</a>,
+and <a href="emacs.html#Exiting">Exiting (emacs)</a>.
+
+<p class="noindent">For full details about start options See <a href="emacs.html#Emacs-Invocation">Emacs Invocation (emacs)</a>.
+
+<div class="node">
+<p><hr>
+<a name="GNU-Emacs-Lifebelt"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Set-up-tnsdl_002dmode">Set up tnsdl-mode</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="#Set-up-GNU-Emacs">Set up GNU Emacs</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Getting-Started">Getting Started</a>
+<br>
+</div>
+
+<h3 class="section">2.2 GNU Emacs Lifebelt</h3>
+
+<ul class="menu">
+<li><a accesskey="1" href="#Emacs-Key-Notation">Emacs Key Notation</a>:   What you should know for the first time uing Emacs;
+                          or e.g. to understand help. 
+<li><a accesskey="2" href="#Emacs-Terminology">Emacs Terminology</a>:    What you should know to e.g. understand help. 
+<li><a accesskey="3" href="#Getting-Help">Getting Help</a>:         How to reach many helping functionalities. 
+<li><a accesskey="4" href="#Useful-Commands">Useful Commands</a>:      Some general Emacs key combinations especially
+                          useful for tnsdl-mode. 
+<!-- add: useful features; e.g. svn-status, color-theme, ... -->
+</ul>
+
+<div class="node">
+<p><hr>
+<a name="Emacs-Key-Notation"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Emacs-Terminology">Emacs Terminology</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#GNU-Emacs-Lifebelt">GNU Emacs Lifebelt</a>
+<br>
+</div>
+
+<h4 class="subsection">2.2.1 Emacs Key Notation</h4>
+
+<p>Some keyboard notation used in Emacs manuals, helps, etc.:
+
+   <p><table summary=""><tr align="left"><th valign="top">Key </th><th valign="top">Emacs notion
+<br></th></tr><tr align="left"><td valign="top">&lt;Alt&gt; </td><td valign="top">&lt;M&gt;
+<br></td></tr><tr align="left"><td valign="top">&lt;Shift&gt; </td><td valign="top">&lt;S&gt;
+<br></td></tr><tr align="left"><td valign="top">&lt;Ctrl&gt; </td><td valign="top">&lt;C&gt;
+<br></td></tr><tr align="left"><td valign="top">&lt;down arrow&gt; </td><td valign="top">&lt;DOWN&gt;
+<br></td></tr><tr align="left"><td valign="top">&lt;F1&gt; </td><td valign="top">&lt;F1&gt;
+<br></td></tr><tr align="left"><td valign="top">&lt;Delete&gt; </td><td valign="top">&lt;DEL&gt;
+<br></td></tr><tr align="left"><td valign="top">&lt;Enter&gt; </td><td valign="top">&lt;RET&gt;
+<br></td></tr><tr align="left"><td valign="top">&lt;Space&gt; </td><td valign="top">&lt;SPC&gt;
+<br></td></tr><tr align="left"><td valign="top">&lt;Backspace&gt; </td><td valign="top">&lt;BS&gt;
+<br></td></tr><tr align="left"><td valign="top">&lt;PgUp&gt; </td><td valign="top">&lt;PAGEUP&gt;
+   <br></td></tr></table>
+
+   <p>Examples:
+
+   <p><table summary=""><tr align="left"><th valign="top">Key sequence in Emacs notion </th><th valign="top">Meaning
+<br></th></tr><tr align="left"><td valign="top">&lt;C-SPC&gt; </td><td valign="top">Hold down &lt;Ctrl&gt; and push &lt;Space&gt; (set mark)
+<br></td></tr><tr align="left"><td valign="top">&lt;M-w&gt; </td><td valign="top">Hold down &lt;Alt&gt; and push &lt;w&gt; (copy)
+<br></td></tr><tr align="left"><td valign="top">&lt;C-w&gt; </td><td valign="top">Hold down &lt;Ctrl&gt; and push &lt;w&gt; (cut)
+<br></td></tr><tr align="left"><td valign="top">&lt;C-y&gt; </td><td valign="top">Hold down &lt;Ctrl&gt; and push &lt;y&gt; (paste)
+<br></td></tr><tr align="left"><td valign="top">&lt;C-M-k&gt; </td><td valign="top">Hold down both &lt;Ctrl&gt; and &lt;Alt&gt; and push &lt;k&gt;
+(cut a balanced expression)
+<br></td></tr><tr align="left"><td valign="top">&lt;S-down-mouse-1&gt; </td><td valign="top">Hold down &lt;Shift&gt; and click with the left mouse button
+(mouse-set-font)
+<br></td></tr><tr align="left"><td valign="top">&lt;C-u 10 C-x $&gt; </td><td valign="top">Hold down &lt;Ctrl&gt; and push &lt;u&gt;;
+then type <kbd>1 0</kbd>; then hold down &lt;Ctrl&gt; and push &lt;x&gt;;
+then type &lt;$&gt; (hides all lines indented by 10+ space)
+   <br></td></tr></table>
+
+<p class="noindent">For more info See <a href="efaq.html#Basic-Keys">Basic Keys (efaq)</a>, <a href="emacs.html#User-Input">User Input (emacs)</a>, and <a href="emacs.html#M_002dx">M-x (emacs)</a>...
+
+<div class="node">
+<p><hr>
+<a name="Emacs-Terminology"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Getting-Help">Getting Help</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="#Emacs-Key-Notation">Emacs Key Notation</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#GNU-Emacs-Lifebelt">GNU Emacs Lifebelt</a>
+<br>
+</div>
+
+<h4 class="subsection">2.2.2 Emacs Terminology</h4>
+
+<p>These are not &ldquo;official&rdquo; definitions,
+just short scratches for beginners to help understanding further
+Emacs documentation.
+
+     <dl>
+<dt><dfn>point</dfn><dd>The <b>cursor</b> and/or its location (in terms of character position). See <a href="emacs.html#Point">Point (emacs)</a>. 
+<br><dt><dfn>kill</dfn><dd>Item is copied and deleted. Well known name for this functionality: &ldquo;<b>cut</b>&rdquo;. 
+<br><dt><dfn>yank</dfn><dd>Previously &ldquo;killed&rdquo; or &ldquo;copied&rdquo; item is <b>paste</b>d. 
+<br><dt><dfn>frame</dfn><dd>It is a &ldquo;<b>window</b>&rdquo; from the windowing system's (e.g. MS Windows) point of view. 
+<br><dt><dfn>buffer</dfn><dd>It is a piece of text. Usually a whole file's content. 
+<br><dt><dfn>window</dfn><dd>A part of a &ldquo;frame&rdquo;. One frame can consist of one or more windows. 
+Windows can be splitted into more (smaller) windows. 
+<br><dt><dfn>visit a file</dfn><dd>Opening it in Emacs. 
+<br><dt><dfn>fontification</dfn><dd>Syntax highlighting. 
+<br><dt><dfn>minibuffer</dfn><dd>The (generally) one-line area at the bottom of a frame, where you can e.g. type
+commands in. Note: Emacs communicates with you mainly via the minibuffer! 
+See <a href="emacs.html#Minibuffer">Minibuffer (emacs)</a>. 
+<br><dt><dfn>command</dfn><dd>An Emacs function designed to be callable by end users. See <a href="emacs.html#Commands">Commands (emacs)</a>. 
+</dl>
+
+   <p>For many more terms explained more exactly See <a href="emacs.html#Glossary">Glossary (emacs)</a>. 
+For learning more about the screen See <a href="emacs.html#Screen">Screen (emacs)</a>.
+
+<div class="node">
+<p><hr>
+<a name="Getting-Help"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Useful-Commands">Useful Commands</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="#Emacs-Terminology">Emacs Terminology</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#GNU-Emacs-Lifebelt">GNU Emacs Lifebelt</a>
+<br>
+</div>
+
+<h4 class="subsection">2.2.3 Getting Help</h4>
+
+<p>Most of the &ldquo;interactive&rdquo; help within Emacs is available in Info. 
+To learn about its usage See <a href="info.html#Top">Top (info)</a>.
+
+   <p>Type &lt;C-h ?&gt; anytime for a list of available help possibilities. Some of them:
+     <dl>
+<dt>&lt;C-h b&gt;<dd>List all key sequences usable at the moment (in the current window!). 
+<br><dt>&lt;C-h i&gt;<dd>Opens the Info reader with enourmos amount of available local,
+hypertexted documentation. 
+<br><dt>&lt;C-h k&gt;<dd>Type a key sequence or click a mouse button (e.g. on a menu): its help is shown. 
+<br><dt>&lt;C-h l&gt;<dd>Helps finding out what triggered the last events: show your last 100 keystroke. 
+</dl>
+
+   <p>See <a href="efaq.html#On_002dline-manual">On-line manual (efaq)</a>.
+
+   <p>See <a href="efaq.html#Learning-how-to-do-something">Learning how to do something (efaq)</a>. Note especially <span class="file">refcard</span> in it!
+
+<div class="node">
+<p><hr>
+<a name="Useful-Commands"></a>Previous:&nbsp;<a rel="previous" accesskey="p" href="#Getting-Help">Getting Help</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#GNU-Emacs-Lifebelt">GNU Emacs Lifebelt</a>
+<br>
+</div>
+
+<h4 class="subsection">2.2.4 Useful Commands</h4>
+
+<p>Several basic Emacs key combinations and commands are mentioned above
+(See <a href="#Emacs-Key-Notation">Emacs Key Notation</a>, and <a href="#Getting-Help">Getting Help</a>).
+
+   <p>Here I list some more, what are especially useful for <acronym>TNSDL</acronym>
+development. (tnsdl-mode's own commands are not listed here. 
+For them See <a href="#Everyday-Usage">Everyday Usage</a>.)
+
+   <p>If you read this in Emacs' Info reader (recommended),
+then move the cursor (point) onto the function names below
+one by one, and press &lt;C-h f&gt; &lt;RET&gt; on them: &lt;C-h f&gt; calls the
+Emacs function (command) <code>describe-function</code> with default value
+derived from text found around point. 
+(Note: Emacs communicates with you mainly via the minibuffer. Check it!) 
+Then &lt;RET&gt; tells that the
+default's descripton is looked for. The &ldquo;description&rdquo; contains
+the function's name, the actual key combination(s) bound to it, a short
+description about its usage, etc. The best is to try them immediately
+in a trial (<acronym>TNSDL</acronym>) buffer...
+
+   <p><code>indent-for-tab-command</code>
+
+   <p><code>isearch-forward</code> &ndash; <code>isearch-backward</code><br>
+
+   <code>isearch-forward-regexp</code> &ndash; <code>isearch-backward-regexp</code>
+
+   <p><code>dabbrev-expand</code>
+
+   <p><code>query-replace</code> &ndash; <code>query-replace-regexp</code><br>
+
+   <code>replace-string</code> &ndash; <code>replace-regexp</code>
+
+   <p><code>comment-dwim</code>
+
+   <p><code>just-one-space</code> &ndash; <code>delete-horizontal-space</code><br>
+
+   <code>delete-blank-lines</code><br>
+
+   <code>kill-line</code> &ndash; <code>kill-whole-line</code> &ndash; <code>kill-sexp</code> &ndash;&gt; <a href="emacs.html#Erasing">Erasing (emacs)</a>
+
+   <p><code>find-tag</code>
+
+   <p><code>forward-sexp</code> &ndash; <code>backward-sexp</code>
+
+   <p><code>mark-sexp</code>
+
+   <p><code>split-window-vertically</code> &ndash; <code>split-window-horizontally</code><br>
+
+   <code>other-window</code>
+
+   <code>delete-other-windows</code>
+
+   <p><code>kill-buffer</code>
+
+   <p><code>make-frame-command</code>
+
+   <p><code>count-lines-region</code> &ndash;&gt; <a href="emacs.html#Position-Info">Position Info (emacs)</a>
+
+   <p><code>goto-line</code> &ndash;&gt; <a href="emacs.html#Moving-Point">Moving Point (emacs)</a>
+
+   <p><code>upcase-word</code> &ndash; <code>downcase-word</code>
+
+   <p><code>undo</code>
+
+   <p><code>hs-minor-mode</code>
+
+   <p><code>color-theme-select</code> (requires <a href="http://www.">ColorThemes</a>)
+
+<p class="noindent">For others See <a href="emacs.html#Help">Help (emacs)</a>. <a href="emacs.html#Basic">Basic (emacs)</a>
+
+<p class="noindent">Do not forget to check refcard.ps in the <span class="file">emacs/etc</span> directory.
+
+<div class="node">
+<p><hr>
+<a name="Set-up-tnsdl_002dmode"></a>Previous:&nbsp;<a rel="previous" accesskey="p" href="#GNU-Emacs-Lifebelt">GNU Emacs Lifebelt</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Getting-Started">Getting Started</a>
+<br>
+</div>
+
+<h3 class="section">2.3 Set up tnsdl-mode</h3>
+
+<p>Everything what is needed for tnsdl-mode is downloadable from
+<a href="http://xxx">http://xxx</a>.
+
+   <p>In this section we describe all the details about how to use these files:
+how to &ldquo;install&rdquo; the functionality and the documentation. 
+Source files also described with full details.
+
+<ul class="menu">
+<li><a accesskey="1" href="#Functionality">Functionality</a>
+<li><a accesskey="2" href="#Documentation">Documentation</a>
+<li><a accesskey="3" href="#Sources">Sources</a>
+</ul>
+
+<div class="node">
+<p><hr>
+<a name="Functionality"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Documentation">Documentation</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Set-up-tnsdl_002dmode">Set up tnsdl-mode</a>
+<br>
+</div>
+
+<h4 class="subsection">2.3.1 Functionality</h4>
+
+<p>tnsdl-mode's functionality is implemented in one single file:
+<span class="file">tnsdl.el</span>. Since Emacs can interpret source files, you should have either this source file,
+or its byte compiled version <span class="file">tnsdl.elc</span> for using tnsdl-mode.
+
+   <p>To make Emacs find this file when needed, copy it into a directory where
+Emacs looks for such files: type <kbd>C-h v load-path &lt;RET&gt;</kbd>. This
+brings up a help window showing the value (and meaning) of the variable
+<code>load-path</code>. Any directory in the list will suffice;
+<span class="file">emacs/site-lisp</span> is dedicated to such purposes, so you can choose
+it safely.
+
+   <p>After copying <span class="file">tnsdl.el(c)</span> into such a directory, Emacs can find
+it. Now you have to order Emacs to load it when it starts. For this, locate
+your <span class="file">.emacs</span> file (see <a href="#Set-up-GNU-Emacs">Set up GNU Emacs</a>) and add this line to its
+end: <code>(load "tnsdl")</code>. Go to the end of the expression you've just typed
+(so place the cursor (point) immediately after the closing paren <code>)</code>) and
+type <kbd>C-x C-e</kbd>. From now on all tnsdl-mode functionalities should
+be available. Try it by opening (visiting) a tnsdl file.
+
+   <p>See <a href="emacs.html#Lisp-Libraries">Lisp Libraries (emacs)</a>.
+
+<div class="node">
+<p><hr>
+<a name="Documentation"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Sources">Sources</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="#Functionality">Functionality</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Set-up-tnsdl_002dmode">Set up tnsdl-mode</a>
+<br>
+</div>
+
+<h4 class="subsection">2.3.2 Documentation</h4>
+
+<p>tnsdl-mode's documentation comes in the following forms:
+
+     <dl>
+<dt>Info<dd>for online reading (inside Emacs or in another info reader),
+<br><dt>PDF<dd>for printing and
+<br><dt>HTML<dd>for browsing in a web browser. 
+</dl>
+
+   <p>You know how to handle HTML and PDF files.
+
+   <p>The Info file <span class="file">tnsdl</span> can be &ldquo;installed&rdquo; for Emacs, so you will reach it
+via the standard Emacs help system. Here is a step-by-step instruction how to install.
+
+     <ol type=1 start=1>
+<li>Locate documentation coming with Emacs. You should find it under
+<span class="file">your Emacs documentation directory/info</span>. If you don't know where is it,
+try searching e.g. for file <span class="file">elisp-8</span>. 
+<li>Copy the info file <span class="file">tnsdl</span> into this directory. 
+<li>Edit the file <span class="file">dir</span> in this directory: add a line like
+<pre class="verbatim">     
+     
+     * TNSDL: (tnsdl).       Emacs mode for developing TNSDL PRBs.
+     
+</pre>
+after e.g. the line
+<pre class="verbatim">     
+     
+     * Info: (info).         How to use the documentation browsing system.
+     
+</pre>
+Next time you type <kbd>C-h i</kbd>, the hypertexted root of tnsdl-mode's documentation
+will be linked in: type <kbd>RET</kbd> on it and start browsing!
+        </ol>
+
+<div class="node">
+<p><hr>
+<a name="Sources"></a>Previous:&nbsp;<a rel="previous" accesskey="p" href="#Documentation">Documentation</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Set-up-tnsdl_002dmode">Set up tnsdl-mode</a>
+<br>
+</div>
+
+<h4 class="subsection">2.3.3 Sources</h4>
+
+<p>Here is a full list of tnsdl-mode's source files along with their usage. 
+If you want to contribute to tnsdl-mode development, use (enhance) these files. 
+Otherwise you can safely skip this subsection.
+
+     <dl>
+<dt><span class="file">tnsdl.el</span><dd>Contains the Emacs Lisp implementation of all the functionality of tnsdl-mode. 
+Byte compiled <span class="file">tnsdl.elc</span> file can be generated from it. 
+<br><dt><span class="file">tnsdl.texinfo</span><dd>Source of all the documentation: both Info file <span class="file">tnsdl</span>, <span class="file">tnsdl.pdf</span> and
+HTML documentation files are generated from it. 
+<br><dt><span class="file">test_tnsdlmode.sdl</span><dd>A (partly pathological) TNSDL file to test syntax highlighting, indenatation,
+move commands, etc. 
+<br><dt><span class="file">test_tnsdlmode.el</span><dd>&ldquo;Unit tests&rdquo; for tnsdl-mode development. 
+</dl>
+
+<div class="node">
+<p><hr>
+<a name="Everyday-Usage"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Customization">Customization</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="#Getting-Started">Getting Started</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Top">Top</a>
+<br>
+</div>
+
+<h2 class="chapter">3 Everyday Usage</h2>
+
+<p>The purpose of tnsdl-mode is to help everyday sw development work.
+
+   <p>Most of tnsdl-mode is nothing more than supporting and customizing
+of standard Emacs functionalities.
+
+   <p>Source code typing, modification, reviewing and navigation are helped
+as well as compilation and other related activities. Details follows
+in this chapter.
+
+<ul class="menu">
+<li><a accesskey="1" href="#Syntax-Highlighting">Syntax Highlighting</a>:  Various ways of it are introduced. 
+<!-- upcase -->
+<li><a accesskey="2" href="#Indentation">Indentation</a>:          Automatic and commanded; reindentation and
+                          alignement. 
+<li><a accesskey="3" href="#Navigation">Navigation</a>:           Jumping to different locations. 
+<li><a accesskey="4" href="#Hide-and-Show">Hide and Show</a>:        Folding. 
+<!-- and manual region hiding. -->
+<li><a accesskey="5" href="#Compilation">Compilation</a>:          Compile your .pac from tnsdl-mode! 
+</ul>
+
+<div class="node">
+<p><hr>
+<a name="Syntax-Highlighting"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Indentation">Indentation</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Everyday-Usage">Everyday Usage</a>
+<br>
+</div>
+
+<h3 class="section">3.1 Syntax Highlighting</h3>
+
+<p>This is standard Emacs functionality, but I added a menu for it:
+Tnsdl &gt; Font-lock.
+
+   <p>Fontification can be totally switched off or switched on.
+
+   <p>You can choose from a lot of ready-to-use color schemes or
+you can define your own fonts to use. I recommend the former one
+using ColorThemes: http:\\xxx.
+
+   <p>When fontificaton is switched on, several levels can be applied:
+
+     <dl>
+<dt>Level-0<dd>highlights only the most basic elements:
+strings, comments, compiler directives and
+STATEs, PROCEDUREs and TYPEs. 
+<br><dt>Level-1<dd>adds fontification for all keywords
+<br><dt>Level-2<dd>additionally highlights
+type names (like <span class="samp">byte</span>, <span class="samp">bool</span>, etc. or ending with <span class="samp">_t</span>),
+constant names (ending with <span class="samp">_c</span> or <span class="samp">_ec</span>),
+variable and parameter names (starting with <span class="samp">g_</span>, <span class="samp">l_</span> or <span class="samp">p_</span>), etc. 
+</dl>
+
+   <p>For more, general info See <a href="elisp.html#Levels-of-Font-Lock">Levels of Font Lock (elisp)</a>.
+
+<div class="node">
+<p><hr>
+<a name="Indentation"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Navigation">Navigation</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="#Syntax-Highlighting">Syntax Highlighting</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Everyday-Usage">Everyday Usage</a>
+<br>
+</div>
+
+<h3 class="section">3.2 Indentation</h3>
+
+<p>tnsdl-mode indents lines automatically when <kbd>RET</kbd> is typed:
+both the just-closed and the just-started lines are indented.
+
+   <p>Typing <kbd>TAB</kbd> once tries to indent intelligently:
+indentation happens (instead of inserting spaces or tabs)
+if point wasn't in a place where inserting whitespace seems to be reasonable.
+
+   <p>Second and following <kbd>TAB</kbd> typings do xxx. This in practice can be used
+for alignement quite comfortably.
+
+   <p>Regions etc. can be reindented using the Tnsdl menu.
+
+   <p>Each line's indentation is calculated from patterns found in the actual
+and preceding lines. When the actual line is empty (=just started),
+calculation can be wrong easily. In such cases type the line and hope
+<kbd>RET</kbd> at the end of the line will reindent well.
+
+   <p>When automatic identation does a wrong job, indent
+the line manually, and hope following lines' automatic indentation will
+be calculated in a good way from it.
+
+<div class="node">
+<p><hr>
+<a name="Navigation"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Hide-and-Show">Hide and Show</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="#Indentation">Indentation</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Everyday-Usage">Everyday Usage</a>
+<br>
+</div>
+
+<h3 class="section">3.3 Navigation</h3>
+
+<!-- TAGing -->
+<p>A lot of standard (and sometimes most convenient!) possibilities
+are not mentioned below. Check the <kbd>Edit</kbd> menu (especially its
+<kbd>Search</kbd> and <kbd>Go To</kbd> submenus) for them. 
+I use <kbd>Incremental Search</kbd> most of the time.
+
+   <p>Also note that <a href="speedbar.html#Top">Top (speedbar)</a> is supported. Try it:
+<kbd>M-x speedbar &lt;RET&gt;</kbd>.
+
+<ul class="menu">
+<li><a accesskey="1" href="#Nearby">Nearby</a>:    How to skip by symbol or by statement... 
+<li><a accesskey="2" href="#Far">Far</a>:       How to skip decision branches, procedures, etc. 
+<li><a accesskey="3" href="#Away">Away</a>:      Go away into (possibly) other files containing a
+               specific definition... 
+</ul>
+
+<div class="node">
+<p><hr>
+<a name="Nearby"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Far">Far</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Navigation">Navigation</a>
+<br>
+</div>
+
+<h4 class="subsection">3.3.1 Nearby</h4>
+
+<p>Use standard Emacs commands: `forward-word'/`backward-word',
+`forward-sentence'/`backward-sentence' (this is quite handy!),
+etc.
+
+<div class="node">
+<p><hr>
+<a name="Far"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Away">Away</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="#Nearby">Nearby</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Navigation">Navigation</a>
+<br>
+</div>
+
+<h4 class="subsection">3.3.2 Far</h4>
+
+<p>Skipping bigger entities (e.g. branches of DECISIONs or any code
+enclosed by &lt;keyword&gt;-END&lt;keyword&gt; pairs) is supported by the
+`forward-sexp'/`backward-sexp' functions.
+
+   <p>When you want to &ldquo;skip out&rdquo; from such a block, then
+`tnsdl-goto-block-start'/`tnsdl-goto-block-end' can be used. These are
+in the Tnsdl menu, but no keys are bound to them by default.
+
+   <p>Skipping to the start/end of the actual PROCEDURE has its own menu and
+keys. `beginning-of-defun'/`end-of-defun' do these.
+
+   <p>Many other (probably interactively less useful) tnsdl-specific move
+commands are defined: check (via <kbd>C-h a</kbd>) the commands starting with
+<span class="samp">tnsdl-goto-</span>.
+
+   <p>Note: It is a good practice to use `point-to-register' to store any loaction
+where to you want to go back later.
+
+<div class="node">
+<p><hr>
+<a name="Away"></a>Previous:&nbsp;<a rel="previous" accesskey="p" href="#Far">Far</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Navigation">Navigation</a>
+<br>
+</div>
+
+<h4 class="subsection">3.3.3 Away</h4>
+
+<p>Skipping to a specific PROCEDURE or TYPE is easiest using TAG files. 
+Generate/refresh the TAG file using the menu <kbd>Etag</kbd>. 
+Sometimes you have to load the freshly generated file(s) using `visit-tags-table'. 
+Then use `find-tag'. 
+Usually it defaults to the right name, but you can type any name you
+want.
+
+<div class="node">
+<p><hr>
+<a name="Hide-and-Show"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Compilation">Compilation</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="#Navigation">Navigation</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Everyday-Usage">Everyday Usage</a>
+<br>
+</div>
+
+<h3 class="section">3.4 Hide and Show</h3>
+
+<p>Some bigger entities (e.g. branches of DECISIONs or complete PROCEDUREs
+or their long FPAR or DCL parts or long comments, etc.) can be hidden
+temporarily. This functionality is usually referred elsewhere as &ldquo;folding&rdquo;. 
+Use `hs-minor-mode' for it. (It is not activated by tnsdl-mode by default,
+you have to switch this minor mode on by yourself: type
+<kbd>M-x hs-minor-mode &lt;RET&gt;</kbd>. Then its menu appears...)
+
+<div class="node">
+<p><hr>
+<a name="Compilation"></a>Previous:&nbsp;<a rel="previous" accesskey="p" href="#Hide-and-Show">Hide and Show</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Everyday-Usage">Everyday Usage</a>
+<br>
+</div>
+
+<h3 class="section">3.5 Compilation</h3>
+
+<p>Currently I suggest compilation is the following way.
+
+     <ol type=1 start=1>
+<li>Create your own MS Windows batch file what compiles from command line. 
+E.g. a file <span class="file">buildmyprb.cmd</span> could look like this: <br>
+<code>call meenv 5.1-0 <br>
+build -dstdout -mk2cd -rm2cd -test -timestamp my__scmx.pac.</code> <br>
+Note: these two lines are enough for compilation. 
+<li>Copy this <span class="file">buildmyprb.cmd</span> into the directory where your <span class="file">my__scmx.pac</span> resides. 
+<li>Open a file from this directory in Emacs. E.g. it is a good practice
+to visit the <span class="file">my__scmx.pac</span> file and set the <span class="file">.img</span>'s id in it. 
+<li><span class="samp">M-x compile </span><kbd>RET</kbd><span class="samp"> buildmyprb.cmd </span><kbd>RET</kbd> <br>
+(Note: after the first time, you can use <span class="samp">M-x recompile </span><kbd>RET</kbd> instead.) 
+After this, compilation starts (you may have to open an SPM connection before it). 
+Compilation messages appears in their own buffer. 
+tnsdl-mode adds knowledge to highlight error and warning messages differently
+and makes them links. 
+<li>Click on an error/warning message and the file at the problematic line will
+be opened. 
+If Emacs ask you to locate the directory where the problematic file resides, then
+usually the best is to open any TNSDL file from that directory and check-in TNSDL
+menu's Compilation &gt; In search path before the compilation process. 
+After this, all source files in that directory
+fill be found automatically by Emacs.
+        </ol>
+
+<div class="node">
+<p><hr>
+<a name="Customization"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Contribute">Contribute</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="#Everyday-Usage">Everyday Usage</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Top">Top</a>
+<br>
+</div>
+
+<h2 class="chapter">4 Customization</h2>
+
+<p>To customize tnsdl-mode use the menu <kbd>Tnsdl &gt; Customize</kbd>.
+
+   <p>It is usually a good idea to bind your favourite commands to key combinations,
+so you don't have to type <kbd>M-x my-fav-command &lt;RET&gt;</kbd> always. 
+You can choose any key combination you like (even &ldquo;self inserting&rdquo; keys
+like &lt;TAB&gt; or &lt;RET&gt; or simple symbols like &lt;~&gt; or letters etc. 
+can be rebound), but <kbd>C-c &lt;letter&gt;</kbd> are reserved for such purposes
+(=for users):
+no major or minor modes should use them.
+
+   <p>To bind e.g. <kbd>C-c b</kbd> to the command `tnsdl-goto-block-start', put this line
+into your <span class="file">.emacs</span> file (append to its end):
+<pre class="lisp">     (define-key tnsdl-mode-map "\C-cb" 'tnsdl-goto-block-start)
+</pre>
+   <div class="node">
+<p><hr>
+<a name="Contribute"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Copying">Copying</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="#Customization">Customization</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Top">Top</a>
+<br>
+</div>
+
+<h2 class="chapter">5 Contribute</h2>
+
+<p>If you simply use this tnsdl-mode and send your comments to the author,
+then you help a lot! (For names <a href="xxx.html#xxx">xxx (xxx)</a>.)
+
+   <p>However, you are free to modify any source files (either documentation or
+test or implementation sources). If you do it, please inform the author,
+so I can add you modification to the &ldquo;official&rdquo; version.
+
+   <p>If you comply with my coding conventions, then I can easily merge your
+enhancements into the code. Here I list some of them.
+
+<h4 class="subsection">5.0.1 Coding conventions</h4>
+
+     <ul>
+<li>Each function's, option's, ... name starts with <span class="samp">tnsdl-</span>.
+
+     <li>Everything (functions, variables, ...) is documented in its documentation
+string.
+
+     <li>Functions' (intentional) returned values should be mentioned explicitly in
+their docstring.
+
+     <li>Whenever it is possible, add functionality via supporting official minor modes
+and features instead of reinventing the wheel. Examples: hs-minor-mode, imenu,
+`forward-sexp', etc.
+
+</ul>
+
+<div class="node">
+<p><hr>
+<a name="Copying"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Supported-Features">Supported Features</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="#Contribute">Contribute</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Top">Top</a>
+<br>
+</div>
+
+<h2 class="chapter">6 Copying</h2>
+
+<p>This manual is for GNU Emacs' tnsdl-mode what is made
+to help programming in the <acronym>TNSDL</acronym> programming language.
+
+   <p>Copyright &copy; 2007 NSN.
+
+   <blockquote>
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved. 
+</blockquote>
+
+<div class="node">
+<p><hr>
+<a name="Supported-Features"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#News">News</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="#Copying">Copying</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Top">Top</a>
+<br>
+</div>
+
+<h2 class="appendix">Appendix A Supported Features</h2>
+
+<p>Here is a (hopefully full) list of standard Emacs features what are
+supported by tnsdl-mode. I.e. these can be used (in addition to the
+special tnsdl-mode-features) &ldquo;out of the box&rdquo;.
+
+   <p>Type <kbd>C-h f &lt;RET&gt;</kbd> on them to get more info.
+
+     <ul>
+<li>which-func-mode
+
+     <li>imenu (makes TAG files unnecessary locally)
+
+     <li>hs-minor-mode (&ldquo;folding&rdquo;)
+
+     <li>font-lock-mode (syntax highlighting)
+
+     <li>compilation-mode (to skip to the problematic source code line from the compilation log)
+
+   </ul>
+
+<div class="node">
+<p><hr>
+<a name="News"></a>Next:&nbsp;<a rel="next" accesskey="n" href="#Index">Index</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="#Supported-Features">Supported Features</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Top">Top</a>
+<br>
+</div>
+
+<h2 class="appendix">Appendix B News</h2>
+
+     <ul>
+<li>v2
+
+     <p>This is a complete rewrite from scratch. Made by Peter Tury. 
+It works only with Emacs v22 or later.
+
+     <p>New features:
+
+          <ul>
+<li>complete documentation
+
+          <li>standard Emacs customizability (via <kbd>M-x customize-mode</kbd>)
+
+          <li>multi-level and more exact syntax highlighting
+
+          <li>folding
+
+          <li>tnsdl-specific code browsing (`forward-sexp', etc.)
+
+          <li>enhanced(?) automatic indentation
+
+          <li>TAG support
+
+          <li>compilation support
+</ul>
+
+     <p>Removed features:
+
+          <ul>
+<li>abbreviations (I found `dabbrev-expand' enough)
+
+          <li>skeletons (I didn't use them)
+
+          <li>unknown functionalities (probably there were some)
+</ul>
+
+     <li>v1
+
+     <p>First(?) tnsdl-mode was created and maintained by Harri M‰enp‰‰ until 1992. 
+Later Toni Arte and Tero Venetjoki maintained it for many years. Its variants
+can be used for older Emacses (from version 17(?)).
+
+     <p>It knew:
+          <ul>
+<li>one-level syntax highlighting
+
+          <li>automatic indentation
+
+          <li>menu
+
+          <li>imenu support
+
+          <li>abbreviations
+
+          <li>skeletons
+</ul>
+     </ul>
+
+<div class="node">
+<p><hr>
+<a name="Index"></a>Previous:&nbsp;<a rel="previous" accesskey="p" href="#News">News</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="#Top">Top</a>
+<br>
+</div>
+
+<h2 class="unnumbered">Index</h2>
+
+<ul class="index-cp" compact>
+   </ul></body></html>
+

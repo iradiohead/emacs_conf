@@ -1,0 +1,622 @@
+;; Object elisp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "elisp/"
+  :tables (list 
+   (semanticdb-table "fxq-basic-config.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("setq" code nil nil [16 673])
+            ("set-face-foreground" code nil nil [754 794])
+            ("set-face-background" code nil nil [795 835])
+            ("set-face-foreground" code nil nil [836 872])
+            ("set-face-background" code nil nil [873 910])
+            ("set-face-foreground" code nil nil [911 963])
+            ("set-face-background" code nil nil [964 1017])
+            ("set-default-font" code nil nil [1222 1257])
+            ("set-face-foreground" code nil nil [1258 1293])
+            ("setq" code nil nil [1349 1375])
+            ("setq-default" code nil nil [1436 1471])
+            ("setenv" code nil nil [1938 2000])
+            ("setq" code nil nil [2001 2055])
+            ("cygwin-mount" include nil nil [2056 2079])
+            ("cygwin-mount-activate" code nil nil [2080 2103])
+            ("setenv" code nil nil [2104 2140])
+            ("grep-compute-defaults" function (:arguments ("around" "grep-compute-defaults-advice-null-device")) nil [2142 2321])
+            ("ad-activate" code nil nil [2322 2358])
+            ("setq" code nil nil [2384 2414])
+            ("setq" code nil nil [2415 2449])
+            ("w32-browser" include nil nil [2452 2474])
+            ("eval-after-load" code nil nil [2475 2820])
+            ("setq" code nil nil [2821 2867])
+            ("setq" code nil nil [2881 3056])
+            ("tool-bar-mode" code nil nil [3095 3113])
+            ("menu-bar-mode" code nil nil [3193 3211])
+            ("scroll-bar-mode" code nil nil [3263 3283])
+            ("setq" code nil nil [3427 3451])
+            ("setq" code nil nil [3487 3513])
+            ("setq" code nil nil [3531 3557])
+            ("setq" code nil nil [3575 3603])
+            ("setq" code nil nil [3618 3644])
+            ("setq" code nil nil [3814 3889])
+            ("setq" code nil nil [3890 3973])
+            ("setq" code nil nil [3975 4031])
+            ("global-set-key" code nil nil [4383 4426])
+            ("setq" code nil nil [4427 4903])
+            ("setq" code nil nil [4989 5015])
+            ("setq" code nil nil [5035 5068])
+            ("setq" code nil nil [5128 5184])
+            ("add-hook" code nil nil [5206 5246])
+            ("display-time-mode" code nil nil [5269 5290])
+            ("setq" code nil nil [5303 5336])
+            ("setq" code nil nil [5353 5387])
+            ("setq" code nil nil [5402 5437])
+            ("setq" code nil nil [5456 5487])
+            ("minibuffer-electric-default-mode" code nil nil [5513 5549])
+            ("icomplete-mode" code nil nil [5740 5758])
+            ("fset" code nil nil [5797 5826])
+            ("setq" code nil nil [5854 5882])
+            ("setq" code nil nil [5907 5949])
+            ("setq" code nil nil [5977 6008])
+            ("mouse-avoidance-mode" code nil nil [6049 6080])
+            ("auto-image-file-mode" code nil nil [6100 6124])
+            ("auto-compression-mode" code nil nil [6136 6161])
+            ("column-number-mode" code nil nil [6184 6206])
+            ("setq" code nil nil [6229 6258])
+            ("blink-cursor-mode" code nil nil [6274 6296])
+            ("transient-mark-mode" code nil nil [6297 6320])
+            ("show-paren-mode" code nil nil [6347 6366])
+            ("mouse-wheel-mode" code nil nil [6376 6396])
+            ("setq" code nil nil [6409 6431])
+            ("setq" code nil nil [6452 6528])
+            ("setq" code nil nil [6548 6631])
+            ("setq" code nil nil [6632 6668])
+            ("setq" code nil nil [6692 6724])
+            ("setq" code nil nil [6725 6762])
+            ("setq" code nil nil [6783 6816])
+            ("setq" code nil nil [6850 6880])
+            ("setq" code nil nil [6881 6899])
+            ("setq-default" code nil nil [6921 6953])
+            ("setq" code nil nil [6980 7004])
+            ("setq" code nil nil [7024 7047])
+            ("put" code nil nil [7067 7104])
+            ("split-window-vertically" code nil nil [7131 7156])
+            ("setq" code nil nil [7173 7209])
+            ("setq" code nil nil [7230 7264])
+            ("setq" code nil nil [7411 7433])
+            ("setq" code nil nil [7434 7457])
+            ("setq-default" code nil nil [7458 7487])
+            ("setq" code nil nil [7489 7515])
+            ("setq" code nil nil [7531 7580])
+            ("add-hook" code nil nil [7596 7647])
+            ("add-hook" code nil nil [7648 7694])
+            ("ibuffer" include nil nil [7744 7762])
+            ("wb-line-number" include nil nil [7794 7819])
+            ("setq" code nil nil [7820 7861])
+            ("set-scroll-bar-mode" code nil nil [7884 7909])
+            ("if" code nil nil [7994 8125])
+            ("xcscope" include nil nil [8259 8277])
+            ("add-hook" code nil nil [8290 8353])
+            ("add-hook" code nil nil [8354 8419])
+            ("setq" code nil nil [8556 8588])
+            ("add-hook" code nil nil [8589 8652])
+            ("load-file" code nil nil [8653 8717])
+            ("load-file" code nil nil [8718 8791])
+            ("load-file" code nil nil [8792 8851])
+            ("load-file" code nil nil [8852 8915])
+            ("load-file" code nil nil [8916 8985])
+            ("load-file" code nil nil [8986 9049])
+            ("semantic-load-enable-code-helpers" code nil nil [9050 9085])
+            ("speedbar-frame-mode" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [9086 9155])
+            ("speedbar-get-focus" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [9156 9224])
+            ("define-key-after" code nil nil [9225 9352])
+            ("setq" code nil nil [9490 9521])
+            ("add-to-list" code nil nil [9522 9581])
+            ("load-file" code nil nil [9582 9635])
+            ("ecb" include nil nil [9636 9650])
+            ("setq" code nil nil [9651 9916])
+            ("custom-set-variables" code nil nil [9963 10653])
+            ("custom-set-faces" code nil nil [10654 10896])
+            ("setq" code nil nil [10945 11024])
+            ("setq" code nil nil [11025 11093])
+            ("my-indent-or-complete" function nil nil [11116 11258])
+            ("global-set-key" code nil nil [11260 11315])
+            ("senator-try-expand-semantic" function (:prototype-flag t) nil [11318 11367])
+            ("setq" code nil nil [11369 11892])
+            ("doxymacs" include nil nil [11895 11914])
+            ("add-hook" code nil nil [11929 11974])
+            ("add-hook" code nil nil [11994 12041])
+            ("ido" include nil nil [12182 12196])
+            ("ido-mode" code nil nil [12197 12209])
+            ("electric-pair-mode" code nil nil [12609 12631]))          
+    :file "fxq-basic-config.el"
+    :pointmax 12632
+    :fsize 14907
+    :lastmodtime '(21974 46057 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cygwin-mount.el"
+    :file "cygwin-mount.el"
+    :fsize 30821
+    :lastmodtime '(18587 52612 0 0)
+    )
+   (semanticdb-table "w32-browser.el"
+    :file "w32-browser.el"
+    :fsize 6207
+    :lastmodtime '(18090 51064 0 0)
+    )
+   (semanticdb-table "ibuffer.el"
+    :file "ibuffer.el"
+    :fsize 136201
+    :lastmodtime '(18090 56774 0 0)
+    )
+   (semanticdb-table "wb-line-number.el"
+    :file "wb-line-number.el"
+    :fsize 30467
+    :lastmodtime '(18093 20620 0 0)
+    )
+   (semanticdb-table "fxq-key-bindings.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("global-set-key" code nil nil [92 121])
+            ("global-set-key" code nil nil [133 162])
+            ("global-set-key" code nil nil [188 222])
+            ("global-set-key" code nil nil [238 298])
+            ("global-set-key" code nil nil [299 343])
+            ("global-set-key" code nil nil [344 396])
+            ("global-set-key" code nil nil [397 448])
+            ("global-set-key" code nil nil [449 517])
+            ("global-set-key" code nil nil [547 588])
+            ("global-set-key" code nil nil [643 679])
+            ("global-set-key" code nil nil [681 711])
+            ("global-set-key" code nil nil [724 759])
+            ("global-set-key" code nil nil [760 813])
+            ("global-set-key" code nil nil [1066 1108])
+            ("global-set-key" code nil nil [1109 1157])
+            ("global-set-key" code nil nil [1158 1208])
+            ("global-set-key" code nil nil [1209 1282])
+            ("flyspell-check-next-highlighted-word" function (:user-visible-flag t) nil [1283 1451])
+            ("global-set-key" code nil nil [1452 1521])
+            ("global-set-key" code nil nil [1579 1637])
+            ("global-set-key" code nil nil [1638 1698])
+            ("global-set-key" code nil nil [1713 1757])
+            ("global-set-key" code nil nil [1808 1847])
+            ("global-set-key" code nil nil [1981 2020])
+            ("global-set-key" code nil nil [2021 2059])
+            ("global-set-key" code nil nil [2164 2210])
+            ("global-set-key" code nil nil [2234 2273])
+            ("global-set-key" code nil nil [2285 2333])
+            ("global-set-key" code nil nil [2335 2385])
+            ("global-set-key" code nil nil [2411 2468])
+            ("global-set-key" code nil nil [2815 2860])
+            ("global-set-key" code nil nil [2862 2907])
+            ("global-set-key" code nil nil [2909 2954])
+            ("global-set-key" code nil nil [2956 3004])
+            ("define-key" code nil nil [3049 3102])
+            ("define-key" code nil nil [3103 3160])
+            ("define-key" code nil nil [3161 3223])
+            ("define-key" code nil nil [3224 3399])
+            ("global-set-key" code nil nil [3438 3479])
+            ("global-set-key" code nil nil [3481 3522])
+            ("global-set-key" code nil nil [3524 3569])
+            ("global-set-key" code nil nil [3571 3616])
+            ("define-key" code nil nil [3618 3656])
+            ("define-key" code nil nil [3657 3695])
+            ("define-key" code nil nil [3696 3738])
+            ("define-key" code nil nil [3739 3780])
+            ("global-set-key" code nil nil [3782 3829])
+            ("global-set-key" code nil nil [3831 3872])
+            ("global-set-key" code nil nil [3874 3922])
+            ("global-set-key" code nil nil [3924 3973])
+            ("global-set-key" code nil nil [4015 4068])
+            ("global-set-key" code nil nil [4089 4134])
+            ("global-set-key" code nil nil [4164 4205])
+            ("setq" code nil nil [4256 4302])
+            ("define-prefix-command" code nil nil [4375 4409])
+            ("global-set-key" code nil nil [4411 4450])
+            ("global-set-key" code nil nil [4476 4531])
+            ("global-set-key" code nil nil [4543 4585])
+            ("global-set-key" code nil nil [4601 4663])
+            ("global-set-key" code nil nil [4674 4725])
+            ("global-set-key" code nil nil [4750 4806])
+            ("global-set-key" code nil nil [4831 4888])
+            ("global-set-key" code nil nil [4918 4974])
+            ("global-set-key" code nil nil [4975 5026])
+            ("global-set-key" code nil nil [5174 5221])
+            ("global-set-key" code nil nil [5242 5291])
+            ("global-set-key" code nil nil [5303 5339])
+            ("global-set-key" code nil nil [5355 5411])
+            ("global-set-key" code nil nil [5424 5483])
+            ("global-set-key" code nil nil [5493 5542])
+            ("global-set-key" code nil nil [5553 5588])
+            ("global-set-key" code nil nil [5605 5653])
+            ("global-set-key" code nil nil [5682 5735])
+            ("global-set-key" code nil nil [5756 5795])
+            ("global-set-key" code nil nil [5813 5863])
+            ("global-set-key" code nil nil [5865 5904])
+            ("global-set-key" code nil nil [5906 5943])
+            ("global-set-key" code nil nil [5954 5994])
+            ("global-set-key" code nil nil [5996 6036])
+            ("global-set-key" code nil nil [6084 6132])
+            ("global-set-key" code nil nil [6156 6217])
+            ("global-set-key" code nil nil [6244 6286])
+            ("global-set-key" code nil nil [6296 6332])
+            ("global-set-key" code nil nil [6380 6419])
+            ("global-set-key" code nil nil [6619 6669])
+            ("global-set-key" code nil nil [6691 6750])
+            ("global-set-key" code nil nil [6752 6806])
+            ("global-set-key" code nil nil [6808 6865])
+            ("global-set-key" code nil nil [6867 6917])
+            ("global-set-key" code nil nil [6919 6971])
+            ("global-set-key" code nil nil [6973 7024])
+            ("global-set-key" code nil nil [7035 7072])
+            ("global-set-key" code nil nil [7096 7160])
+            ("global-set-key" code nil nil [7196 7242])
+            ("global-set-key" code nil nil [7290 7338])
+            ("global-set-key" code nil nil [7340 7390])
+            ("global-set-key" code nil nil [7412 7451])
+            ("setq" code nil nil [7453 7552])
+            ("browse-url" include nil nil [7735 7756])
+            ("global-set-key" code nil nil [7757 7806])
+            ("define-key" code nil nil [7854 7903])
+            ("global-set-key" code nil nil [7904 7937])
+            ("global-set-key" code nil nil [7960 7998])
+            ("global-set-key" code nil nil [8010 8046])
+            ("global-set-key" code nil nil [8155 8208])
+            ("global-set-key" code nil nil [8255 8298])
+            ("global-set-key" code nil nil [8299 8339])
+            ("global-set-key" code nil nil [8340 8380])
+            ("global-set-key" code nil nil [8412 8441])
+            ("compile-command" code nil nil [8498 8522])
+            ("global-set-key" code nil nil [8564 8613])
+            ("setq" code nil nil [8670 8688])
+            ("setq" code nil nil [8767 8796])
+            ("global-set-key" code nil nil [8841 8898])
+            ("his-speedbar-buffer-name" variable
+               (:constant-flag t
+                :default-value "SPEEDBAR")
+                nil [8934 8980])
+            ("his-speedbar-no-separate-frame" function nil nil [8981 9982])
+            ("global-set-key" code nil nil [10080 10137])
+            ("global-set-key" code nil nil [10138 10201])
+            ("global-set-key" code nil nil [10202 10278])
+            ("global-set-key" code nil nil [10279 10356])
+            ("global-set-key" code nil nil [10357 10419])
+            ("global-set-key" code nil nil [10420 10482])
+            ("global-set-key" code nil nil [10483 10542])
+            ("global-set-key" code nil nil [10543 10598]))          
+    :file "fxq-key-bindings.el"
+    :pointmax 11426
+    :fsize 12364
+    :lastmodtime '(21790 129 0 0)
+    :unmatched-syntax '((punctuation 8497 . 8498))
+    )
+   (semanticdb-table "tabbar.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("tabbar-version" variable
+               (:constant-flag t
+                :default-value "2.0")
+                nil [313 344])
+            ("tabbar" customgroup (:user-visible-flag t) nil [8305 8390])
+            ("tabbar-cycle-scope" variable (:user-visible-flag t) nil [8392 8922])
+            ("tabbar-auto-scroll-flag" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [8924 9194])
+            ("tabbar-inhibit-functions" variable (:default-value (quote (tabbar-default-inhibit-function))) nil [9196 9474])
+            ("tabbar-current-tabset-function" variable nil nil [9476 9633])
+            ("tabbar-tab-label-function" variable nil nil [9635 9794])
+            ("tabbar-select-tab-function" variable nil nil [9796 9952])
+            ("tabbar-help-on-tab-function" variable nil nil [9954 10187])
+            ("tabbar-button-label-function" variable nil nil [10189 10381])
+            ("tabbar-home-function" variable nil nil [10383 10527])
+            ("tabbar-home-help-function" variable nil nil [10529 10739])
+            ("tabbar-scroll-left-function" variable (:default-value (quote tabbar-scroll-left)) nil [10741 10965])
+            ("tabbar-scroll-left-help-function" variable (:default-value (quote tabbar-scroll-left-help)) nil [10967 11204])
+            ("tabbar-scroll-right-function" variable (:default-value (quote tabbar-scroll-right)) nil [11206 11434])
+            ("tabbar-scroll-right-help-function" variable (:default-value (quote tabbar-scroll-right-help)) nil [11436 11676])
+            ("defalias" code nil nil [11711 11876])
+            ("tabbar-click-p" function (:arguments ("event")) nil [11879 12004])
+            ("tabbar-shorten" function (:arguments ("str" "width")) nil [12006 13561])
+            ("tabbar-make-tab" function (:arguments ("object" "tabset")) nil [13586 13733])
+            ("tabbar-tab-value" function (:arguments ("tab")) nil [13735 13813])
+            ("tabbar-tab-tabset" function (:arguments ("tab")) nil [13815 13900])
+            ("tabbar-tabsets" variable nil nil [13902 13953])
+            ("tabbar-tabsets-tabset" variable nil nil [13955 14035])
+            ("tabbar-current-tabset" variable nil nil [14037 14123])
+            ("make-variable-buffer-local" code nil nil [14124 14175])
+            ("tabbar-init-hook" variable nil nil [14177 14315])
+            ("tabbar-init-tabsets-store" function nil nil [14317 14572])
+            ("tabbar-quit-hook" variable nil nil [14574 14701])
+            ("tabbar-free-tabsets-store" function nil nil [14703 14864])
+            ("defalias" code nil nil [14995 15517])
+            ("tabbar-make-tabset" function (:arguments ("name" "objects")) nil [15520 15960])
+            ("tabbar-get-tabset" function (:arguments ("name")) nil [15962 16112])
+            ("tabbar-delete-tabset" function (:arguments ("tabset")) nil [16114 16264])
+            ("tabbar-tabs" function (:arguments ("tabset")) nil [16266 16360])
+            ("tabbar-tab-values" function (:arguments ("tabset")) nil [16362 16494])
+            ("tabbar-get-tab" function (:arguments ("object" "tabset")) nil [16496 16668])
+            ("tabbar-member" function (:arguments ("tab" "tabset")) nil [16670 16828])
+            ("tabbar-template" function (:arguments ("tabset")) nil [16830 17017])
+            ("tabbar-set-template" function (:arguments ("tabset" "template")) nil [17019 17250])
+            ("tabbar-selected-tab" function (:arguments ("tabset")) nil [17252 17353])
+            ("tabbar-selected-value" function (:arguments ("tabset")) nil [17355 17498])
+            ("tabbar-selected-p" function (:arguments ("tab" "tabset")) nil [17500 17638])
+            ("tabbar--track-selected" variable nil nil [17640 17675])
+            ("tabbar-select-tab" function (:arguments ("tab" "tabset")) nil [17677 18047])
+            ("tabbar-select-tab-value" function (:arguments ("object" "tabset")) nil [18049 18344])
+            ("tabbar-start" function (:arguments ("tabset")) nil [18346 18457])
+            ("tabbar-view" function (:arguments ("tabset")) nil [18459 18656])
+            ("tabbar-add-tab" function (:arguments ("tabset" "object" "append")) nil [18658 19242])
+            ("tabbar-delete-tab" function (:arguments ("tab")) nil [19244 19767])
+            ("tabbar-scroll" function (:arguments ("tabset" "count")) nil [19769 20184])
+            ("tabbar-tab-next" function (:arguments ("tabset" "tab" "before")) nil [20186 20590])
+            ("tabbar-current-tabset" function (:arguments ("update")) nil [20592 21020])
+            ("tabbar-get-tabsets-tabset" function nil nil [21022 21308])
+            ("tabbar-default" variable
+               (:default-value (quote ((((class color grayscale) (background dark)) :inherit variable-pitch :height 0.8 :foreground "grey75" :background "gray50") (((class mono) (background light)) :inherit variable-pitch :height 0.8 :foreground "black" :background "white") (((class mono) (background dark)) :inherit variable-pitch :height 0.8 :foreground "white" :background "black") (t :inherit variable-pitch :height 0.8 :foreground "gray50" :background "gray75")))
+                :type "face")
+                nil [21323 22124])
+            ("tabbar-unselected" variable
+               (:default-value (quote ((t :inherit tabbar-default :box (:line-width 1 :color "white" :style released-button))))
+                :type "face")
+                nil [22126 22313])
+            ("tabbar-selected" variable
+               (:default-value (quote ((t :inherit tabbar-default :box (:line-width 1 :color "white" :style pressed-button) :foreground "blue")))
+                :type "face")
+                nil [22315 22524])
+            ("tabbar-highlight" variable
+               (:default-value (quote ((t :underline t)))
+                :type "face")
+                nil [22526 22655])
+            ("tabbar-separator" variable
+               (:default-value (quote ((t :inherit tabbar-default)))
+                :type "face")
+                nil [22657 22787])
+            ("tabbar-button" variable
+               (:default-value (quote ((t :inherit tabbar-default :box (:line-width 1 :color "white" :style released-button))))
+                :type "face")
+                nil [22789 22972])
+            ("tabbar-button-highlight" variable
+               (:default-value (quote ((t :inherit tabbar-default)))
+                :type "face")
+                nil [22974 23124])
+            ("tabbar-background-color" variable (:user-visible-flag t) nil [23126 23458])
+            ("tabbar-background-color" function nil nil [23460 23848])
+            ("tabbar-button-widget" variable
+               (:constant-flag t
+                :default-value (quote (cons (cons :tag "Enabled" (string) (repeat :tag "Image" :extra-offset 2 (restricted-sexp :tag "Spec" :match-alternatives (listp)))) (cons :tag "Disabled" (string) (repeat :tag "Image" :extra-offset 2 (restricted-sexp :tag "Spec" :match-alternatives (listp)))))))
+                nil [23893 24882])
+            ("tabbar-home-button-value" variable nil nil [24903 24970])
+            ("tabbar-home-button-enabled-image" variable
+               (:constant-flag t
+                :default-value (quote ((:type pbm :data "P2 13 13 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 0
+6 0 255 255 255 255 255 255 255 255 255 255 9 130 9 255 255 255 255
+255 255 255 255 255 255 26 130 26 255 255 255 255 255 255 255 0 9 26
+41 130 41 26 9 0 255 255 255 255 5 145 140 135 130 125 120 115 5 255
+255 255 255 0 9 26 41 130 41 26 9 0 255 255 255 255 255 255 255 26 130
+26 255 255 255 255 255 255 255 255 255 255 9 130 9 255 255 255 255 255
+255 255 255 255 255 0 6 0 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255
+"))))
+                nil [24972 25727])
+            ("tabbar-home-button-disabled-image" variable
+               (:constant-flag t
+                :default-value (quote ((:type pbm :data "P2 13 13 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 0 0 1 2 3 2 1 0 0 255 255 255 255 0 132 128 123 119 114 110
+106 0 255 255 255 255 0 0 1 2 3 2 1 0 0 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 255
+"))))
+                nil [25729 26498])
+            ("tabbar-home-button" variable (:default-value (cons (cons "[o]" tabbar-home-button-enabled-image) (cons "[x]" tabbar-home-button-disabled-image))) nil [26500 26946])
+            ("tabbar-scroll-left-button-value" variable nil nil [26974 27055])
+            ("tabbar-scroll-left-button-enabled-image" variable
+               (:constant-flag t
+                :default-value (quote ((:type pbm :data "P2 13 13 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255 128 16 48 255 255 255 255 255 255 255
+255 144 28 86 128 0 255 255 255 255 255 255 160 44 92 159 135 113 0
+255 255 255 255 160 44 97 165 144 129 120 117 0 255 255 176 44 98 175
+174 146 127 126 127 128 0 255 255 0 160 184 156 143 136 134 135 137
+138 0 255 255 176 32 67 144 146 144 145 146 148 149 0 255 255 255 255
+160 42 75 140 154 158 159 160 0 255 255 255 255 255 255 160 40 74 154
+170 171 0 255 255 255 255 255 255 255 255 160 41 82 163 0 255 255 255
+255 255 255 255 255 255 255 160 32 48 255 255 255 255 255 255 255 255
+255 255 255 255 255 255
+"))))
+                nil [27057 27899])
+            ("tabbar-scroll-left-button" variable (:default-value (cons (cons " <" tabbar-scroll-left-button-enabled-image) (cons " =" nil))) nil [27901 28343])
+            ("tabbar-scroll-right-button-value" variable nil nil [28372 28455])
+            ("tabbar-scroll-right-button-enabled-image" variable
+               (:constant-flag t
+                :default-value (quote ((:type pbm :data "P2 13 13 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+48 32 160 255 255 255 255 255 255 255 255 255 255 44 161 71 32 160 255
+255 255 255 255 255 255 255 36 157 163 145 62 32 160 255 255 255 255
+255 255 30 128 133 137 142 124 50 32 160 255 255 255 255 29 120 121
+124 126 126 124 105 42 32 176 255 255 31 126 127 128 128 128 128 126
+124 89 32 255 255 33 134 135 136 137 137 138 119 49 32 176 255 255 34
+143 144 145 146 128 54 32 160 255 255 255 255 36 152 153 134 57 32 160
+255 255 255 255 255 255 38 141 60 32 160 255 255 255 255 255 255 255
+255 48 32 160 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+255 255 255 255 255 255 255 255
+"))))
+                nil [28457 29310])
+            ("tabbar-scroll-right-button" variable (:default-value (cons (cons " >" tabbar-scroll-right-button-enabled-image) (cons " =" nil))) nil [29312 29758])
+            ("tabbar-separator-widget" variable
+               (:constant-flag t
+                :default-value (quote (cons (choice (string) (number :tag "Space width" 0.2)) (repeat :tag "Image" :extra-offset 2 (restricted-sexp :tag "Spec" :match-alternatives (listp))))))
+                nil [29777 30378])
+            ("tabbar-separator-value" variable nil nil [30380 30461])
+            ("tabbar-separator" variable (:default-value (list 0.2)) nil [30463 30827])
+            ("tabbar-use-images" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [30843 31337])
+            ("tabbar-find-image" function (:arguments ("specs")) nil [31339 31629])
+            ("tabbar-disable-image" function (:arguments ("image")) nil [31631 31835])
+            ("tabbar-normalize-image" function (:arguments ("image" "margin")) nil [31837 32394])
+            ("tabbar-make-mouse-keymap" function (:arguments ("callback")) nil [32432 33030])
+            ("tabbar-make-mouse-event" function (:arguments ("type")) nil [33032 33445])
+            ("tabbar-default-button-keymap" variable
+               (:constant-flag t
+                :default-value (tabbar-make-mouse-keymap (quote tabbar-select-button-callback)))
+                nil [33462 33593])
+            ("tabbar-help-on-button" function (:arguments ("window" "object" "position")) nil [33595 34241])
+            ("tabbar-click-on-button" function (:arguments ("name" "type")) nil [34243 34740])
+            ("tabbar-select-button-callback" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [34742 35110])
+            ("tabbar-make-button-keymap" function (:arguments ("name")) nil [35112 35506])
+            ("tabbar-scroll-left" function (:arguments ("event")) nil [35532 35713])
+            ("tabbar-scroll-left-help" function nil nil [35715 35845])
+            ("tabbar-scroll-right" function (:arguments ("event")) nil [35847 36029])
+            ("tabbar-scroll-right-help" function nil nil [36031 36164])
+            ("tabbar-default-tab-keymap" variable
+               (:constant-flag t
+                :default-value (tabbar-make-mouse-keymap (quote tabbar-select-tab-callback)))
+                nil [36178 36300])
+            ("tabbar-help-on-tab" function (:arguments ("window" "object" "position")) nil [36302 36775])
+            ("tabbar-click-on-tab" function (:arguments ("tab" "type")) nil [36777 37227])
+            ("tabbar-select-tab-callback" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [37229 37579])
+            ("tabbar-make-tab-keymap" function (:arguments ("tab")) nil [37581 37956])
+            ("tabbar-button-label" function (:arguments ("name")) nil [37986 38861])
+            ("tabbar-line-button" function (:arguments ("name")) nil [38863 39819])
+            ("tabbar-line-separator" function nil nil [39821 40823])
+            ("tabbar-line-buttons" function (:arguments ("tabset")) nil [40825 41419])
+            ("tabbar-line-tab" function (:arguments ("tab")) nil [41421 42147])
+            ("tabbar-line-format" function (:arguments ("tabset")) nil [42149 44627])
+            ("tabbar-line" function nil nil [44629 45163])
+            ("tabbar-header-line-format" variable
+               (:constant-flag t
+                :default-value (quote (:eval (tabbar-line))))
+                nil [45165 45260])
+            ("tabbar-default-inhibit-function" function nil nil [45262 45673])
+            ("tabbar-cycle" function (:arguments ("backward" "type")) nil [45713 48156])
+            ("tabbar-backward" function (:user-visible-flag t) nil [48173 48331])
+            ("tabbar-forward" function (:user-visible-flag t) nil [48348 48499])
+            ("tabbar-backward-group" function (:user-visible-flag t) nil [48516 48680])
+            ("tabbar-forward-group" function (:user-visible-flag t) nil [48697 48854])
+            ("tabbar-backward-tab" function (:user-visible-flag t) nil [48871 49012])
+            ("tabbar-forward-tab" function (:user-visible-flag t) nil [49029 49163])
+            ("tabbar--mouse" function (:arguments ("number")) nil [49194 49450])
+            ("tabbar-press-home" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [49467 49788])
+            ("tabbar-press-scroll-left" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [49805 50147])
+            ("tabbar-press-scroll-right" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [50164 50509])
+            ("mwheel" include nil nil [50538 50555])
+            ("tabbar--mwheel-up-event" variable
+               (:constant-flag t
+                :default-value (symbol-value (if (boundp (quote mouse-wheel-up-event)) (quote mouse-wheel-up-event) (quote mouse-wheel-up-button))))
+                nil [50578 50748])
+            ("tabbar--mwheel-down-event" variable
+               (:constant-flag t
+                :default-value (symbol-value (if (boundp (quote mouse-wheel-down-event)) (quote mouse-wheel-down-event) (quote mouse-wheel-down-button))))
+                nil [50750 50928])
+            ("tabbar--mwheel-key" function (:arguments ("event-type")) nil [50930 51217])
+            ("tabbar--mwheel-up-p" function (:arguments ("event")) nil [51219 51493])
+            ("tabbar-mwheel-backward" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [51532 51768])
+            ("tabbar-mwheel-forward" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [51785 52017])
+            ("tabbar-mwheel-backward-group" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [52034 52401])
+            ("tabbar-mwheel-forward-group" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [52418 52777])
+            ("tabbar-mwheel-backward-tab" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [52794 53075])
+            ("tabbar-mwheel-forward-tab" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [53092 53369])
+            ("tabbar-mwheel-switch-tab" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [53451 53682])
+            ("tabbar-mwheel-switch-group" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [53699 53946])
+            ("tabbar-mode-on-p" function nil nil [53967 54113])
+            ("tabbar--local-hlf" variable nil nil [54140 54170])
+            ("define-minor-mode" code nil nil [54187 55772])
+            ("tabbar-prefix-key" variable (:default-value [(control 99)]) nil [55793 55881])
+            ("tabbar-prefix-map" variable (:default-value (let ((km (make-sparse-keymap))) (define-key km [(control home)] (quote tabbar-press-home)) (define-key km [(control left)] (quote tabbar-backward)) (define-key km [(control right)] (quote tabbar-forward)) (define-key km [(control up)] (quote tabbar-backward-group)) (define-key km [(control down)] (quote tabbar-forward-group)) (define-key km [(control prior)] (quote tabbar-press-scroll-left)) (define-key km [(control next)] (quote tabbar-press-scroll-right)) (define-key km [(control f10)] (quote tabbar-local-mode)) km)) nil [55883 56471])
+            ("tabbar-mode-map" variable (:default-value (let ((km (make-sparse-keymap))) (define-key km tabbar-prefix-key tabbar-prefix-map) km)) nil [56473 56631])
+            ("tabbar--global-hlf" variable nil nil [56633 56664])
+            ("define-minor-mode" code nil nil [56681 57825])
+            ("tabbar-mwheel-mode-map" variable (:default-value (let ((km (make-sparse-keymap))) (if (get (quote mouse-wheel) (quote event-symbol-elements)) (define-key km [A-mouse-wheel] (quote tabbar-mwheel-switch-group)) (let ((up (tabbar--mwheel-key tabbar--mwheel-up-event)) (down (tabbar--mwheel-key tabbar--mwheel-down-event))) (define-key km (\` [header-line (\, down)]) (quote tabbar-mwheel-backward-group)) (define-key km (\` [header-line (\, up)]) (quote tabbar-mwheel-forward-group)) (define-key km (\` [header-line (control (\, down))]) (quote tabbar-mwheel-backward-tab)) (define-key km (\` [header-line (control (\, up))]) (quote tabbar-mwheel-forward-tab)) (define-key km (\` [header-line (shift (\, down))]) (quote tabbar-mwheel-backward)) (define-key km (\` [header-line (shift (\, up))]) (quote tabbar-mwheel-forward)))) km)) nil [57853 58853])
+            ("define-minor-mode" code nil nil [58870 59300])
+            ("tabbar-mwheel-follow" function nil nil [59302 59466])
+            ("add-hook" code nil nil [59468 59523])
+            ("add-hook" code nil nil [59524 59579])
+            ("tabbar-buffer" customgroup (:user-visible-flag t) nil [59600 59681])
+            ("tabbar-buffer-home-button" variable (:default-value (cons (cons "[+]" tabbar-home-button-enabled-image) (cons "[-]" tabbar-home-button-disabled-image))) nil [59683 60326])
+            ("tabbar-buffer-list-function" variable (:default-value (quote tabbar-buffer-list)) nil [60328 60524])
+            ("tabbar-buffer-groups-function" variable (:default-value (quote tabbar-buffer-groups)) nil [60526 60792])
+            ("tabbar-buffer-list" function nil nil [60794 61362])
+            ("tabbar-buffer-mode-derived-p" function (:arguments ("mode" "parents")) nil [61364 61651])
+            ("tabbar-buffer-groups" function nil nil [61653 62999])
+            ("tabbar--buffers" variable nil nil [63035 63063])
+            ("tabbar-buffer-update-groups" function nil nil [63065 66093])
+            ("tabbar--buffer-show-groups" variable nil nil [66120 66159])
+            ("tabbar-buffer-show-groups" function (:arguments ("flag")) nil [66161 66375])
+            ("tabbar-buffer-tabs" function nil nil [66377 66746])
+            ("tabbar-buffer-button-label" function (:arguments ("name")) nil [66748 68024])
+            ("tabbar-buffer-tab-label" function (:arguments ("tab")) nil [68026 68702])
+            ("tabbar-buffer-help-on-tab" function (:arguments ("tab")) nil [68704 69207])
+            ("tabbar-buffer-select-tab" function (:arguments ("event" "tab")) nil [69209 69622])
+            ("tabbar-buffer-click-on-home" function (:arguments ("event")) nil [69624 70046])
+            ("tabbar-buffer-help-on-home" function nil nil [70048 70327])
+            ("tabbar-buffer-track-killed" function nil nil [70329 71420])
+            ("tabbar-buffer-init" function nil nil [71450 72105])
+            ("tabbar-buffer-quit" function nil nil [72107 72599])
+            ("add-hook" code nil nil [72601 72649])
+            ("add-hook" code nil nil [72650 72698])
+            ("tabbar" package nil nil [72700 72717])
+            ("run-hooks" code nil nil [72719 72748]))          
+    :file "tabbar.el"
+    :pointmax 72774
+    :fsize 72773
+    :lastmodtime '(20359 33670 0 0)
+    :unmatched-syntax '((close-paren 15517 . 15518) (symbol 14976 . 14992) (open-paren 14975 . 14976) (close-paren 11876 . 11877) (symbol 11692 . 11708) (open-paren 11691 . 11692))
+    )
+   )
+  :file "!drive_d!Dropbox!emacs!.emacs.d!elisp!semantic.cache"
+  :semantic-tag-version "2.1"
+  :semanticdb-version "2.1"
+  )

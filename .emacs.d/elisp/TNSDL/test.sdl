@@ -1,0 +1,475 @@
+/* 
+ Note: other GOOD test file could be TNSDL Grammar's 15.1 A complete program =
+ http://cewww.ntc.nokia.com/tools/tnsdl/yfr0902e/node64.html#SECTION000161000000000000000
+ Though it doesn't contain ``strings`` neither 'a'n' ... (What about 'n' and ''n'?)
+ Nor local procedures... 
+ 
+ Yet another one is The TNSDL Book's YXA.sdl example...
+ 
+ It would be nice to have different "indentation policies":
+ + a "normal" indentation (what fits to e.g. yxa-style)
+ + and a "miserly" one (what fits to our real code: when we reduce indentation
+   wherever it is possible...)
+ */
+
+PROCESS cia1sc
+  COMMENT '%SID%';
+
+/* abs ABSTRAC  TYP  types 
+ * PROCEDUR NI  nilp retur */
+CONSTANT
+  min_msg_lenght_abnf__c = 0x03;
+
+CONSTANT own_cause_code__t_not_exist_c
+  = own_cause_code__t(. cd_t_normal_end_of_the_call, /* note: cd_t_init exists... */
+                        clear_add_info_t (. family_id_t_any_c,
+                                            0xFFFF,
+                                            0xFFFF .) .);
+
+CONSTANT
+  own_cause_code__t_not_exist_c = own_cause_code__t(.
+  cd_t_normal_end_of_the_call, /* note: cd_t_init exists... */
+  clear_add_info_t (. family_id_t_any_c,
+                      0xFFFF,
+                      0xFFFF .) .);
+
+  /* Variable Definitions *******************************************************/
+DCL WITHWARMING
+  g_mgw_info                    hand_mgw_info__t,
+  g_dummy_hta_pid               pid,  /* Use this as a constant! Do not modify!
+                                       * It is used for special purposes! */
+  g_prb_state                   state__t := state__t_all_ok_c,
+#if ( not direct_read ) /* what happened with syntax highlight?? */
+  g_mgw_identification        mgw_identification_t,
+#endif
+  g_hand_table                character,
+  g_mfu_pid                   pid,
+  /* Spontaneous release  */
+  g_sbb_buf_handle              s_buf_handle__t( BUFFER,
+                                                 area_size_t_dynbuf_size_c,
+                                                 g_sbb_buf_ptr ),
+  g_meg_in_sbf                  longint;
+
+ABSTRACT TYPE foo__t
+  /* abstract   CONStanT procedure */
+  CONSTANT
+    type_c = 7;
+    max_data_area_c   = 0x2000
+      COMMENT 'This is the shorter, or normal, string constant syntax'
+              'what is primarily intended for constant data used by code,'
+              'and it also permits the expression of non-printing characters'
+              ''
+              'Test text: the type procedure m data /* area */ '
+              'which is'n acceptable';
+    /* types /* inside * / the 'type' would come here ...*/
+  REPRESENTATION
+  STRUCT
+    mgw_id        byte; /* BYTE   is wrong!! STRUCT ENDSTRUCT */
+    mana_pid      doublereal
+      COMMENT    ``the pid of the `hta` mana STRUCT ENDSTRUCT ``
+                 ````
+                 ``bcelonging to the mgw.``   ;
+  ENDSTRUCT;
+  OPERATORS 
+  PROCEDURE init( IN/OUT mgw_info   hand_mgw_info__t   /* out */ 
+                ) ->, FAR =>; /*aa'sja'hjs*/
+
+    PROCEDURE xxx( IN VIEWED    mgw_info   hand_mgw_info__t,
+                   IN/OUT       aaa        integer
+                 ) ->, NEAR => /*aa'sja'hjs*/
+                   COMMENT 'something';
+
+                 read( IN/OUT FAR tone     h248_tones__t, /* foo__t kja ajsj */
+                       IN         source_size   dword 
+                     ) -> error_t, MACRO
+                       COMMENT '#USES: a''s b'
+                               ''  
+                               'ftmd_pckg__t_std_tl_c 'n 't ' 'aaa foo-t foo__t '  ;
+ENDTYPE foo__t
+  COMMENT 'foo-comment foo_ ahsguwl'; /* foo_ */
+/*  */  
+TYPE up_occured_event_ptr__t
+  CONSTANT
+    x_c = nil;
+  REPRESENTATION
+  POINTER( up_occured_event_t );
+ENDTYPE up_occured_event_ptr__t;
+
+/* vsubtype_t  1.1+ */ TYPE vsubtype_t 
+   REPRESENTATION 
+     ENUM  
+       nul_c = 0  COMMENT 'all';
+     mdy_c = 1  COMMENT 'date';
+   dmy_c = 2  COMMENT 'date';                 
+ myd_c = 3  COMMENT 'date';                 
+ dym_c = 4  COMMENT 'date';                 
+     ENDENUM;
+ENDTYPE vsubtype_t 
+   COMMENT '#E:Announcement sub variable types in Play(Advanced Audio Package)';
+  
+TYPE test_id__t
+  REPRESENTATION ENUM
+    sbb_c = 7;
+    emulate_warm_c = 9;
+  ENDENUM;
+ENDTYPE test_id__t
+  COMMENT 'use this in '
+          'OUTPUT / INPUT c_test_msg_s!'   ;
+
+ABSTRACT TYPE h248_coding__t
+  CONSTANT x = 1;
+  REPRESENTATION h248_coding_t;
+  OPERATORS
+    macro_constants() ->, MACRO
+      COMMENT '#USES:';
+ENDTYPE h248_coding__t;
+
+CONSTANT
+  ct_tbl__t_in_ext_ip_c = ct_tbl__t(. 6,
+                                      ct_arr__t(. rm_crct_type_t_in_ext_ip_1_c,
+                                                  rm_crct_type_t_in_ext_ip_6_c .) .);
+  
+  ct_tbl__t_out_ext_ip_c = ct_tbl__t(. 6,
+                                       ct_arr__t(. rm_crct_type_t_out_ext_ip_1_c,
+                                                   rm_crct_type_t_out_ext_ip_5_c,
+                                                   rm_crct_type_t_out_ext_ip_6_c .) .);
+
+  
+ALARM
+  nopar_disturbance_a = 0x1000; /* A disturbance */
+  b_fault_a = 0x2000, (b byte;); /* A fault */
+  wtb_fault_a = 0x2001, (w word;
+                         tab t_t;
+                         b anypointer;); /* pointer?? */
+  eb_fault_a = 0x2003, (e e_t; b byte;);
+CONSTANT
+  wo_code = 1;
+  sp_code = 2;
+  any_code = 3;
+SET
+  (ALARM(0x10, 0x11), nopar_notice_a),
+  (ALARM(0x10, 0x12, wo_code), nopar_notice_a),
+        (ALARM(0x10, 0x13, sp_code), nopar_notice_a),
+        (ALARM(0x10,
+               0x14,
+               any_code),
+         nopar_notice_a
+        );
+SET
+  (ALARM(0x10, 0x31, wo_code), b_fault_a(1));
+RESET
+  (ALARM(0x10, 0x31, wo_code), b_fault_a(1));
+SET
+  (ALARM(0x10, 0x41), wtb_fault_a(1, a_table, 64));
+SET
+  (ALARM(0x10, 0x42), wtb_fault_a(2, a_table));
+  
+PROCEDURE foo
+  COMMENT ``...comment...``;
+FPAR      
+  IN   p_text_ptr   characterpointer;   /* IN */
+    /* Variable Definitions ******************************************************/
+RETURNS
+  bool;
+DCL   
+  l_idx     dword     := 0;
+  
+PROCEDURE inner_foo; /* valid??? */
+START;
+  RETURN;
+ENDPROCEDURE inner_foo;
+
+START;
+  TASK ``a /* two lines long */ string constant``
+       ``wrong parsers will fail here: /* ``;
+  DECISION var;
+#if (procedure)
+  (1 : 3) :
+    TASK x := 1,
+         y := 2;
+#endif
+  (>6):
+    CALL foo( bar( 1+2, /* (1 + 2) */
+                   3,
+                   baz( 4, /* (4 */
+                        5 ),
+                   any__t(.   another__t(. 1, 2, 3 .), /* TASK ( t, a, s, k */
+                              7 .),
+                   8 ),
+              9,
+              10 );
+
+    CALL foo(
+           bar(
+             1+2, /* (1 + 2) */
+             SIZEOF( l_variable ),
+             SIZEOF type__t,
+             baz( 4, /* (4 */ 5 ),
+             any__t(.
+               another__t(. 1, 2, 3 .), /* TASK ( t, a, s, k */
+               7
+               .),
+             8
+              ),
+           9,
+           SIZEOF l_type2__t,
+           10 );
+
+    TASK a := foo( 1,
+                   bar( 2 )),
+         csddf := foo( 1,
+                       bar(2) ) ,
+         b := 3;
+
+    TASK a := 1, b := 2;
+
+    TASK a := 1, /* sizeof( x ) */
+         b := 2;
+
+    TASK tlog_1( log_type_t_byte_t_c,
+                 log_write_item_t( @skipp_message ),
+                 SIZEOF( skipp_message,
+                         hsjhajs
+                       ), /* ( (  */
+                 @'102: fill_act_miss_parts ended, skipp_message='
+               );
+    TASK 'something else';
+    TASK pack_topology_to_h248_act( term_table,         /* in */
+                                    ext_top_tbl,        /* in */
+                                    l_action_send,      /* in/out */
+                                    l_ctx_req_filled ); /* out */
+    CALL failure_handler(  dx_action.i1.b->properties.descriptor.termination_id_list,
+                           dx_action.i1.b->properties.ack,
+                           g_context_info,
+                           invalid_request_ec,      /* Put MEGLIB internal error code */
+                           0x0,      /* No H.248 error code */
+                           internal_error__t_urq_c,
+                           fpar_urq_hand_pid,
+                           own_cause_code
+                        )
+                          COMMENT 'Send reject to URQ';
+  ELSE:
+
+    DECISION error;
+    ( success_ec, 2, 3 ):
+      TASK error_code := prop_prm_a_t_add_octstr( $l_prop_prm_ptr,
+                                                  bytepointer( @l_prop_param.value ),
+                                                  l_written_octets );
+        /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+    ( 4:5 ):
+      DECISION error_code;
+      ( /= meglib_error__t_no_error_c ):
+        TASK elog_1( log_type_t_byte_e_c,
+                     log_write_item_t( @error_code ),
+                     SIZEOF( error_code ),
+                     @'102/enpack_package: nokiaipnwr add failed, merr=' );
+                       /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+      ELSE:
+        DECISION (xxx);
+        (1):
+          TASK 'asd';
+        (2):
+          TASK 'asd';
+          TASK a := 1;
+          DECISION x;
+          ELSE: /* aaaaaaaaaaaaaaaaaaaaaaaaa
+                 * bbbbbbbbbbbbbbbbbbbbbbbbbb
+                 * cccccccccccccccccc
+                 * ddddddddddddddddddddddddd */
+            TASK 'nothing';
+          ENDDECISION;
+        ENDDECISION;
+      ENDDECISION;
+    (9):
+      TASK 'nothing';
+    (10): TASK 'still nothing';
+    ELSE:
+      TASK elog_1( log_type_t_byte_e_c,
+                   log_write_item_t( @error ),
+                   SIZEOF( error ),
+                   @'102/enpack_package: nokiaipnwr write failed, err=' );
+      TASK 'xxx';
+    ENDDECISION;
+
+    TASK 'the final else branch';
+  ENDDECISION;
+ENDPROCEDURE foo;
+
+PROCEDURE bar;
+RETURNS bool;
+START;
+  RETURN T;
+ENDPROCEDURE bar;
+  /**************************************************************
+   * version:             @(#)sid : sbblgegx.sdl 1.3-0 07/02/22 *
+   **************************************************************/
+TYPE s_buf_size__t
+# line 1234 "test.sdl"
+  CONSTANT
+    ini_c = 0; /* ksjakjsk
+                * aksjaks */
+  REPRESENTATION
+#if   ( defined( ds_buf_size__t_is_byte )) /* "this is /* not * / 
+                                            *   a string!" 'neither this' ``nor this`` */
+    byte
+#elif ( defined( ds_buf_size__t_is_area_size_t ))
+    area_size_t
+#else
+# include "/*this is not a comment!*/"
+#endif
+    ;
+ENDTYPE s_buf_size__t
+  COMMENT 'let''s test aphostrophes!'/*what about comments here?*/ ;
+
+TYPE s_size_limit__t
+# 1357
+  REPRESENTATION
+  ARRAY (4) OF dword;
+ENDTYPE s_size_limit__t
+  COMMENT 'Test 't /* we are still in a comment-comment! */ special 'n characters: 'x50'
+          'continue in new line '\
+          'and without new line';
+
+TYPE s_sbf_head__t
+  REPRESENTATION STRUCT
+    id     s_sbf_id__t;
+  ENDSTRUCT;
+ENDTYPE s_sbf_head__t
+  COMMENT 'This is also legal'\;
+
+/* s_sbf_head__t_ini_c = s_sbf_head__t_terminate_c
+ COMMENT 'Be careful: this value really TERMINATEs the buffer!'; */
+
+CONSTANT 
+  g_sizeof_sbf_head_   = SIZEOF s_sbf_head__t; /* this would be possible for DCL CONSTANT also,
+                                                * but we need this CONSTANT anyway for
+                                                * g_min_buf_size_c... */
+PROCEDURE s_tlog0
+  COMMENT 'IF testlogging is turned on (at compilation time!)'
+          'THEN writes testlog text without data.'
+          'ELSE: do nothing. /*'/* delete-me */;
+FPAR
+  IN          p_in_ptr     characterpointer,   /* IN */
+  IN VIEWED   p_text_ptr   characterpointer,   /* IN */
+  IN/OUT      p_xxx        xxx__t,             /* OUT */
+  IN          p_in_ptr2    characterpointer,   /* IN */
+  OUT         p_out_ptr    characterpointer;   /* IN */
+DCL
+  l_byte   byte := 0,
+  l_xxx    word := foo(
+                     SIZEOF( /* bar( */ p_xxx )) MOD 11,
+                                                     l_bool   bool := F,
+                                                     l_abc   characterpointer := @'asdfg';
+START;
+  /* init */
+  DECISION not 1*27 AND 3
+    AND (p_xxx >> 3)
+    AND T
+    OR ( NULL /= @p_xxx 
+    AND 2 < p_in_ptr2 );
+  (>=1):
+    TASK 'dummy-1';
+  (=2):
+    TASK 'dummy-2'
+         ' ENDDECISION ';
+#if (pdcxxx)
+    DECISION 11; /* compiler switches confuses many things. E.g. tnsdl-forward-sexp ... :-(( */
+#else
+    DECISION 111;
+#endif
+    ( <= 11 ):
+      TASK 'dummy-11';
+      DECISION
+        (12,
+         17,
+         19):
+        TASK 'dummy-12'
+             ' DECISION ';
+      ENDDECISION;
+      /*--*/
+      DECISION SIZEOF(p_xxx)|3;
+      (21,22,23,24,30:40):
+        TASK 'dummy-21';
+      (222 MOD 2):
+        TASK 'dummy-22';
+      ENDDECISION;
+    ELSE:
+      TASK 'dummy-3';
+    ENDDECISION;
+    TASK 'this /* empty /* */ command is needed, since otherwise logging cant be switched off';
+  ENDDECISION;
+ENDPROCEDURE s_tlog0;
+
+TYPE aaa__t
+  REPRESENTATION ENUM
+    aaa_c = 7;
+    bbb_c = 9;
+  ENDENUM;
+ENDTYPE aaa__t;
+
+TYPE ba__t
+  REPRESENTATION ENUM
+    aaa_c = 3;
+    bbb_c = 5;
+  ENDENUM;
+ENDTYPE ba__t;
+
+  /* NIL is good, nil is wrong
+   * b_return_F is good, b_return_f is wrong */
+
+  /******************************/
+  /* newcomment(.el) does this: */
+  /******************************/
+  /* PROCEDURE s_tlog0 */
+  /*   COMMENT 'IF testlogging is turned on (at compilation time!)' */
+  /*           'THEN writes testlog text without data.' */
+  /*           'ELSE: do nothing. /\*'/\* delete-me *\/; */
+  /* FPAR */
+  /*   IN   p_text_ptr   characterpointer;   /\* IN *\/ */
+  /* START; */
+  /*   TASK 'this /\* empty *\/ command is needed, since otherwise logging cant be switched off'; */
+  /* ENDPROCEDURE s_tlog0; */
+
+CONSTANT
+  s_sbf_head__t_terminate_c = s_sbf_head__t(. s_sbf_id__t_free_c,
+                                              0 .)
+                                                COMMENT ``This is legal string constant too!``
+                                                        ``What can contain it's own aphostrophes! ``;
+
+                                              /* let's close the file with a comment -- this is unusual */
+
+
+/*********************** P R O C E S S    B O D Y ****************************/
+START;
+TASK tlog_1( log_type_t_byte_t_c,
+             log_write_item_t( @fpar_mgw_id ),
+             SIZEOF( fpar_mgw_id ),
+             @'1sc: I am alive, mgw_id=' );
+
+DECISION init_env( 1 );
+( T ):
+  CALL cyclic_data__t_init( g_cyclic_data,  /*IN*/
+                            fpar_mgw_id,    /*IN*/
+                            g_mgw_info.h248_coding   /*IN*/);
+  NEXTSTATE working;
+ENDDECISION;
+
+STATE working;
+  /*===========================================================================*/
+  INPUT cia_ftmt_act_req_s( term_id )
+    COMMENT '0xA72D';
+
+DCL
+  l_term_id_list     term_list__t;
+  BEGINCRITICAL somemutex;
+    TASK l_term_id_list := 2;
+    TASK zip;
+    ENDCRITICAL somemutex;
+    BEGINCRITICAL somemutex;
+      TASK x:=1;
+    ENDCRITICAL somemutex;
+
+    NEXTSTATE -;
+
+ENDSTATE working;
+

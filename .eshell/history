@@ -1,0 +1,128 @@
+find -name '*.c' | xargs etags
+find . -name '*.c' | xargs etags
+find ./ -name '*.c' | xargs etags
+find -name '*.c'| xargs etags
+find -name '*.h'| xargs etags -a
+find -name '*.c'| xargs etags
+find ./ -name '*.c'| xargs etags
+find ./ -name '*.h'| xargs etags
+telnet tncluster
+find ./ -name '*.h'| xargs etags
+find -name "*.[ch]" -or -name "*.sdl" -or -name "*.sdt" -or -name "*.spd" -or -name"*.a*"|xargs etags
+find -h
+find --help
+find -name "*.[ch]" -or -name "*.sdl" -or -name "*.sdt" -or -name "*.spd" -or -name"*.a*"
+find -name "*"
+find . -name "*"
+find 
+find -name 
+find -name '*'
+find -name '*'
+find -name "*.[ch]" -or -name "*.sdl" -or -name "*.sdt" -or -name "*.spd" -or -name"*.a*"
+find
+find ./ -name "*"
+find ./ 
+find ./ |xargs etags
+rgrep -name '*.sdl'
+open
+ls
+gcc
+telnet tnclus
+telnet tnclus
+telnet tnclus
+which gcc
+gcc selvar_eng.c -0 selvar_eng.exe
+selvar_eng.exe
+tree
+tree
+./configure --prefix=/usr --with-contrib
+sudo
+sudo:./configure --prefix=/usr --with-contrib
+sudo@./configure --prefix=/usr --with-contrib
+./configure --with-contrib
+sudo
+sudo -u 
+sudo -u 
+sudo ./configure
+./configure
+plink -ssh Dx200lab@10.56.122.219
+plink -ssh Dx200lab@10.56.122.219
+telnet 10.56.122.48
+ftp 10.56.122.48
+telnet SYSTEM@10.56.122.48
+telnet --help
+telnet -l SYSTEM 10.56.122.48
+tree
+./tree
+plink hzling08
+y2env 1.17-0
+make ria
+make ria
+y2env 1.17-0&make ria
+cd D:\Current_Task\10_HW_SUP_DIK\RCY\RCX_ANALYSIS
+./selvar3.exe 
+cd D:\Current_Task\10_HW_SUP_DIK\RCY\RCX_ANALYSIS
+selvar3.exe 
+cd D:\Current_Task\10_HW_SUP_DIK\RCY\RCX_ANALYSIS
+ls
+./selvar3.exe 
+cd D:\Current_Task\10_HW_SUP_DIK\RCY\RCX_ANALYSIS
+selvar3.exe 
+etag
+slist -version PILOADGX.PAC
+y1env 2.56
+ls
+dir
+ftp tncluster
+y1env 2.56-0
+cd D:\Current_Task\10_HW_SUP_DIK\RCY\RCX_ANALYSIS
+cd \cd ..
+cd ..
+cd \
+cd /
+dir
+ls
+cd D:\Current_Task\10_HW_SUP_DIK\RCY\RCX_ANALYSIS
+cd /
+cd d:/Current_Task/Source/RCY/
+cd d:/Current_Task/Source/RCY/
+cd spm
+ls
+pwd
+cd ..
+cd SPM
+dir
+ls
+ls -l
+ls -r
+plink -ssh tncluster
+plink -telnet tncluster
+rgrep -name '*.sdl'
+dir
+dir
+tag_gen.bat 
+D:\Current_Task\10_HW_SUP_DIK\RCY\RCX_ANALYSIS\tree.exe
+find 
+ls
+dir
+ls -l
+ls -j
+ls -h
+ls
+dir
+ls -la
+echo "hello"
+path
+echo path
+$path
+$svn
+svn
+cd ~/Other/demo-it
+exit
+cd ~/Other/demo-it
+ls
+dir
+python
+ls
+dir
+git clone deveo@deveo.access.nsn.com:Nokia/projects/vsp_clean_coder/repositories/git/Coding_salon

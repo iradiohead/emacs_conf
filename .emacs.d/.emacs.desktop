@@ -1,0 +1,96 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Thu Aug 20 12:15:02 2015
+;; Desktop file format version 206
+;; Emacs version 24.5.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (21973 21574 395000 0) (desktop . "206") "xifu@5CG45042N0" nil nil ((((font-backend uniscribe gdi) (font . "-outline-Courier New-normal-normal-normal-mono-16-*-*-*-c-*-iso8859-1") (border-width . 2) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (foreground-color . "white") (background-color . "black") (mouse-color . "mediumpurple") (border-color . "grey") (screen-gamma) (line-spacing) (left-fringe . 10) (right-fringe . 10) (alpha) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (fullscreen . maximized) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (horizontal-scroll-bars . t) (display-type . color) (background-mode . dark) (cursor-color . "white") (environment) (frameset--id . "A17E-8FF8-B441-E34D") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (icon-name) (display . "w32") (explicit-name) (tool-bar-position . top) (visibility . t) (height . 58) (width . 183) (left + -8) (top + -8)) ((min-height . 4) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 100) (min-pixel-height-ignore . 72) (min-pixel-width-ignore . 40) (min-pixel-height-safe . 18) (min-pixel-width-safe . 20)) leaf (pixel-width . 1850) (pixel-height . 1026) (total-width . 185) (total-height . 57) (normal-height . 1.0) (normal-width . 1.0) (buffer "PLM2C.hst" (selected . t) (hscroll . 0) (fringes 10 10 nil) (margins nil) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated) (point . 2004) (start . 1468))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name "d:/Current_Task/14_PLM2C/TCPROG/compiled/tcproggx/TAGS")
+(setq tags-table-list '("d:/Current_Task/14_PLM2C/TCPROG/compiled/tcproggx/TAGS"))
+(setq search-ring '("1" "1as" "1sd" "wrm"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs.d/" "d:/Current_Task/14_PLM2C/TCPROG/tcp_git/PLM2C.hst" "~/.emacs.d/" "d:/Current_Task/14_PLM2C/TCPROG/compiled/tcproggx/" "~/.emacs.d/" "d:/Current_Task/14_PLM2C/TCPROG/compiled/tcproggx/TAGS"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "d:/Current_Task/14_PLM2C/TCPROG/tcp_git/PLM2C.hst"
+  "PLM2C.hst"
+  'org-mode
+  '(abbrev-mode highlight-symbol-mode)
+  2004
+  '(468 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-dos) (truncate-lines . t)))
+
+(desktop-create-buffer 206
+  "d:/Current_Task/Source_git/Git_submodule/history_files/various_comment.txt"
+  "various_comment.txt"
+  'text-mode
+  '(abbrev-mode highlight-symbol-mode yas/minor-mode auto-complete-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-dos)))
+
+(desktop-create-buffer 206
+  "d:/Current_Task/CodeOfficer/CodeOfficer.hst"
+  "CodeOfficer.hst"
+  'org-mode
+  '(abbrev-mode highlight-symbol-mode)
+  665
+  '(385 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-dos) (truncate-lines . t)))
+
+(desktop-create-buffer 206
+  "d:/Current_Task/CIG/CIG.hst"
+  "CIG.hst"
+  'org-mode
+  '(abbrev-mode highlight-symbol-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . chinese-gbk-dos) (truncate-lines . t)))
+
+(desktop-create-buffer 206
+  "d:/Ferry/temp.txt"
+  "temp.txt"
+  'text-mode
+  '(abbrev-mode highlight-symbol-mode yas/minor-mode auto-complete-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-dos)))
+
+(desktop-create-buffer 206
+  "d:/emacs/diary/TimeQuadrant.org"
+  "TimeQuadrant.org"
+  'org-mode
+  '(abbrev-mode highlight-symbol-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . chinese-gbk-dos) (truncate-lines . t)))
+
+(desktop-create-buffer 206
+  "d:/Current_Task/Source/RCYVSP/Makefile"
+  "Makefile"
+  'makefile-gmake-mode
+  '(abbrev-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-file-coding-system . undecided-dos)))
+

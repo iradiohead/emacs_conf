@@ -1,0 +1,23 @@
+y3env 1.36-0
+meeting
+fam FF
+fam 122
+y3env 1.40-0
+build -test -lazy seirtagx.com
+mes 2094
+mes 2049
+file dxs
+ccc
+y
+spm use
+spm use dxs
+meeting
+spm list *
+spm list dxsfil
+spm list dxsfil*
+spm fetch dxsfil*
+spm fetch dxsfil*
+spm fetch DXSMGRGX*
+cd ../Seeing/Vagrant/centos/
+vagrant up
+vagrant halt

@@ -1,0 +1,190 @@
+2014/11/18 10:38:33 Starting cygwin install, version 2.852
+2014/11/18 10:38:33 User has backup/restore rights
+2014/11/18 10:38:33 io_stream_cygfile: fopen(/etc/setup/setup.rc) failed 2 No such file or directory
+2014/11/18 10:38:33 Current Directory: D:\Seeing\Software
+2014/11/18 10:38:33 Could not open service McShield for query, start and stop. McAfee may not be installed, or we don't have access.
+2014/11/18 10:38:34 source: network install
+2014/11/18 10:38:43 root: C:\emacs\cygwin64 system
+2014/11/18 10:38:44 Selected local directory: D:\Seeing\Software
+2014/11/18 10:38:59 net: Proxy
+2014/11/18 10:39:20 site: http://mirrors.ustc.edu.cn/cygwin/
+2014/11/18 10:39:25 io_stream_cygfile: fopen(/etc/setup/installed.db) failed 2 No such file or directory
+2014/11/18 10:39:25 io_stream_cygfile: fopen(/etc/setup/timestamp) failed 2 No such file or directory
+2014/11/18 10:40:11 Adding required dependency bzip2: Selecting version 1.0.6-2 for installation.
+2014/11/18 10:40:11 Adding required dependency ca-certificates: Selecting version 2.1-1 for installation.
+2014/11/18 10:40:11 Adding required dependency groff: Selecting version 1.22.2-2 for installation.
+2014/11/18 10:40:11 Adding required dependency less: Selecting version 458-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libargp: Selecting version 20110921-2 for installation.
+2014/11/18 10:40:11 Adding required dependency libattr1: Selecting version 2.4.46-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libblkid1: Selecting version 2.25.1-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libbz2_1: Selecting version 1.0.6-2 for installation.
+2014/11/18 10:40:11 Adding required dependency libffi6: Selecting version 3.0.13-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libgcc1: Selecting version 4.8.3-5 for installation.
+2014/11/18 10:40:11 Adding required dependency libgdbm4: Selecting version 1.11-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libgmp10: Selecting version 6.0.0a-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libiconv: Selecting version 1.14-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libiconv2: Selecting version 1.14-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libintl8: Selecting version 0.18.3.2-2 for installation.
+2014/11/18 10:40:11 Adding required dependency liblzma5: Selecting version 5.0.5-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libmpfr4: Selecting version 3.1.2-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libncursesw10: Selecting version 5.9-20140524-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libopenssl100: Selecting version 1.0.1j-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libp11-kit0: Selecting version 0.20.7-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libpcre1: Selecting version 8.35-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libpipeline1: Selecting version 1.3.0-3 for installation.
+2014/11/18 10:40:11 Adding required dependency libpopt0: Selecting version 1.16-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libreadline7: Selecting version 6.2-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libsmartcols1: Selecting version 2.25.1-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libstdc++6: Selecting version 4.8.3-5 for installation.
+2014/11/18 10:40:11 Adding required dependency libtasn1_6: Selecting version 4.2-1 for installation.
+2014/11/18 10:40:11 Adding required dependency libuuid1: Selecting version 2.25.1-1 for installation.
+2014/11/18 10:40:11 Adding required dependency lynx: Selecting version 2.8.7-2 for installation.
+2014/11/18 10:40:11 Adding required dependency p11-kit: Selecting version 0.20.7-1 for installation.
+2014/11/18 10:40:11 Adding required dependency p11-kit-trust: Selecting version 0.20.7-1 for installation.
+2014/11/18 10:40:11 Adding required dependency popt: Selecting version 1.16-1 for installation.
+2014/11/18 10:40:11 Adding required dependency xz: Selecting version 5.0.5-1 for installation.
+2014/11/18 10:40:11 Adding required dependency zlib0: Selecting version 1.2.8-2 for installation.
+2014/11/18 10:40:11 Adding required dependency _autorebase: Selecting version 000284-1 for installation.
+2014/11/18 10:40:11 Adding required dependency _update-info-dir: Selecting version 00350-1 for installation.
+2014/11/18 10:40:12 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/base-cygwin/base-cygwin-3.3-1.tar.bz2
+2014/11/18 10:40:15 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/base-files/base-files-4.2-3.tar.xz
+2014/11/18 10:40:25 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/bash/bash-4.1.17-9.tar.xz
+2014/11/18 10:40:27 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/bzip2/bzip2-1.0.6-2.tar.bz2
+2014/11/18 10:40:33 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/ca-certificates/ca-certificates-2.1-1.tar.xz
+2014/11/18 10:43:45 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/coreutils/coreutils-8.23-4.tar.xz
+2014/11/18 10:43:48 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/cygutils/cygutils-1.4.14-1.tar.bz2
+2014/11/18 10:44:03 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/cygwin/cygwin-1.7.33-1.tar.xz
+2014/11/18 10:44:06 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/dash/dash-0.5.8-3.tar.xz
+2014/11/18 10:44:08 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/editrights/editrights-1.03-1.tar.xz
+2014/11/18 10:44:14 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/file/file-5.20-1.tar.xz
+2014/11/18 10:47:05 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/findutils/findutils-4.5.12-1.tar.xz
+2014/11/18 10:47:15 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/gawk/gawk-4.1.1-1.tar.xz
+2014/11/18 10:47:18 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/getent/getent-2.18.90-3.tar.xz
+2014/11/18 10:47:22 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/grep/grep-2.20-1.tar.xz
+2014/11/18 10:47:40 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/groff/groff-1.22.2-2.tar.xz
+2014/11/18 10:50:52 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/gzip/gzip-1.6-1.tar.xz
+2014/11/18 10:50:55 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/hostname/hostname-3.13-1.tar.bz2
+2014/11/18 10:51:01 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/texinfo/info/info-5.2-3.tar.xz
+2014/11/18 10:54:13 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/ipc-utils/ipc-utils-1.0-2.tar.bz2
+2014/11/18 10:54:17 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/less/less-458-1.tar.bz2
+2014/11/18 10:54:21 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/libargp/libargp-20110921-2.tar.bz2
+2014/11/18 10:54:23 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/attr/libattr1/libattr1-2.4.46-1.tar.bz2
+2014/11/18 10:54:26 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/util-linux/libblkid1/libblkid1-2.25.1-1.tar.xz
+2014/11/18 10:54:29 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/bzip2/libbz2_1/libbz2_1-1.0.6-2.tar.bz2
+2014/11/18 10:54:32 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/libffi/libffi6/libffi6-3.0.13-1.tar.bz2
+2014/11/18 10:57:44 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/gcc/libgcc1/libgcc1-4.8.3-5.tar.xz
+2014/11/18 10:57:47 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/gdbm/libgdbm4/libgdbm4-1.11-1.tar.xz
+2014/11/18 10:57:51 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/gmp/libgmp10/libgmp10-6.0.0a-1.tar.xz
+2014/11/18 10:57:55 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/libiconv/libiconv-1.14-1.tar.bz2
+2014/11/18 10:58:03 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/libiconv/libiconv2/libiconv2-1.14-1.tar.bz2
+2014/11/18 11:01:15 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/gettext/libintl8/libintl8-0.18.3.2-2.tar.xz
+2014/11/18 11:01:19 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/xz/liblzma5/liblzma5-5.0.5-1.tar.xz
+2014/11/18 11:01:22 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/mpfr/libmpfr4/libmpfr4-3.1.2-1.tar.bz2
+2014/11/18 11:01:26 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/ncurses/libncursesw10/libncursesw10-5.9-20140524-1.tar.xz
+2014/11/18 11:01:33 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/openssl/libopenssl100/libopenssl100-1.0.1j-1.tar.xz
+2014/11/18 11:04:46 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/p11-kit/libp11-kit0/libp11-kit0-0.20.7-1.tar.xz
+2014/11/18 11:04:50 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/pcre/libpcre1/libpcre1-8.35-1.tar.xz
+2014/11/18 11:04:52 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/libpipeline/libpipeline1/libpipeline1-1.3.0-3.tar.xz
+2014/11/18 11:08:05 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/popt/libpopt0/libpopt0-1.16-1.tar.xz
+2014/11/18 11:08:08 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/readline/libreadline7/libreadline7-6.2-1.tar.bz2
+2014/11/18 11:08:11 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/util-linux/libsmartcols1/libsmartcols1-2.25.1-1.tar.xz
+2014/11/18 11:11:23 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/gcc/libstdc++6/libstdc++6-4.8.3-5.tar.xz
+2014/11/18 11:11:26 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/libtasn1/libtasn1_6/libtasn1_6-4.2-1.tar.xz
+2014/11/18 11:11:28 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/util-linux/libuuid1/libuuid1-2.25.1-1.tar.xz
+2014/11/18 11:11:31 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/login/login-1.11-1.tar.xz
+2014/11/18 11:11:44 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/lynx/lynx-2.8.7-2.tar.bz2
+2014/11/18 11:11:51 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/man-db/man-db-2.6.7-2.tar.xz
+2014/11/18 11:11:55 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/mintty/mintty-1.2-beta1-1.tar.bz2
+2014/11/18 11:11:58 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/p11-kit/p11-kit-0.20.7-1.tar.xz
+2014/11/18 11:12:02 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/p11-kit/p11-kit-trust/p11-kit-trust-0.20.7-1.tar.xz
+2014/11/18 11:12:05 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/popt/popt-1.16-1.tar.xz
+2014/11/18 11:12:10 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/rebase/rebase-4.4.1-1.tar.bz2
+2014/11/18 11:12:13 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/run/run-1.3.3-1.tar.xz
+2014/11/18 11:12:18 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/sed/sed-4.2.2-3.tar.bz2
+2014/11/18 11:12:25 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/tar/tar-1.27.1-1.tar.xz
+2014/11/18 11:12:28 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/ncurses/terminfo/terminfo-5.9-20140524-1.tar.xz
+2014/11/18 11:12:32 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/tzcode/tzcode-2014i-1.tar.xz
+2014/11/18 11:15:45 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/util-linux/util-linux-2.25.1-1.tar.xz
+2014/11/18 11:15:50 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/vim/vim-minimal/vim-minimal-7.4.516-1.tar.xz
+2014/11/18 11:15:53 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/which/which-2.20-2.tar.bz2
+2014/11/18 11:15:57 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/xz/xz-5.0.5-1.tar.xz
+2014/11/18 11:19:10 Downloaded D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/zlib/zlib0/zlib0-1.2.8-2.tar.xz
+2014/11/18 11:19:12 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/_autorebase/_autorebase-000284-1.tar.bz2
+2014/11/18 11:19:12 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/_update-info-dir/_update-info-dir-00350-1.tar.bz2
+2014/11/18 11:19:12 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/alternatives/alternatives-1.3.30c-10.tar.bz2
+2014/11/18 11:19:13 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/base-cygwin/base-cygwin-3.3-1.tar.bz2
+2014/11/18 11:19:13 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/base-files/base-files-4.2-3.tar.xz
+2014/11/18 11:19:14 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/bash/bash-4.1.17-9.tar.xz
+2014/11/18 11:19:15 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/bzip2/bzip2-1.0.6-2.tar.bz2
+2014/11/18 11:19:16 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/ca-certificates/ca-certificates-2.1-1.tar.xz
+2014/11/18 11:19:16 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/coreutils/coreutils-8.23-4.tar.xz
+2014/11/18 11:19:22 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/cygutils/cygutils-1.4.14-1.tar.bz2
+2014/11/18 11:19:22 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/cygwin/cygwin-1.7.33-1.tar.xz
+2014/11/18 11:19:23 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/dash/dash-0.5.8-3.tar.xz
+2014/11/18 11:19:23 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/editrights/editrights-1.03-1.tar.xz
+2014/11/18 11:19:23 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/file/file-5.20-1.tar.xz
+2014/11/18 11:19:23 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/findutils/findutils-4.5.12-1.tar.xz
+2014/11/18 11:19:24 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/gawk/gawk-4.1.1-1.tar.xz
+2014/11/18 11:19:25 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/getent/getent-2.18.90-3.tar.xz
+2014/11/18 11:19:25 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/grep/grep-2.20-1.tar.xz
+2014/11/18 11:19:26 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/groff/groff-1.22.2-2.tar.xz
+2014/11/18 11:19:32 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/gzip/gzip-1.6-1.tar.xz
+2014/11/18 11:19:33 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/hostname/hostname-3.13-1.tar.bz2
+2014/11/18 11:19:33 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/texinfo/info/info-5.2-3.tar.xz
+2014/11/18 11:19:33 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/ipc-utils/ipc-utils-1.0-2.tar.bz2
+2014/11/18 11:19:33 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/less/less-458-1.tar.bz2
+2014/11/18 11:19:33 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/libargp/libargp-20110921-2.tar.bz2
+2014/11/18 11:19:34 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/attr/libattr1/libattr1-2.4.46-1.tar.bz2
+2014/11/18 11:19:34 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/util-linux/libblkid1/libblkid1-2.25.1-1.tar.xz
+2014/11/18 11:19:34 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/bzip2/libbz2_1/libbz2_1-1.0.6-2.tar.bz2
+2014/11/18 11:19:34 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/libffi/libffi6/libffi6-3.0.13-1.tar.bz2
+2014/11/18 11:19:34 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/gcc/libgcc1/libgcc1-4.8.3-5.tar.xz
+2014/11/18 11:19:34 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/gdbm/libgdbm4/libgdbm4-1.11-1.tar.xz
+2014/11/18 11:19:34 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/gmp/libgmp10/libgmp10-6.0.0a-1.tar.xz
+2014/11/18 11:19:34 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/libiconv/libiconv-1.14-1.tar.bz2
+2014/11/18 11:19:34 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/libiconv/libiconv2/libiconv2-1.14-1.tar.bz2
+2014/11/18 11:19:34 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/gettext/libintl8/libintl8-0.18.3.2-2.tar.xz
+2014/11/18 11:19:34 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/xz/liblzma5/liblzma5-5.0.5-1.tar.xz
+2014/11/18 11:19:34 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/mpfr/libmpfr4/libmpfr4-3.1.2-1.tar.bz2
+2014/11/18 11:19:35 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/ncurses/libncursesw10/libncursesw10-5.9-20140524-1.tar.xz
+2014/11/18 11:19:35 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/openssl/libopenssl100/libopenssl100-1.0.1j-1.tar.xz
+2014/11/18 11:19:35 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/p11-kit/libp11-kit0/libp11-kit0-0.20.7-1.tar.xz
+2014/11/18 11:19:35 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/pcre/libpcre1/libpcre1-8.35-1.tar.xz
+2014/11/18 11:19:35 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/libpipeline/libpipeline1/libpipeline1-1.3.0-3.tar.xz
+2014/11/18 11:19:35 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/readline/libreadline7/libreadline7-6.2-1.tar.bz2
+2014/11/18 11:19:35 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/util-linux/libsmartcols1/libsmartcols1-2.25.1-1.tar.xz
+2014/11/18 11:19:36 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/gcc/libstdc++6/libstdc++6-4.8.3-5.tar.xz
+2014/11/18 11:19:36 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/libtasn1/libtasn1_6/libtasn1_6-4.2-1.tar.xz
+2014/11/18 11:19:36 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/util-linux/libuuid1/libuuid1-2.25.1-1.tar.xz
+2014/11/18 11:19:36 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/login/login-1.11-1.tar.xz
+2014/11/18 11:19:36 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/lynx/lynx-2.8.7-2.tar.bz2
+2014/11/18 11:19:39 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/man-db/man-db-2.6.7-2.tar.xz
+2014/11/18 11:19:41 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/mintty/mintty-1.2-beta1-1.tar.bz2
+2014/11/18 11:19:41 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/p11-kit/p11-kit-0.20.7-1.tar.xz
+2014/11/18 11:19:41 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/p11-kit/p11-kit-trust/p11-kit-trust-0.20.7-1.tar.xz
+2014/11/18 11:19:41 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/popt/popt-1.16-1.tar.xz
+2014/11/18 11:19:42 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/rebase/rebase-4.4.1-1.tar.bz2
+2014/11/18 11:19:42 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/run/run-1.3.3-1.tar.xz
+2014/11/18 11:19:42 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/sed/sed-4.2.2-3.tar.bz2
+2014/11/18 11:19:43 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/tar/tar-1.27.1-1.tar.xz
+2014/11/18 11:19:44 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/ncurses/terminfo/terminfo-5.9-20140524-1.tar.xz
+2014/11/18 11:19:44 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/tzcode/tzcode-2014i-1.tar.xz
+2014/11/18 11:19:48 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/util-linux/util-linux-2.25.1-1.tar.xz
+2014/11/18 11:19:50 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/vim/vim-minimal/vim-minimal-7.4.516-1.tar.xz
+2014/11/18 11:19:50 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/which/which-2.20-2.tar.bz2
+2014/11/18 11:19:51 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/xz/xz-5.0.5-1.tar.xz
+2014/11/18 11:19:51 Extracting from file://D:\Seeing\Software/http%3a%2f%2fmirrors.ustc.edu.cn%2fcygwin%2f/x86_64/release/zlib/zlib0/zlib0-1.2.8-2.tar.xz
+2014/11/18 11:19:51 Changing gid back to original
+2014/11/18 11:19:51 running: cmd.exe /c "C:\emacs\cygwin64\etc\postinstall\autorebase.bat"
+2014/11/18 11:19:54 running: C:\emacs\cygwin64\bin\bash.exe --norc --noprofile "/etc/postinstall/000-cygwin-post-install.sh"
+2014/11/18 11:19:56 running: C:\emacs\cygwin64\bin\bash.exe --norc --noprofile "/etc/postinstall/update-info-dir.sh"
+2014/11/18 11:19:58 running: C:\emacs\cygwin64\bin\bash.exe --norc --noprofile "/etc/postinstall/coreutils.sh"
+2014/11/18 11:19:58 running: C:\emacs\cygwin64\bin\bash.exe --norc --noprofile "/etc/postinstall/bash.sh"
+2014/11/18 11:19:58 running: C:\emacs\cygwin64\bin\bash.exe --norc --noprofile "/etc/postinstall/base-files-mketc.sh"
+2014/11/18 11:19:59 running: C:\emacs\cygwin64\bin\bash.exe --norc --noprofile "/etc/postinstall/base-files-profile.sh"
+2014/11/18 11:20:01 running: C:\emacs\cygwin64\bin\bash.exe --norc --noprofile "/etc/postinstall/ca-certificates.sh"
+2014/11/18 11:20:03 running: C:\emacs\cygwin64\bin\bash.exe --norc --noprofile "/etc/postinstall/lynx.sh"
+2014/11/18 11:20:03 running: C:\emacs\cygwin64\bin\bash.exe --norc --noprofile "/etc/postinstall/man-db.sh"
+2014/11/18 11:20:03 Changing gid to Administrators
+2014/11/18 11:23:10 note: Installation Complete
+2014/11/18 11:23:10 Ending cygwin install

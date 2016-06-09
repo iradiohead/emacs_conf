@@ -1,0 +1,284 @@
+user guide:
+http://www.cbi.pku.edu.cn/chinese/documents/csdoc/emacs/
+
+0) Create cscope.files
+find ./ |egrep -i "*.h$|*.c$|*.sdt$|*.spd$|*.sdl$|*.a$|*.p38$|*.p86$|*.a38$|*.a86$|*.inc$|*.inf$|*.pin$|*.cin$|*.cli$|*.cva$|*.sli$|*.pli$|*.pva$" > cscope.files
+cscope -b -q -k 
+
+Create TAGS:
+find ./ |egrep -i "*.h$|*.c$|*.sdt$|*.spd$|*.sdl$|*.a$|*.p38$|*.p86$|*.a38$|*.a86$|*.inc$|*.inf$|*.cin$|*.cli$|*.cva$" |xargs etags
+
+PLM language:
+/* find ./ |egrep -i "*.h$|*.c$|*.sdt$|*.spd$|*.sdl$|*.a$|*.p38$|*.p86$|*.a38$|*.a86$|*.inc$|*.inf$|*.pin$|*.cin$|*.cli$|*.cva$|*.sli$|*.pli$|*.pva$" |xargs etags --language=auto --regex=@d:\emacs\.emacs.d\regex.file --language=c *.cin --language=asm *.inc
+*/
+
+/* find ./ |egrep -i "*.h$|*.c$|*.sdt$|*.spd$|*.sdl$|*.a$|*.p38$|*.p86$|*.a38$|*.a86$|*.inc$|*.inf$|*.pin$|*.cin$|*.cli$|*.cva$|*.sli$|*.pli$|*.pva$" |xargs etags --language=auto --regex=@d:\emacs\.emacs.d\regex.file */
+find ./ |egrep -i "TAGS$" |xargs rm -f
+find ./ |egrep -i "*.p38$|*.p86$|*.pin$|*.pli$|*.pva$|*.inc$" |xargs etags --language=auto --regex=@d:\emacs\.emacs.d\regex_plm.file 
+find ./ |egrep -i "*.sdt$|*.spd$|*.sdl$|*.inf$|*.sli$" |xargs etags -a --language=auto --regex=@d:\emacs\.emacs.d\regex_tnsdl.file 
+find ./ |egrep -i "*.asm$|*.a38$|*.a86$|*.inc$" |xargs etags -a --language=asm
+find ./ |egrep -i "*.h$|*.c$|*.cin$|*.cli$|*.cva$" |xargs etags -a --language=auto
+
+
+find ./ |egrep -i "TAGS$" |xargs rm -f
+find ./ |egrep -i "\w*\.p38$|\w*\.p86$|\w*\.pin$|\w*\.pli$|\w*\.pva$|\w*\.inc$" |xargs etags --language=auto --regex=@d:\emacs\.emacs.d\regex_plm.file 
+find ./ |egrep -i "\w*\.sdt$|\w*\.spd$|\w*\.sdl$|\w*\.inf$|\w*\.sli$" |xargs etags -a --language=auto --regex=@d:\emacs\.emacs.d\regex_tnsdl.file 
+find ./ |egrep -i "\w*\.asm$|\w*\.a38$|\w*\.a86$|\w*\.inc$" |xargs etags -a --language=asm
+find ./ |egrep -i "\w*\.h$|\w*\.c$|\w*\.cin$|\w*\.cli$|\w*\.cva$" |xargs etags -a --language=auto
+
+Delete rubbish files after compile:
+find ./ |egrep -i "*\.txt$|*\.lib$|*\.obj$|*\.lst$|*\.lbk$|*\..*_[01234]_$|*\.scc$|*\.ccc$|*\.err$|*\.mod$|*\.mp[12]$|*\.lnk$|  *\.cfv$|*\.map$|*\.env$|*\.386$|*\.cfx$|*\.exp$|_lazy*|*\.cfu$|*\.pex$|*\.exl$" |xargs rm
+
+find -name "*.[ch]" -or -name "*.sdl" -or -name "*.sdt" -or -name "*.spd" -or -name "*.a*"|xargs etags
+
+grep-find: find . -type f -print0 | xargs -0 -e grep -nH –e ***
+注意：在输入要搜索的字符串时最好使用双引号/而在模式匹配使用正则表达式时，注意使用单引号
+-A ：后面可加数字，为 after 的意思，除了列出该行外，后续的 n 行也列出 
+-B ：后面可加数字，为 befer 的意思，除了列出该行外，前面的 n 行也列出
+
+grep -r $'\xB' search ascii code
+
+rgrep:
+
+Some examples of use (see also ReplaceRegexp and EmacsCrashRegexp):
+
+    Search for trailing whitespace: C-M-s SPC+$
+    Highlight all trailing whitespace: M-x highlight-regexp RET SPC+$ RET RET
+    Delete trailing whitespace: M-x replace-regexp RET SPC+$ RET RET (same as ‘M-x delete-trailing-whitespace’)
+    Search for open delimiters: C-M-s \s(
+    Search for duplicated words (works across lines): C-M-s \(\<\w+\>\)\s-+\1
+    Count number of words in buffer: M-x how-many RET \< RET
+    Align words beginning with an uppercase letter followed by a lowercase letter: M-: (setq case-fold-search nil) RET then M-x align-regexp RET \<[[:upper:]][[:lower:]] RET
+    Replace word foo by bar (won’t replace fool by barl): M-x replace-regexp RET \<foo\> RET bar
+    Keep only the first two words on each line: M-x replace-regexp RET ^\(\W*\w+\W+\w+\).* RET \1 RET
+    Suppress lines beginning with ;;: M-x flush-lines RET ^;; RET
+    Remove the text after the first ; on each line: M-x replace-regexp RET \([^;]*\);.* RET \1 RET
+    Keep only lines that contain an email address: M-x keep-lines RET \w+\(\.\w+\)?@\(\w\|\.\)+ RET
+    Keep only one instance of consecutive empty lines: M-x replace-regexp RET ^C-q C-j\{2,\} RET C-q C-j RET
+    Keep words or letters in uppercase, one per line: M-x replace-regexp RET [^[:upper:]]+ RET C-o RET
+    List lines beginning with Chapter or Section: M-x occur RET ^\(Chapter\|Section\) RET
+    List lines with more than 80 characters: M-x occur RET ^.\{81,\} RET
+
+1) query-replace-regexp
+    In TO-STRING, `\&' stands for whatever matched the whole of REGEXP,
+    and `\N' (where N is a digit) stands for
+    whatever what matched the Nth `\(...\)' in REGEXP.
+    `\?' lets you edit the replacement text in the minibuffer
+    at the given position for each replacement.
+    
+    In interactive calls, the replacement text can contain `\,'
+    followed by a Lisp expression.  Each
+    replacement evaluates that expression to compute the replacement
+    string.  Inside of that expression, `\&' is a string denoting the
+    whole match as a string, `\N' for a partial match, `\#&' and `\#N'
+    for the whole or a partial match converted to a number with
+    `string-to-number', and `\#' itself for the number of replacements
+    done so far (starting with zero).
+    
+    If the replacement expression is a symbol, write a space after it
+    to terminate it.  One space there, if any, will be discarded.
+
+
+2) 几个重要的命令:
+C-2 M-x occur RET display several lines.
+
+M-r Regexp history search in Shell-mode
+ 
+open with gnuclient : D:\emacs\bin\gnuclientw.exe "%1"
+
+C-x ESC ESC (C-x z) 执行历史命令记录，M-p选择上一条命令，M-n选择下一条命令
+
+M-. tag <RET>
+    Find first definition of tag (find-tag). 
+
+C-u M-.
+    Find next alternate definition of last tag specified. 
+
+C-M-. pattern <RET>
+    Find a tag whose name matches pattern (find-tag-regexp).
+
+C-u C-M-. / M-0 M-.
+    Find the next tag whose name matches the last pattern used. 
+
+C-u - M-.
+    Move back to previous tag definitions
+
+M-* 
+    Pop back to where you previously invoked M-. and friends. 
+
+C-M-i / M-TAB 自动补齐函数名。
+
+在Vi下也可以实现这种功能。Vi中是用ctags生成tags文件，然后用ctrl-]找到
+光标自找tag，ctrl-t返回上一次寻找tag时的光标位置。
+
+		a) fill-paragraph (alt-p) -- 智能地帮你把文本分行，这是必备良药啊，在注释里面都能用
+
+   		b) * 矩形区域的两端是由 Mark 和 Point 确定的。
+
+			   C-x r r（复制标记的矩形区域）
+			   C-x r g/i（粘贴到光标所在的位置）
+			   C-x r d（删除矩形区域）
+			   C-x r k（删除并保存到剪切板）
+			   C-x r y（从剪切板复制）
+			   C-x r o（在矩形区插入空白，内容右移）
+			   C-x r c（清除矩形区的内容）
+			   C-x r t  用串填充矩形区域
+			   C-x r o  插入空白的矩形区域
+			   C-x r y  插入之前删除的矩形区域
+			   C-x r k  删除矩形区域
+			   C-x r c  将当前矩形区域清空
+	    
+        c) align-regexp
+		   M-x align-regexp 可以方便的对齐一些文字
+        d) Emacs 删除特定的行
+           M-x flush-lines ^$ Enter Enter 删除所有空行
+           M-x flush-lines ^# Enter Enter 删除所有以#开头的行
+           M-x keep-lines ^# Enter Enter  删除所有不以#开头的行	
+        e) M-^ 将当前行接到上一行末尾处
+        f) highlight-changes-mode emphasize what you changed.
+
+3) 正则表达式中的字符：
+
+^          匹配行首
+
+$          匹配行尾
+
+.          匹配任意单个字符
+
+.*         匹配任意个字符
+
+\<         匹配单词的开头
+
+\>         匹配单词的结尾
+
+[]         匹配[]中的任何一个字符，如[a-z]匹配任何一个小写字母
+
+4) HIDE SHOW keys
+(global-set-key (kbd "C-c h") 'hs-hide-block)
+(global-set-key (kbd "C-c x") 'hs-show-block)
+(global-set-key (kbd "C-c l") 'hs-hide-level)
+(global-set-key (kbd "C-c c") 'hs-toggle-hiding)
+
+5) ^M (C-q C-m),这个应该是Mac机产生的换行符
+replace-string RET C-q C-m RET RET
+注意上面的C-q C-m就是换行符的生成方法,而不是简单的输入^M.
+Revisiting the current file using the coding system CODING:
+  C-x <RET> r CODING <RET>
+Use coding system CODING for saving or revisiting the visited file in the current buffer:
+  C-x <RET> f CODING <RET>
+Specify coding system CODING for the immediately following command.
+  C-x <RET> c CODING <RET>
+Convert a region that was decoded using coding system WRONG, decoding it using coding system RIGHT instead.
+  M-x recode-region <RET> RIGHT <RET> WRONG <RET>
+若要转换dos格式到unix格式，则可用替换命令:
+  M-% C-q C-m RET C-q C-j RET
+其中C-q的作用是输入控制字符，如C-q C-m输入^M, 即\r, C-q C-j输入\n
+
+C-u C-@ [Alt-Enter] 在本缓冲区中根据Mark Set的顺序依次向后跳转。
+C-x C-@ [Alt-M]在全局中根据Mark Set的顺序依次向后跳转。
+
+6) artist-mode : http://fangzhzh.info/blog/drawing-picture-in-emacs-using-ditaa.html
+  利用emacs画图模式
+  http://emacser.com/artist-mode.htm
+
+7) Emacs Macro
+   C-x ( (M-x kmacro-start-macro)
+   C-x ) (M-x kmacro-end-macro)
+   C-x e (M-x kmacro-end-and-call-macro)
+
+8) DMX env cmd:
+   cmd.exe /a="/K D: & y1env 2.5-0 & CALL C:\APPS\DMXSEE\bin\spmticks.bat"
+   ala: search alarm name and number
+   ald: use alarm number to display alarm definition file
+   err: search err code, put a 'h' in the end of error code if hex
+   api: search api you want
+   fam: search family id and name
+   file: search file id and name
+   mes: use message number to display message definition
+   msg: search message number
+   STATE: search unit state information
+   data: search and display data type information
+   UNIT: search unit information
+   SEACOL: search in package infomation
+   h2d: change hex number to decimal number
+   d2h: change decimal number to hex number
+   pde: search the keyword in WWWPDE using env set in dmxsee
+   folder : open current folder
+   Meeting : open meeting room reservation page in today and 5-6 fl
+   localbuild: local build of pac already in you disk
+   Sofiabuild: build a version of PAC in sofia	
+   spmdiff:spmdiff dtooptgx.c 2.10-0 2.11-0
+
+9) list-colors-display list-faces-display
+
+10) describe-bindings  describe-key	 apropos
+
+11) ;;/* Added by Ferry for ispell and flyspell mode 20120807*/
+(global-set-key (kbd "<f8>") 'ispell-word)
+(global-set-key (kbd "C-S-<f8>") 'flyspell-mode)
+(global-set-key (kbd "C-M-<f8>") 'flyspell-buffer)
+(global-set-key (kbd "C-<f8>") 'flyspell-check-previous-highlighted-word)
+(defun flyspell-check-next-highlighted-word ()
+  "Custom function to spell check next highlighted word"
+  (interactive)
+  (flyspell-goto-next-error)
+  (ispell-word)
+  )
+(global-set-key (kbd "M-<f8>") 'flyspell-check-next-highlighted-word)
+
+
+12) register 
+Save Positions in Registers
+C-x r SPC r
+    Save position of point in register r (point-to-register).
+C-x r j r
+    Jump to the position saved in register r (jump-to-register).
+Saving Text in Registers
+C-x r s r
+    Copy region into register r (copy-to-register).
+C-x r i r
+    Insert text from register r (insert-register).
+M-x append-to-register RET r
+    Append region to text in register r.
+M-x prepend-to-register RET r
+    Prepend region to text in register r.
+Saving Rectangles in Registers
+C-x r r r
+    Copy the region-rectangle into register r (copy-rectangle-to-register). With numeric argument, delete it as well.
+C-x r i r
+    Insert the rectangle stored in register r (if it contains a rectangle) (insert-register).
+Saving Window Configurations in Registers
+C-x r w r
+    Save the state of the selected frame's windows in register r (window-configuration-to-register).
+C-x r f r
+    Save the state of all frames, including all their windows, in register r (frame-configuration-to-register).
+Keeping Numbers in Registers
+C-u number C-x r n r
+    Store number into register r (number-to-register).
+C-u number C-x r + r
+    Increment the number in register r by number (increment-register).
+C-x r g r
+    Insert the number from register r into the buffer.
+
+13) electric-pair-mode
+Emacs 24 has a new minor mode electric-pair-mode. When on, typing any left bracket automatically insert the right matching bracket
+
+14) rectangle-number-lines
+rectangle-number-lines Ctrl+x r N will insert a vertical column of numbers into a block of text.
+
+15) occur-edit-mode: Edit Search Output in list matching lines
+When using list-matching-lines (aka occur) or multi-occur, you can edit the output, so that the change will happen in the original file. In the output buffer, call occur-edit-mode 【e】. Example:
+    Open a file, then call occur or multi-occur.
+    Switch cursor to the output pane.
+    Call occur-edit-mode 【e】.
+    Edit. When done, call occur-cease-edit 【Ctrl+c Ctrl+c】.
+    Your changes are made in original file(s) too. You still need to save the file(s).
+
+16) Color Themes
+    call load-theme
+
+17) C-u M-! date : insert current date&time
+    C-u indicates for parameter inputs before commands
+
+18) ssh in emacs
+    C-x C-f within Emacs and type /ssh:username@server.domain:

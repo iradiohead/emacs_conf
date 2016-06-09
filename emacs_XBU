@@ -1,0 +1,102 @@
+;;设置你的全名和邮件，在发邮件时可以用到
+(setq user-full-name "Ferry")
+(setq user-mail-address "xiaoqiang.fu@gmail.com")
+;;设置你的书签文件，默认是~/.emacs.bmk，我喜欢把有关emacs的文件尽量放在一个文件夹，所以就修改了。
+(setq bookmark-default-file "~/.emacs.d/.emacs.bmk")
+;;load-path就同bash中的$PATH相似，emacs所需要的Elisp包都得在load-path里的文件夹中，~/.emacs.d/elisp是我自己添加的Elisp包
+(setq load-path (cons "~/.emacs.d/elisp" load-path))
+;;设置info的路径，也可通过Shell的全局变量$INFOPATH设置
+(add-to-list 'Info-default-directory-list "~/local/info/")
+(load "fxq-basic-config")
+(load "fxq-dired")
+(load "fxq-mode")
+;;(load "fxq-wiki")
+;;(load "fxq-other-elisp")
+(load "fxq-key-bindings")
+(load "fxq-tnsdl")
+(load "fxq-psvn");;SVN(SubVersion) plugin
+(load "fxq-plm");;PL/M highlight
+;; (load "color-theme")
+;; (require 'color-theme)
+;; (eval-after-load "color-theme"
+;;   '(progn
+;;      (color-theme-initialize)
+;;      (color-theme-emacs-nw)))
+(load "highlight-symbol")
+(require 'highlight-symbol)
+
+(load "ascii-table")
+
+
+(add-to-list 'load-path
+              "~/.emacs.d/elisp/iedit")
+(load "iedit")
+(require 'iedit)
+
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+
+(load "yasnippet-bundle")
+(require 'yasnippet)
+(setq yas/root-directory "~/.emacs.d/snippets")
+(yas/load-directory yas/root-directory)
+(yas/global-mode 1)
+
+;;强大的自动补齐功能
+;; ensure abbrev mode is always on
+(setq-default abbrev-mode t)
+
+;; do not bug me about saving my abbreviations
+;;(setq save-abbrevs nil)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; redo.el
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'redo)
+(tool-bar-add-item "stock_redo"
+                   'redo
+                   'redo
+                   :help "Redo(control f2)")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; find-recursive.el
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'find-recursive)
+
+;;Setting for ibuffer
+(require 'ibuffer)
+
+;;Setting for wb-line-number
+(require 'wb-line-number)
+(setq truncate-partial-width-windows nil) ; use continuous line
+(set-scroll-bar-mode nil)                 ; no scroll bar, even in x-window system
+
+;;Setting for ido, using for searching files
+(require 'ido)
+(ido-mode t)
+
+
+;; add tab mode by Ferry on 20120413
+(require 'tabbar)  
+(tabbar-mode 1)  	
+(define-prefix-command 'lwindow-map)
+
+;; added by Ferry on 09072012 for adding auto-complete function
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/site-lisp/auto-complete//ac-dict")
+(ac-config-default)
+(ac-set-trigger-key "TAB")
+(ac-set-trigger-key "<tab>")
+(global-auto-complete-mode t)
+
+;; added by Ferry on 15112013 to use whitespace
+(require 'whitespace)
+;;Step-1: Load white color theme and deactivate ECB mode
+(load-theme 'wheatgrass t)
+;;Step-2: load execute command mode
+(find-file "D:/emacs/diary/TimeQuadrant.org")
+(find-file "D:/Current_Task/Source/RCYVSP/Makefile")
+(shell)
+;;Step-3: Execute default commands
+(shell-command "spm use RCX -database dxsw2 -username xifu -password Ferry1412")

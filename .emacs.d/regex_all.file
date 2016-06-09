@@ -1,0 +1,33 @@
+'PLM regex'
+'#Function regex'
+'/.*\([a-zA-Z_][a-zA-Z0-9_]+\) *: *\(\(FUNCTION\)\|\(PROCEDURE\)\)/'
+/.*\([a-zA-Z_][a-zA-Z0-9_]+\) *: *\(\(FUNCTION\)\|\(PROCEDURE\)\) +/
+'/.*\([a-zA-Z_][a-zA-Z0-9_]+\) *: *\(\(FUNCTION\)\|\(PROCEDURE\)\)/'
+'LITERALLY'
+/.*\([a-zA-Z_][a-zA-Z0-9_$]+\) +LITERALLY/
+'STRUCTURE : need to be improved for two lines declare, not STRUCTURE'
+'/.*\([a-zA-Z_][a-zA-Z0-9_]*\)[ \r\n\t]+STRUCTURE/'
+/[ \b\t]*\(DECLARE\)[\n].*\([a-zA-Z_][a-zA-Z0-9_]*\)/m
+'VARIABLES 1'
+'/.*\([a-zA-Z_][a-zA-Z0-9_]*\)[\t ]+[a-zA-Z_][a-zA-Z0-9_]*,/'
+'VARIABLES 2'
+/.*\([a-zA-Z_][a-zA-Z0-9_]*\) +\(\(BYTE[,; ]\)\|\(POINTER[,; ]\)\|\(DOUBLE[,; ]\)\|\(WORD[,; ]\)\|\(BASED[\t\n ]\)\)/
+'VARIABLES 3'
+/.*\([a-zA-Z_][a-zA-Z0-9_]*\)[\t ]+[a-zA-Z_][a-zA-Z0-9_]+ +\(\(V_SP\)\|\(EXTERNAL\)\)[\t ]*[,;]/
+'VARIABLES 4'
+/.*DLR[ \r\t\n]+\([a-zA-Z_][a-zA-Z0-9_]*\)[ \r\n\t]/
+
+'TNSDL regex'
+'#Function regex'
+/ *\(\(PROCEDURE\)\) *\([a-zA-Z_][a-zA-Z0-9_]+\) *;/
+'CONSTANT'
+/[\t ]*\([a-zA-Z_][a-zA-Z0-9_]*\)_[cC][\t ]*=[\t ]*[a-zA-Z0-9_]*;/
+'IN/OUT variable'
+/[\t ]*\(\(IN\)\|\(OUT\)\|\(IN.OUT\)\)[\t ]*[a-zA-Z0-9_]*[\t ]*[a-zA-Z0-9_]*[,;]/
+'From tnsdl.el'
+'/[ \t]*\(PROCEDURE\|\(ABSTRACT[ \t]+\)?TYPE\|STATE\|INPUT\)[ \t]+\([_a-zA-Z0-9_]+\)/'
+
+'*.c/h regex'
+'extern void func_name(void);'
+/\(\(extern\)\|\(EXTERN\)\).*/
+'/[\t ]*\([a-zA-Z_][a-zA-Z0-9_]*\)_[cC][\t ]*=[\t ]*[a-zA-Z0-9_]*;/'

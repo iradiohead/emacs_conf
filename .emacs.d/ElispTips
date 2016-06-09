@@ -1,0 +1,293 @@
+作为一个实践的手册，第一件事当然是告诉如果运行一行代码，让你在看指南的过程中可以方便地动手尝试。
+
+* eval-last-sexp
+输入后把光标移到表达式后面，如“(+ 3 4)”后面，然后输入”Alt+x eval-last-sexp”或者使用快捷键”C-x C-e”，就可以在mini buffer看到这一句的运行结果”7″。
+
+* eval-region
+解释选中的区域。
+
+* ielm
+打开一个交互式的elips命令行解释器。
+
+寻找帮助:
+可以使用”Alt + x describe-function”(快捷键”C-h f”)来查找一个函数的用法。也可以使用”Alt+x elisp-index-search”在手参考手册中查询。
+常用函数
+打印
+view plaincopy to clipboardprint?
+
+1. (message "hi")
+2. (message "her age is:%d" 16) ;%d 数字
+3. (message "her name is: %s" "Vicky") ;%s 字符串
+4. (message "her min init is: %c" 86) ;%c 字符
+
+(message "hi")
+(message "her age is:%d" 16) ;%d 数字
+(message "her name is: %s" "Vicky") ;%s 字符串
+(message "her min init is: %c" 86) ;%c 字符
+
+注意：你可以在*message* buffer中看到打印出来的结果。
+运算函数
+view plaincopy to clipboardprint?
+
+1. (+ 4 5 1 ) ;=10
+2. (- 9 2) ;=7
+3. (* 2 3) ;=6
+4. (* 2 3 4) ;=24
+5. (/ 7 2) ;=3 结果的整数部分
+6. (/ 7 2.0) ;=3.5
+7. (% 7 4) ;=3 余数
+
+(+ 4 5 1 ) ;=10
+(- 9 2) ;=7
+(* 2 3) ;=6
+(* 2 3 4) ;=24
+(/ 7 2) ;=3 结果的整数部分
+(/ 7 2.0) ;=3.5
+(% 7 4) ;=3 余数
+
+注意，如果你的操作数是小数，必须把后面的0带上。就是说你应该写2.0，而不是2.。
+view plaincopy to clipboardprint?
+
+1. (integerp 3.) ;T
+2. (floatp 3.) ;nil
+3. (floatp 3.0) ;T
+
+(integerp 3.) ;T
+(floatp 3.) ;nil
+(floatp 3.0) ;T
+
+以字符p结尾的函数通常意味着它的返回值是True或者False。p意味着”predicate”(判定)。
+True和False
+
+在elisp中，标识”nil”代表false，其它的一切都是true,包括0。”nil”是空链表”()”的同义词。所以”()”也是false。
+
+按惯例，标识”t”用来表示true。
+view plaincopy to clipboardprint?
+
+1. (and t nil) ; nil
+2. (or t nil) ; t
+
+(and t nil) ; nil
+(or t nil) ; t
+
+在elisp中没有布尔型，只需记住”nil”和”()”是false，其它一切都是true。
+比较函数
+
+比较数字
+view plaincopy to clipboardprint?
+
+1. (< 3 4) ;小于
+2. (<= 3 4) ;小于等于
+3. (> 3 4) ;大于
+4. (>= 3 4) ;大于等于
+5. (= 3 3) ;等于
+
+(< 3 4) ;小于
+(<= 3 4) ;小于等于
+(> 3 4) ;大于
+(>= 3 4) ;大于等于
+(= 3 3) ;等于
+
+比较字符串
+view plaincopy to clipboardprint?
+
+1. (string= "this" "thiS")
+2. (string< "a" "b")
+3. (string< "B" "b")
+
+(string= "this" "thiS")
+(string< "a" "b")
+(string< "B" "b")
+
+在字符串比较中大小写是敏感的。比较依据是字典顺序。
+
+要比较两个sysbols是否有相同的数据类型和值，使用"equal"。
+view plaincopy to clipboardprint?
+
+1. (equal "abc" "abc") ;t
+2. (equal 3 3) ;t
+3. (equal 3 3.0) ;nil.类型不同
+4. (equal '(3 4 5) '(3 4 5)) ; t
+5. (equal '(3 4 5) '(3 4 "5")) ;nil
+
+(equal "abc" "abc") ;t
+(equal 3 3) ;t
+(equal 3 3.0) ;nil.类型不同
+(equal '(3 4 5) '(3 4 5)) ; t
+(equal '(3 4 5) '(3 4 "5")) ;nil
+
+在Elisp中并没有"!="或者“not-equal”。判断不等，可以在对整个等式取非。
+view plaincopy to clipboardprint?
+
+1. (not (= 3 4)) ;t
+
+(not (= 3 4)) ;t
+
+全局和局部变量
+
+"setq"用于给变量赋值。格式一般为"setq 变量1 值1 变量2 值2..."
+
+在lisp中，变量不需要声时，并且是全局的。
+view plaincopy to clipboardprint?
+
+1. (setq a 3 b 2 c 7) ;三个变是，a=3 b=2 c=7
+
+(setq a 3 b 2 c 7) ;三个变是，a=3 b=2 c=7
+
+定义局部变量，使用let。格式为"(let (变量1 变量2) body)"。"body"代表其它的表达式。其中最后一个表达式的取值是整个语句块的返回值。
+view plaincopy to clipboardprint?
+
+1. (let (a b)
+2. (setq a 3)
+3. (setq b 4)
+4. (+ a b)
+5. )
+
+(let (a b)
+(setq a 3)
+(setq b 4)
+(+ a b)
+)
+
+a和b都是这个语句块的局部变量，返值是最后一个表达式"(+ a b)"的取值。
+
+另一种格式是"(let ((变量1 值1)(变量2 值2)) body )"。例如：
+view plaincopy to clipboardprint?
+
+1. (let ((a 3) (b 4))
+2. (+ a b)
+3. )
+
+(let ((a 3) (b 4))
+(+ a b)
+)
+
+如果你的变量很少，并且值都是已经确定的，可以用这种方法。
+表达式块
+
+有时需要把一些表达式括起来。这时可以使用"progn"。
+view plaincopy to clipboardprint?
+
+1. (progn (message "hi"))
+
+(progn (message "hi"))
+
+它相当于
+view plaincopy to clipboardprint?
+
+1. (message "hi")
+
+(message "hi")
+
+"progn"类似于C语言中的"{...}"。它使用于某些需要把语句合并起来的场合，其实这跟C语言中也是一样的。比如："(if something (progn this that))"。这里，如果把progn去掉，变成"(if somethong this that"，在lisp中表示如果something,那么this,否则that。在有progn把this和that括真情为情况下，表示的是如果something，那么执行this和that。
+If then else
+
+格式为"(if test then )"。"else"是可选的。例：
+view plaincopy to clipboardprint?
+
+1. (if (< 3 2) (message "yes")))
+2. (if (< 3 2) (message "yes") (message "no")))
+
+(if (< 3 2) (message "yes")))
+(if (< 3 2) (message "yes") (message "no")))
+
+迭代循环
+
+使用while。
+view plaincopy to clipboardprint?
+
+1. (setq x 0)
+2. (while (< x 4)
+3. (princ (format "yay %d." x))
+4. (setq x (+ 1 x)))
+
+(setq x 0)
+(while (< x 4)
+(princ (format "yay %d." x))
+(setq x (+ 1 x)))
+
+在elisp中，并没有for语句。
+Lists
+
+在lisp中的List是这样的：“'(x y z)”。括号前面那个单引号是很重要的。不需要太在意它的含义，把它当成句法的一部份即可。
+view plaincopy to clipboardprint?
+
+1. (message "%S" '(a b c))
+2. (setq mylist '(a b c)) ;定义
+3. (let ((x 3) (y 4) (z 5))
+4. (message "%S" (list x y z))
+5. )
+
+(message "%S" '(a b c))
+(setq mylist '(a b c)) ;定义
+(let ((x 3) (y 4) (z 5))
+(message "%S" (list x y z))
+)
+
+以下是List的一些函数：
+Function 目的
+(car mylist) 取第一个元素
+(nth n mylist) 最第n个元素
+(car (last mylist)) 取最后一个元素
+(cdr mylist) 从第二个到最后一个
+(nthcdr n mylist) 从第n个到最后一个元素
+(butlast mylist n) 不包含n到最后一个元素
+
+这里所说的n，都是从0开始的。
+
+下列是一些例子。
+view plaincopy to clipboardprint?
+
+1. (car (list "a" "b" "c"))
+2. (nth 2 (list "a" "b" "c"))
+3. (last (list "a" "b" "c"))
+
+(car (list "a" "b" "c"))
+(nth 2 (list "a" "b" "c"))
+(last (list "a" "b" "c"))
+
+Basic List Functions Function 目的
+(length mylist) List长度
+(cons x mylist) 把x加到list前面
+(append mylist1 mylist2) 连接两个List
+
+例如:
+view plaincopy to clipboardprint?
+
+1. (length (list "a" "b" "c"))
+
+(length (list "a" "b" "c"))
+
+Function Purpose
+(pop mylist) 删除第一个元素并返回
+(nbutlast mylist n) 删除第n个元素，返回删除后的list.
+(setcar mylist x) 替换第一个元素，并返回
+(setcdr mylist x) 替换除第一个之外的所有元素
+遍历运算数组
+view plaincopy to clipboardprint?
+
+1. (mapcar '1+ '(1 2 3 4))
+
+(mapcar '1+ '(1 2 3 4))
+
+上例的做所是遍历list中的每一个元素，并对它进行"1+"的操作。
+
+当然，也可以用while循环来完成这件事。
+定义函数
+
+基本的函数定义方式是"defun (param) "doc" "。
+view plaincopy to clipboardprint?
+
+1. (defun myFunction () "testing" (message "Yay!"))
+
+(defun myFunction () "testing" (message "Yay!"))
+
+myFunction是函数名，这个函数无参，函数注释"testing"，后面是函数体。
+
+可以在doctsing后面加一个"interactive"来使得函数能跟环境进行交互（在emacs中，就呆以可用"Alt + x"来调用）
+
+interactive的一些常用语法:
+
+* (interactive) 无参
+* (interactive "n") 一个数字参数
+* (interactive "s") 一个字符串参数 

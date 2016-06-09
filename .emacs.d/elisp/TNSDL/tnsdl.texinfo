@@ -1,0 +1,791 @@
+\input texinfo   @c -*-texinfo-*-
+
+@c to generate
+@c          Info:        use Emacs' Texinfo menu...
+@c          .pdf:        texi2dvi --pdf tnsdl.texinfo
+@c          .html:       makeinfo --html [--no-split] tnsdl.texinfo
+@c          .txt:        makeinfo --plaintext tnsdl.texinfo --output=tnsdl.txt
+@c otherwise: makeinfo --help
+
+@c %**start of header
+@setfilename tnsdl
+
+@set VERSION pre-2.0.1
+@set TNSDL @acronym{TNSDL}
+@set TITLE The GNU Emacs TNSDL Mode Manual 
+@set TM tnsdl-mode
+
+@settitle @value{TITLE} (for version @value{VERSION})
+
+@syncodeindex fn cp
+
+@c %**end of header
+
+@copying
+This manual is for GNU Emacs' @value{TM} what is made
+to help programming in the @value{TNSDL} programming language.
+
+Copyright @copyright{} 2007 NSN.
+
+@quotation
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+@end quotation
+@end copying
+
+@titlepage
+@title @value{TITLE}
+@subtitle for version @value{VERSION}
+@author Peter Tury
+
+@c  The following two commands
+@c  start the copyright page.
+@page
+@vskip 0pt plus 1filll
+@insertcopying
+@end titlepage
+
+@c So the toc is printed at the start.
+@contents
+
+@ifnottex
+@node Top
+@top @value{TITLE}
+
+@insertcopying
+@end ifnottex
+
+@menu
+* Preface::             How to read this manual.
+* Getting Started::     Set up @value{TM}: download, install, etc.
+* Everyday Usage::      Base functionalities.
+* Customization::       How to custom-tailor this major mode to your needs.
+* Contribute::          How to modify, bug-report, etc.
+* Copying::             Your rights and freedoms.
+* Supported Features::  What Emacs features are supported explicitly.
+* News::                History and news.
+* Index::
+@end menu
+
+@node Preface
+@chapter Preface
+
+@ifnotinfo
+If reading off-Emacs (e.g. on printed paper or a @file{.pdf} or @file{.html} file(s))
+I recommend reading only @ref{Set up GNU Emacs} and @ref{Set up tnsdl-mode}: after the
+installations, reading this manual inside Emacs is much more convenient (e.g. all the
+crossreferences will work).
+
+If you're ``just interesting'' and don't want to install anything, then I suggest reading
+only @ref{Everyday Usage}.
+@end ifnotinfo
+
+@ifinfo
+If you don't know Info and feel got lost after a while, remember:
+@table @key
+@item l
+Pushing key @key{l} takes you back to the @b{l}ast piece you read.
+@item u
+Key @key{u} takes one level @b{u}p in the documentation hierarchy.
+@item SPC
+Simply pushing the @key{space} bar navigates you through the whole documentation!
+@end table
+@end ifinfo
+
+If you are an experienced Emacs user, then @ref{Everyday Usage}: it
+is probably more than enough for you. If you have time for it, @ref{Getting Help} and
+@ref{Useful Commands} also: you might find unknown useful Emacs utilities. If
+you haven't installed Info files previously, then @ref{Documentation} for instructions.
+Also @ref{Supported Features}.
+
+@c node-->why emacs
+
+@node Getting Started
+@chapter Getting Started
+
+This @value{TM} is written for every @value{TNSDL} users. Some of them might be
+unfamiliar with GNU Emacs. In this chapter we summarize everything for a
+successful start.
+
+For other aspects @xref{Top,,,efaq}.
+
+@noindent
+For help about @value{TNSDL} itself, go to the @uref{http://nwiki.nokia.com/TNSDL,TNSDL nwiki}.
+
+@menu
+* Set up GNU Emacs::    Download and install.
+* GNU Emacs Lifebelt::  Most basic commands for e.g. getting help.
+* Set up tnsdl-mode::   Download and install.
+@end menu
+
+@node Set up GNU Emacs
+@section Set up GNU Emacs
+
+GNU Emacs is part of @acronym{DMXSee}. However, only an extremely old, outdated
+version, what is not supported by @value{TM} from version 2.0.0 onwards.
+Thus you have to install another, newer Emacs for yourself. Here follows how.
+
+@noindent
+For general info see @uref{xxx}. 
+
+@noindent
+For MS Windows installers, see @uref{xxx}.
+
+@noindent
+For MS Windows I recommend using the official precompiled binaries from
+@uref{xxx}.
+Their ``installation'' means unzipping the downloaded file and manually setting
+some things in MS Windows:
+
+@enumerate
+@item Set @env{HOME} environment variable to point e.g. @file{C:\USERS\}.
+Your @file{.emacs} file will be here. Remember its location!
+@xref{Windows HOME,,,emacs}.
+@item Associate @file{.sdl}, @file{.sdt}, @file{.spd}, @file{.sst} etc. files to Emacs.
+@end enumerate
+
+@noindent
+Also @xref{Help installing Emacs,,,efaq},
+and @ref{Using an already running Emacs process,,,efaq}.
+
+@noindent
+For info about starting and stopping Emacs @xref{Entering Emacs,,,emacs},
+and @ref{Exiting,,,emacs}.
+
+@noindent
+For full details about start options @xref{Emacs Invocation,,,emacs}.
+
+@node GNU Emacs Lifebelt
+@section GNU Emacs Lifebelt
+
+@menu
+* Emacs Key Notation::  What you should know for the first time uing Emacs;
+                          or e.g. to understand help.
+* Emacs Terminology::   What you should know to e.g. understand help.
+* Getting Help::        How to reach many helping functionalities.
+* Useful Commands::     Some general Emacs key combinations especially
+                          useful for @value{TM}.
+@c add: useful features; e.g. svn-status, color-theme, ...
+@end menu
+
+@node Emacs Key Notation
+@subsection Emacs Key Notation
+
+Some keyboard notation used in Emacs manuals, helps, etc.:
+
+@multitable {<down arrow>mm} {PAGE UP}
+@headitem Key @tab Emacs notion
+@item @key{Alt} @tab @key{M}
+@item @key{Shift} @tab @key{S}
+@item @key{Ctrl} @tab @key{C}
+@item @key{down arrow} @tab @key{DOWN}
+@item @key{F1} @tab @key{F1}
+@item @key{Delete} @tab @key{DEL}
+@item @key{Enter} @tab @key{RET}
+@item @key{Space} @tab @key{SPC}
+@item @key{Backspace} @tab @key{BS}
+@item @key{PgUp} @tab @key{PAGEUP}
+@end multitable
+
+Examples:
+
+@multitable {Key sequence in} {this is a long description placeholder...mmmm67...72}
+@headitem Key sequence in Emacs notion @tab Meaning
+@item @key{C-SPC} @tab Hold down @key{Ctrl} and push @key{Space} (set mark)
+@item @key{M-w} @tab Hold down @key{Alt} and push @key{w} (copy)
+@item @key{C-w} @tab Hold down @key{Ctrl} and push @key{w} (cut)
+@item @key{C-y} @tab Hold down @key{Ctrl} and push @key{y} (paste)
+@item @key{C-M-k} @tab Hold down both @key{Ctrl} and @key{Alt} and push @key{k}
+(cut a balanced expression)
+@item @key{S-down-mouse-1} @tab Hold down @key{Shift} and click with the left mouse button
+(mouse-set-font)
+@item @key{C-u 10 C-x $} @tab Hold down @key{Ctrl} and push @key{u};
+then type @kbd{1 0}; then hold down @key{Ctrl} and push @key{x};
+then type @key{$} (hides all lines indented by 10+ space)
+@end multitable
+
+@noindent
+For more info @xref{Basic Keys,,,efaq}, @ref{User Input,,,emacs}, and @ref{M-x,,,emacs}...
+
+@node Emacs Terminology
+@subsection Emacs Terminology
+
+These are not ``official'' definitions,
+just short scratches for beginners to help understanding further
+Emacs documentation.
+
+@table @dfn
+@item point
+The @b{cursor} and/or its location (in terms of character position). @xref{Point,,,emacs}.
+@item kill
+Item is copied and deleted. Well known name for this functionality: ``@b{cut}''.
+@item yank
+Previously ``killed'' or ``copied'' item is @b{paste}d.
+@item frame
+It is a ``@b{window}'' from the windowing system's (e.g. MS Windows) point of view.
+@item buffer
+It is a piece of text. Usually a whole file's content.
+@item window
+A part of a ``frame''. One frame can consist of one or more windows.
+Windows can be splitted into more (smaller) windows.
+@item visit a file
+Opening it in Emacs.
+@item fontification
+Syntax highlighting.
+@item minibuffer
+The (generally) one-line area at the bottom of a frame, where you can e.g. type
+commands in. Note: Emacs communicates with you mainly via the minibuffer!
+@xref{Minibuffer,,,emacs}.
+@item command
+An Emacs function designed to be callable by end users. @xref{Commands,,,emacs}.
+@end table
+
+For many more terms explained more exactly @xref{Glossary,,,emacs}.
+For learning more about the screen @xref{Screen,,,emacs}.
+
+@node Getting Help
+@subsection Getting Help
+
+Most of the ``interactive'' help within Emacs is available in Info.
+To learn about its usage @xref{Top,,,info}.
+
+Type @key{C-h ?} anytime for a list of available help possibilities. Some of them:
+@table @key
+@item C-h b
+List all key sequences usable at the moment (in the current window!).
+@item C-h i
+Opens the Info reader with enourmos amount of available local,
+hypertexted documentation.
+@item C-h k
+Type a key sequence or click a mouse button (e.g. on a menu): its help is shown.
+@item C-h l
+Helps finding out what triggered the last events: show your last 100 keystroke.
+@end table
+
+@xref{On-line manual,,,efaq}.
+
+@xref{Learning how to do something,,,efaq}. Note especially @file{refcard} in it!
+
+@node Useful Commands
+@subsection Useful Commands
+
+Several basic Emacs key combinations and commands are mentioned above
+(@xref{Emacs Key Notation}, and @ref{Getting Help}).
+
+Here I list some more, what are especially useful for @value{TNSDL}
+development. (@value{TM}'s own commands are not listed here.
+For them @xref{Everyday Usage}.)
+
+If you read this in Emacs' Info reader (recommended),
+then move the cursor (point) onto the function names below
+one by one, and press @key{C-h f} @key{RET} on them: @key{C-h f} calls the
+Emacs function (command) @code{describe-function} with default value
+derived from text found around point.
+(Note: Emacs communicates with you mainly via the minibuffer. Check it!)
+Then @key{RET} tells that the
+default's descripton is looked for. The ``description'' contains
+the function's name, the actual key combination(s) bound to it, a short
+description about its usage, etc. The best is to try them immediately
+in a trial (@value{TNSDL}) buffer...
+
+@code{indent-for-tab-command}
+
+@code{isearch-forward} -- @code{isearch-backward}@*
+@indent @code{isearch-forward-regexp} -- @code{isearch-backward-regexp}
+
+@code{dabbrev-expand}
+
+@code{query-replace} -- @code{query-replace-regexp}@*
+@indent @code{replace-string} -- @code{replace-regexp}
+
+@code{comment-dwim}
+
+@code{just-one-space} -- @code{delete-horizontal-space}@*
+@indent @code{delete-blank-lines}@*
+@indent @code{kill-line} -- @code{kill-whole-line} -- @code{kill-sexp} --> @ref{Erasing,,,emacs}
+
+@code{find-tag}
+
+@code{forward-sexp} -- @code{backward-sexp}
+
+@code{mark-sexp}
+
+@code{split-window-vertically} -- @code{split-window-horizontally}@*
+@indent @code{other-window}
+@indent @code{delete-other-windows}
+
+@code{kill-buffer}
+
+@code{make-frame-command}
+
+@code{count-lines-region} --> @ref{Position Info,,,emacs}
+
+@code{goto-line} --> @ref{Moving Point,,,emacs}
+
+@code{upcase-word} -- @code{downcase-word}
+
+@code{undo}
+
+@code{hs-minor-mode}
+
+@code{color-theme-select} (requires @uref{http://www.,ColorThemes})
+
+@noindent For others @xref{Help,,,emacs}. @ref{Basic,,,emacs}
+
+@noindent Do not forget to check refcard.ps in the @file{emacs/etc} directory.
+
+@node Set up tnsdl-mode
+@section Set up tnsdl-mode
+
+Everything what is needed for @value{TM} is downloadable from
+@uref{http://xxx}.
+
+In this section we describe all the details about how to use these files:
+how to ``install'' the functionality and the documentation.
+Source files also described with full details.
+
+@menu
+* Functionality::
+* Documentation::
+* Sources::
+@end menu
+
+@node Functionality
+@subsection Functionality
+
+@value{TM}'s functionality is implemented in one single file:
+@file{tnsdl.el}. Since Emacs can interpret source files, you should have either this source file,
+or its byte compiled version @file{tnsdl.elc} for using @value{TM}.
+
+To make Emacs find this file when needed, copy it into a directory where
+Emacs looks for such files: type @kbd{C-h v load-path @key{RET}}. This
+brings up a help window showing the value (and meaning) of the variable
+@code{load-path}. Any directory in the list will suffice;
+@file{emacs/site-lisp} is dedicated to such purposes, so you can choose
+it safely.
+
+After copying @file{tnsdl.el(c)} into such a directory, Emacs can find
+it. Now you have to order Emacs to load it when it starts. For this, locate
+your @file{.emacs} file (@pxref{Set up GNU Emacs}) and add this line to its
+end: @code{(load "tnsdl")}. Go to the end of the expression you've just typed
+(so place the cursor (point) immediately after the closing paren @code{)}) and
+type @kbd{C-x C-e}. From now on all @value{TM} functionalities should
+be available. Try it by opening (visiting) a tnsdl file.
+
+@xref{Lisp Libraries,,,emacs}.
+
+@node Documentation
+@subsection Documentation
+
+@value{TM}'s documentation comes in the following forms:
+
+@table @asis
+@item Info
+for online reading (inside Emacs or in another info reader),
+@item PDF
+for printing and 
+@item HTML
+for browsing in a web browser.
+@end table
+
+You know how to handle HTML and PDF files.
+
+The Info file @file{tnsdl} can be ``installed'' for Emacs, so you will reach it
+via the standard Emacs help system. Here is a step-by-step instruction how to install.
+
+@enumerate
+@item
+Locate documentation coming with Emacs. You should find it under
+@file{your Emacs documentation directory/info}. If you don't know where is it,
+try searching e.g. for file @file{elisp-8}.
+@item
+Copy the info file @file{tnsdl} into this directory.
+@item
+Edit the file @file{dir} in this directory: add a line like
+@verbatim
+
+* TNSDL: (tnsdl).       Emacs mode for developing TNSDL PRBs.
+
+@end verbatim
+after e.g. the line
+@verbatim
+
+* Info: (info).         How to use the documentation browsing system.
+
+@end verbatim
+Next time you type @kbd{C-h i}, the hypertexted root of tnsdl-mode's documentation
+will be linked in: type @kbd{RET} on it and start browsing!
+@end enumerate
+
+@node Sources
+@subsection Sources
+
+Here is a full list of @value{TM}'s source files along with their usage.
+If you want to contribute to @value{TM} development, use (enhance) these files.
+Otherwise you can safely skip this subsection.
+
+@table @file
+@item tnsdl.el
+Contains the Emacs Lisp implementation of all the functionality of @value{TM}.
+Byte compiled @file{tnsdl.elc} file can be generated from it.
+@item tnsdl.texinfo
+Source of all the documentation: both Info file @file{tnsdl}, @file{tnsdl.pdf} and
+HTML documentation files are generated from it.
+@item test_tnsdlmode.sdl
+A (partly pathological) TNSDL file to test syntax highlighting, indenatation,
+move commands, etc.
+@item test_tnsdlmode.el
+``Unit tests'' for @value{TM} development.
+@end table
+
+@node Everyday Usage
+@chapter Everyday Usage
+
+The purpose of @value{TM} is to help everyday sw development work.
+
+Most of @value{TM} is nothing more than supporting and customizing
+of standard Emacs functionalities.
+
+Source code typing, modification, reviewing and navigation are helped
+as well as compilation and other related activities. Details follows
+in this chapter.
+
+@menu
+* Syntax Highlighting:: Various ways of it are introduced.
+@c upcase
+* Indentation::         Automatic and commanded; reindentation and
+                          alignement.
+* Navigation::          Jumping to different locations.
+* Hide and Show::       Folding.
+@c and manual region hiding.
+* Compilation::         Compile your .pac from @value{TM}!
+@end menu
+
+@node Syntax Highlighting
+@section Syntax Highlighting
+
+This is standard Emacs functionality, but I added a menu for it:
+Tnsdl > Font-lock.
+
+Fontification can be totally switched off or switched on.
+
+You can choose from a lot of ready-to-use color schemes or
+you can define your own fonts to use. I recommend the former one
+using ColorThemes: http:\\xxx.
+
+When fontificaton is switched on, several levels can be applied:
+
+@table @asis
+@item Level-0
+highlights only the most basic elements:
+strings, comments, compiler directives and
+STATEs, PROCEDUREs and TYPEs.
+@item Level-1
+adds fontification for all keywords
+@item Level-2
+additionally highlights
+type names (like @samp{byte}, @samp{bool}, etc. or ending with @samp{_t}),
+constant names (ending with @samp{_c} or @samp{_ec}),
+variable and parameter names (starting with @samp{g_}, @samp{l_} or @samp{p_}), etc.
+@end table
+
+For more, general info @xref{Levels of Font Lock,,,elisp}.
+
+@node Indentation
+@section Indentation
+
+@value{TM} indents lines automatically when @kbd{RET} is typed:
+both the just-closed and the just-started lines are indented.
+
+Typing @kbd{TAB} once tries to indent intelligently:
+indentation happens (instead of inserting spaces or tabs)
+if point wasn't in a place where inserting whitespace seems to be reasonable.
+
+Second and following @kbd{TAB} typings do xxx. This in practice can be used
+for alignement quite comfortably.
+
+Regions etc. can be reindented using the Tnsdl menu.
+
+Each line's indentation is calculated from patterns found in the actual
+and preceding lines. When the actual line is empty (=just started),
+calculation can be wrong easily. In such cases type the line and hope
+@kbd{RET} at the end of the line will reindent well.
+
+When automatic identation does a wrong job, indent
+the line manually, and hope following lines' automatic indentation will
+be calculated in a good way from it.
+
+@node Navigation
+@section Navigation
+@c TAGing
+
+A lot of standard (and sometimes most convenient!) possibilities
+are not mentioned below. Check the @kbd{Edit} menu (especially its
+@kbd{Search} and @kbd{Go To} submenus) for them.
+I use @kbd{Incremental Search} most of the time.
+
+Also note that @ref{Top,,,speedbar} is supported. Try it:
+@kbd{M-x speedbar @key{RET}}.
+
+@menu
+* Nearby::   How to skip by symbol or by statement...
+* Far::      How to skip decision branches, procedures, etc.
+* Away::     Go away into (possibly) other files containing a
+               specific definition...
+@end menu
+
+@node Nearby
+@subsection Nearby
+
+Use standard Emacs commands: `forward-word'/`backward-word', 
+`forward-sentence'/`backward-sentence' (this is quite handy!),
+etc.
+
+@node Far
+@subsection Far
+
+Skipping bigger entities (e.g. branches of DECISIONs or any code
+enclosed by <keyword>-END<keyword> pairs) is supported by the
+`forward-sexp'/`backward-sexp' functions.
+
+When you want to ``skip out'' from such a block, then
+`tnsdl-goto-block-start'/`tnsdl-goto-block-end' can be used. These are
+in the Tnsdl menu, but no keys are bound to them by default.
+
+Skipping to the start/end of the actual PROCEDURE has its own menu and
+keys. `beginning-of-defun'/`end-of-defun' do these.
+
+Many other (probably interactively less useful) tnsdl-specific move
+commands are defined: check (via @kbd{C-h a}) the commands starting with
+@samp{tnsdl-goto-}.
+
+Note: It is a good practice to use `point-to-register' to store any loaction
+where to you want to go back later.
+
+@node Away
+@subsection Away
+
+Skipping to a specific PROCEDURE or TYPE is easiest using TAG files.
+Generate/refresh the TAG file using the menu @kbd{Etag}.
+Sometimes you have to load the freshly generated file(s) using `visit-tags-table'.
+Then use `find-tag'.
+Usually it defaults to the right name, but you can type any name you
+want.
+
+@node Hide and Show
+@section Hide and Show
+
+Some bigger entities (e.g. branches of DECISIONs or complete PROCEDUREs
+or their long FPAR or DCL parts or long comments, etc.) can be hidden
+temporarily. This functionality is usually referred elsewhere as ``folding''.
+Use `hs-minor-mode' for it. (It is not activated by @value{TM} by default,
+you have to switch this minor mode on by yourself: type
+@kbd{M-x hs-minor-mode @key{RET}}. Then its menu appears...)
+
+@node Compilation
+@section Compilation
+
+Currently I suggest compilation is the following way.
+
+@enumerate
+@item
+Create your own MS Windows batch file what compiles from command line.
+E.g. a file @file{buildmyprb.cmd} could look like this: @*
+@code{call meenv 5.1-0 @*
+build -dstdout -mk2cd -rm2cd -test -timestamp my__scmx.pac.} @*
+Note: these two lines are enough for compilation.
+@item
+Copy this @file{buildmyprb.cmd} into the directory where your @file{my__scmx.pac} resides.
+@item
+Open a file from this directory in Emacs. E.g. it is a good practice
+to visit the @file{my__scmx.pac} file and set the @file{.img}'s id in it.
+@item
+@samp{M-x compile @kbd{RET} buildmyprb.cmd @kbd{RET}} @*
+(Note: after the first time, you can use @samp{M-x recompile @kbd{RET}} instead.)
+After this, compilation starts (you may have to open an SPM connection before it).
+Compilation messages appears in their own buffer.
+@value{TM} adds knowledge to highlight error and warning messages differently
+and makes them links.
+@item
+Click on an error/warning message and the file at the problematic line will
+be opened.
+If Emacs ask you to locate the directory where the problematic file resides, then
+usually the best is to open any TNSDL file from that directory and check-in TNSDL
+menu's Compilation > In search path before the compilation process.
+After this, all source files in that directory
+fill be found automatically by Emacs.
+@end enumerate
+
+@node Customization
+@chapter Customization
+
+To customize @value{TM} use the menu @kbd{Tnsdl > Customize}.
+
+It is usually a good idea to bind your favourite commands to key combinations,
+so you don't have to type @kbd{M-x my-fav-command @key{RET}} always.
+You can choose any key combination you like (even ``self inserting'' keys
+like @key{TAB} or @key{RET} or simple symbols like @key{~} or letters etc.
+can be rebound), but @kbd{C-c @key{letter}} are reserved for such purposes
+(=for users):
+no major or minor modes should use them.
+
+To bind e.g. @kbd{C-c b} to the command `tnsdl-goto-block-start', put this line
+into your @file{.emacs} file (append to its end):
+@lisp
+(define-key tnsdl-mode-map "\C-cb" 'tnsdl-goto-block-start)
+@end lisp
+
+@node Contribute
+@chapter Contribute
+
+If you simply use this @value{TM} and send your comments to the author,
+then you help a lot! (For names @ref{xxx,,,xxx}.)
+
+However, you are free to modify any source files (either documentation or
+test or implementation sources). If you do it, please inform the author,
+so I can add you modification to the ``official'' version.
+
+If you comply with my coding conventions, then I can easily merge your
+enhancements into the code. Here I list some of them.
+
+@subsection Coding conventions
+
+@itemize
+@item
+Each function's, option's, ... name starts with @samp{tnsdl-}.
+
+@item
+Everything (functions, variables, ...) is documented in its documentation
+string.
+
+@item
+Functions' (intentional) returned values should be mentioned explicitly in
+their docstring.
+
+@item
+Whenever it is possible, add functionality via supporting official minor modes
+and features instead of reinventing the wheel. Examples: hs-minor-mode, imenu,
+`forward-sexp', etc.
+
+@end itemize
+
+@node Copying
+@chapter Copying
+
+@insertcopying
+
+@node Supported Features
+@appendix Supported Features
+
+Here is a (hopefully full) list of standard Emacs features what are
+supported by @value{TM}. I.e. these can be used (in addition to the
+special @value{TM}-features) ``out of the box''.
+
+Type @kbd{C-h f @key{RET}} on them to get more info.
+
+@itemize
+
+@item
+which-func-mode
+
+@item
+imenu (makes TAG files unnecessary locally)
+
+@item
+hs-minor-mode (``folding'')
+
+@item
+font-lock-mode (syntax highlighting)
+
+@item
+compilation-mode (to skip to the problematic source code line from the compilation log)
+
+@end itemize
+
+@node News
+@appendix News
+
+@itemize
+@item
+v2
+
+This is a complete rewrite from scratch. Made by Peter Tury.
+It works only with Emacs v22 or later.
+
+New features:
+
+@itemize
+@item
+complete documentation
+
+@item
+standard Emacs customizability (via @kbd{M-x customize-mode})
+
+@item
+multi-level and more exact syntax highlighting
+
+@item
+folding
+
+@item
+tnsdl-specific code browsing (`forward-sexp', etc.)
+
+@item
+enhanced(?) automatic indentation
+
+@item
+TAG support
+
+@item
+compilation support
+@end itemize
+
+Removed features:
+
+@itemize
+@item
+abbreviations (I found `dabbrev-expand' enough)
+
+@item
+skeletons (I didn't use them)
+
+@item
+unknown functionalities (probably there were some)
+@end itemize
+
+@item
+v1
+
+First(?) @value{TM} was created and maintained by Harri M‰enp‰‰ until 1992.
+Later Toni Arte and Tero Venetjoki maintained it for many years. Its variants
+can be used for older Emacses (from version 17(?)).
+
+It knew:
+@itemize
+@item
+one-level syntax highlighting
+
+@item
+automatic indentation
+
+@item
+menu
+
+@item
+imenu support
+
+@item
+abbreviations
+
+@item
+skeletons
+@end itemize
+@end itemize
+
+@node Index
+@unnumbered Index
+
+@printindex cp
+
+@bye
