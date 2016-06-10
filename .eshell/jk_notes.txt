@@ -1,0 +1,5 @@
+M-x eshell
+
+eshell introduction
+http://darksun.blog.51cto.com/3874064/1407394
+http://ergoemacs.org/emacs/eshell.html

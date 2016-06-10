@@ -10,9 +10,9 @@
 ;;设置gnus启动的文件。默认是为~/.gnus.el
 (setq gnus-init-file "~/.emacs.d/elisp/fxq-gnus.el")
 ;;由于我的配置文件很长，所以按照分类分别放在不同的文件里，方便管理
-(load "fxq-basic-config")
+(load "jk-basic-config")
 (load "fxq-language")
-(load "fxq-calendar")
+(load "jk-calendar")
 (load "fxq-folding")
 ;;(load "fxq-ido")
 ;;(load "fxq-dictionary")

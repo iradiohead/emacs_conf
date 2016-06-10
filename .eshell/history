@@ -1,25 +1,3 @@
-find -name '*.c' | xargs etags
-find . -name '*.c' | xargs etags
-find ./ -name '*.c' | xargs etags
-find -name '*.c'| xargs etags
-find -name '*.h'| xargs etags -a
-find -name '*.c'| xargs etags
-find ./ -name '*.c'| xargs etags
-find ./ -name '*.h'| xargs etags
-telnet tncluster
-find ./ -name '*.h'| xargs etags
-find -name "*.[ch]" -or -name "*.sdl" -or -name "*.sdt" -or -name "*.spd" -or -name"*.a*"|xargs etags
-find -h
-find --help
-find -name "*.[ch]" -or -name "*.sdl" -or -name "*.sdt" -or -name "*.spd" -or -name"*.a*"
-find -name "*"
-find . -name "*"
-find 
-find -name 
-find -name '*'
-find -name '*'
-find -name "*.[ch]" -or -name "*.sdl" -or -name "*.sdt" -or -name "*.spd" -or -name"*.a*"
-find
 find ./ -name "*"
 find ./ 
 find ./ |xargs etags
@@ -126,3 +104,25 @@ python
 ls
 dir
 git clone deveo@deveo.access.nsn.com:Nokia/projects/vsp_clean_coder/repositories/git/Coding_salon
+his
+history
+ls
+pwd
+ls
+ssh
+ssh root@45.79.110.55
+ls
+telnet
+pwd
+cat
+man
+man 1
+ls -sail
+pwd
+mv test2.txt test22.txt
+ls
+history
+dired
+set
+export
+history
