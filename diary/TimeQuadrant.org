@@ -1,0 +1,131 @@
+#+STARTUP:  content
+#+STARTUP:  showall
+#+STARTUP:  showeverything
+#+STARTUP:  overview
+#+TAGS: Work(w) Private(p) Life(l) Competence(c)
+#+COLUMNS: %25ITEM .....
+* [#B] I Quadrant: Important and Urgent
+* [#A] II Quadrant: Important and Not Urgent
+** TODO Domain Team                                                    :Work:
+   CLOCK: [2014-10-16 Thu 14:39]--[2014-10-16 Thu 15:08] =>  0:29
+   CLOCK: [2014-10-16 Thu 13:10]--[2014-10-16 Thu 14:38] =>  1:28
+** TODO Clean Code                                               :Competence:
+** TODO LinDX competence development                                   :Work:
+*** LinDX UT
+    CLOCK: [2014-04-02 Wed 12:35]--[2014-04-02 Wed 14:35] =>  2:00
+    CLOCK: [2014-04-01 Tue 11:10]--[2014-04-01 Tue 14:03] =>  2:53
+    CLOCK: [2014-03-31 Mon 13:16]--[2014-03-31 Mon 15:21] =>  2:05
+    CLOCK: [2014-03-28 Fri 16:45]--[2014-03-28 Fri 18:05] =>  1:20
+*** d_stub
+    CLOCK: [2014-04-04 Fri 10:30]--[2014-04-04 Fri 11:25] =>  0:55
+*** LinDX basic
+** TODO VSP competence development
+*** VSP basic
+*** DONE VSP Env Setup                                                 :Work:
+    CLOCK: [2014-03-19 Wed 09:54]--[2014-03-19 Wed 16:54] =>  7:00
+*** TODO Book
+** TODO Recovery RCYSEB                                                :Work:
+** TODO Diagnostic/Supervision DNSSEB/SUVSEB                           :Work:
+*** RE394_001145 VSP - Re-define diagnostics categories in VSP
+    CLOCK: [2014-10-28 Tue 13:42]--[2014-10-28 Tue 15:49] =>  2:07
+    CLOCK: [2014-10-27 Mon 09:21]--[2014-10-27 Mon 11:42] =>  2:21
+    :PROPERTIES:
+    :ORDERED:  t
+    :END:
+*** FC394_001861 Offline service level agreement monitoring Phase 2: clock interrupt jitter test
+*** DONE RE394_001144 VSP - Diagnostics report can show index for failed WDU
+** TODO Alarm AMSSEB                                                   :Work:
+*** FC394_002177 Extend Alarm Namespace for long term usage
+    CLOCK: [2014-11-03 Mon 12:40]--[2014-11-03 Mon 13:54] =>  1:14
+    CLOCK: [2014-11-03 Mon 09:49]--[2014-11-03 Mon 11:35] =>  1:46
+    CLOCK: [2014-10-21 Tue 13:58]--[2014-10-21 Tue 14:42] =>  0:44
+** TODO DXTS Documents Self-study                                :Competence:
+   DEADLINE: <2013-12-06 Fri> SCHEDULED: <2013-12-04 Wed>
+*** DONE DMX RTOS material for self study
+**** DONE Intoduction to DMX RTOS
+***** DONE 1. Kernel and its related SW
+      CLOCK: [2013-07-19 Fri 18:21]--[2013-07-19 Fri 19:21] =>  1:00
+***** DONE 2. Mutual Exclusion
+      CLOCK: [2013-07-19 Fri 19:22]--[2013-07-19 Fri 19:49] =>  0:27
+***** DONE 3. BBOLIB
+      CLOCK: [2013-07-19 Fri 19:50]--[2013-07-19 Fri 20:00] =>  0:10
+***** DONE 4. ISRLIB                                                   :Work:
+      CLOCK: [2013-07-19 Fri 20:00]--[2013-07-19 Fri 20:21] =>  0:21
+***** DONE 5. RAUDAT
+      CLOCK: [2013-07-19 Fri 20:22]--[2013-07-19 Fri 20:25] =>  0:03
+***** DONE 6. Paging and segmentation
+      CLOCK: [2013-07-19 Fri 20:25]--[2013-07-19 Fri 20:30] =>  0:05
+**** DONE Multiprocessor DMX Programmer_s Guide
+     CLOCK: [2013-07-22 Mon 19:36]--[2013-07-22 Mon 20:37] =>  1:01
+**** DONE HW Environment of DMX OS
+     CLOCK: [2013-07-23 Tue 17:05]--[2013-07-23 Tue 17:51] =>  0:46
+*** TODO DX 200 Platform Training
+**** DONE External Basic DX200 for developers
+***** DONE Course introduction
+***** DONE DX 200 overview
+      CLOCK: [2013-07-26 Fri 20:14]--[2013-07-26 Fri 21:30] =>  1:16
+***** DONE LIBGEN
+      CLOCK: [2013-07-28 Sun 22:30]--[2013-07-28 Sun 23:58] =>  1:28
+***** DONE Memory management
+      CLOCK: [2013-07-29 Mon 00:00]--[2013-07-29 Mon 01:35] =>  1:35
+***** DONE DMX boot
+***** DONE IO services
+      CLOCK: [2013-07-31 Wed 14:15]--[2013-07-31 Wed 15:19] =>  1:04
+***** DONE File services
+      CLOCK: [2013-07-31 Wed 15:20]--[2013-07-31 Wed 16:02] =>  0:42
+***** DONE Database
+      CLOCK: [2013-08-01 Thu 15:09]--[2013-08-01 Thu 15:19] =>  0:10
+***** DONE Messaging
+      CLOCK: [2013-08-01 Thu 15:19]--[2013-08-01 Thu 16:45] =>  1:26
+***** DONE POSIX
+      CLOCK: [2013-08-01 Thu 22:30]--[2013-08-02 Fri 00:02] =>  1:32
+***** DONE Black Box ¨C Log system
+      CLOCK: [2013-08-02 Fri 17:59]--[2013-08-02 Fri 18:59] =>  1:00
+***** DONE Dealing with MPE¡¯s
+      CLOCK: [2013-08-02 Fri 18:59]--[2013-08-02 Fri 20:21] =>  1:22
+***** DONE Switchover ¨C warming
+      CLOCK: [2013-08-05 Mon 17:02]--[2013-08-05 Mon 18:30] =>  1:28
+***** DONE Recovery services
+      CLOCK: [2013-08-05 Mon 18:31]--[2013-08-05 Mon 19:17] =>  0:46
+***** DONE Ticket service
+      CLOCK: [2013-08-05 Mon 19:20]--[2013-08-05 Mon 19:24] =>  0:04
+
+***** DONE Service Terminals
+      CLOCK: [2013-08-07 Wed 13:13]--[2013-08-07 Wed 13:38] =>  0:25
+
+**** TODO Internal Training
+***** DONE BSC_overview
+****** BSC introduction.ppt
+       CLOCK: [2013-08-07 Wed 19:43]--[2013-08-07 Wed 21:50] =>  2:07
+****** S15 Packet Abis and AoIP overview v1_2.ppt
+       CLOCK: [2013-08-08 Thu 12:44]--[2013-08-08 Thu 14:35] =>  1:51
+***** DB training for BSC TS
+***** DMX_SMP
+***** DONE libgen_raudat_blackbox
+      CLOCK: [2013-12-03 Tue 21:49]--[2013-12-03 Tue 22:51] =>  1:02
+***** LinDX
+***** Signaling training
+***** STMU training
+***** Vidast
+***** DONE DX200_memory_management.ppt
+      CLOCK: [2013-10-03 Thu 14:30]--[2013-10-03 Thu 15:16] =>  0:46
+***** DONE DX200_Recovery.ppt
+      CLOCK: [2013-10-01 Tue 14:22]--[2013-10-01 Tue 15:25] =>  1:03
+***** DONE EMB for BSC TS.pptx
+      CLOCK: [2013-10-02 Wed 13:24]--[2013-10-02 Wed 13:43] =>  0:19
+***** DONE EMB_for_DXTS.ppt
+      CLOCK: [2013-10-02 Wed 13:30]--[2013-10-02 Wed 13:58] =>  0:28
+***** DONE IUA training.pptx
+      CLOCK: [2013-10-01 Tue 16:22]--[2013-10-01 Tue 17:20] =>  0:58
+***** DONE Message Address description.dot
+      CLOCK: [2013-10-02 Wed 14:25]--[2013-10-02 Wed 14:49] =>  0:24
+****** switch_management_training_AHUB3-A_120321.pptx
+*** DX200 ATCA HW material for self study
+** TODO Lisp improve                                                   :Work:
+   DEADLINE: <2013-12-23 Mon> SCHEDULED: <2013-06-26 Wed>
+   CLOCK: [2013-07-14 Sun 03:53]--[2013-07-14 Sun 05:08] =>  1:15
+* [#C] III Quadrant: Not Important, but Urgent
+** TODO Physical Exam Reservation                                      :Life:
+   SCHEDULED: <2014-09-25 Thu> DEADLINE: <2014-12-30 Tue>
+* [#C] IV Quadrant: Not Important and Not Urgent
+** TODO Create FerryConnections                                        :Life:
