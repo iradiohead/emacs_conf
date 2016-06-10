@@ -1,6 +1,6 @@
 ;;设置你的全名和邮件，在发邮件时可以用到
-(setq user-full-name "Ferry")
-(setq user-mail-address "xiaoqiang.fu@gmail.com")
+(setq user-full-name "radiohead")
+(setq user-mail-address "kjin1983@gmail.com")
 ;;设置你的书签文件，默认是~/.emacs.bmk，我喜欢把有关emacs的文件尽量放在一个文件夹，所以就修改了。
 (setq bookmark-default-file "~/.emacs.d/.emacs.bmk")
 ;;load-path就同bash中的$PATH相似，emacs所需要的Elisp包都得在load-path里的文件夹中，~/.emacs.d/elisp是我自己添加的Elisp包

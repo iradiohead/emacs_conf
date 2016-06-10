@@ -59,6 +59,7 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "d:/Dropbox/emacs_testfolder/"
  "d:/Dropbox/emacs_conf/.emacs.d/elisp/"
  "d:/PAC/SVN_LINDX/SS_LNXvmanakvm/trunk/SS_LNXvmanakvm/src/vmana/"
  "d:/Dropbox/emacs/"
@@ -73,7 +74,6 @@
  "d:/Dropbox/OSP_PLATFORM/5 - Core Service/BSP+virtualization/UT/"
  "d:/Dropbox/emacsbat/"
  "d:/Dropbox/SHARE_FOR_VM/helloword/"
- "d:/Dropbox/emacs_testfolder/"
  "d:/Dropbox/OSP_PLATFORM/"
  "d:/Dropbox/"
  "d:/Dropbox/ARCHITECT/"
@@ -113,6 +113,8 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "database.org"
+ "interview.org"
  "fxq-basic-config.el"
  "cli.c"
  ".emacs"
@@ -121,12 +123,12 @@
  "hotswap.h"
  "configuration.c"
  "jk-basic-config.el"
- "fxq-key-bindings.el"
- "Action.h"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("d:/Dropbox/emacs_testfolder/" (22362 30597 0 0) "test_from_mac" "test_format" "test_chinese_format" "test3.txt" "test2.txt" "temp.txt" "interview.org" "emacs_manual.txt" "database.org" "2016_sprint_todo_list.org" "../" "./")
+
  ("d:/Dropbox/emacs_conf/.emacs.d/elisp/" (22361 14963 0 0) "yasnippet-bundle.el" "webkit.el" "webkit/" "wb-line-number.el" "w32-browser.el" "TNSDL/" "themes/" "tag_gen.bat" "tabbar.el" "sshell.el" "session.el" "sdcv.el" "redo.el" "plm-mode.el" "org-protocol.vbs" "org-outlook.el" "org-freemind.el" "New Folder/" "multi-gud.el" "multi-gdb-ui.el" "msf-abbrev.el" "maxima.el" "maxima-font-lock.el" "markdown-mode.el" "magit-master/" "keisen-mule.el" "keisen-mouse.el" "ignoramus.el" "iedit/" "ibuffer.el" "highlight-symbol.el" "highlight-parentheses.el" "gnuserv_old.el" "git-emacs-master/" "gdb.el" "fxq-w3m.el" "fxq-tnsdl_BU.el" "fxq-tnsdl.el" "fxq-robot-mode.el" "fxq-python-mode.el" "fxq-psvn.el" "fxq-plm.el" "fxq-mode.el" "fxq-mew.el" "fxq-language.el" "fxq-key-bindings.el" "fxq-ipython-mode.el" "fxq-ido.el" "fxq-gnus.el" "fxq-function.el" "fxq-folding.el" "fxq-erc.el" "fxq-dired.el" "fxq-dictionary.el" "fxq-calendar.el" "fxq-basic-config.el" "find-recursive.el" "eww.el" "emaxima.sty" "emaxima.lisp" "emaxima.el" "demo-it-master/" "dbl.el" "cygwin-mount.el" "cs_gen.bat" "color-theme.el" "bookmode.el" "ascii-table.el" "anything.el" "ahk-mode.el" "../" "./")
 
  ("d:/Dropbox/emacs_conf/.emacs.d/" (22362 26785 0 0) "tutorial/" "tramp" "snippets/" "samplecode.el" "regex_tnsdl.file" "regex_plm.file" "regex_plm - Copy.file" "regex_all.file" "recentf" "keymacros.txt" "ispell.el" "ido.last" "GrepTips" "FtpTips" "emacs_regrex.txt" "emacs_extensions/" "EmacsTips" "EmacsReferenceCard.pdf" "elpa/" "ElispTips" "elisp/" "ede-projects.el" "dired_mode" "dired-refcard.gnu.pdf" "Batch-File-Programming.pdf" "auto-save-list/" "ac-comphist.dat" ".emacs.desktop.lock" ".emacs.desktop" ".emacs.bmk" "%backup%~" "#d!!Dropbox!emacs_testfolder!temp.txt#" "../" "./")
@@ -134,8 +136,6 @@
  ("d:/Dropbox/emacs_conf/" (22361 25620 0 0) "var/" "share/" "README.md" "libexec/" "etc/" "en.prepl" "emacs_XBU_all" "emacs_XBU" "emacs_CBU" "diary/" "cygwin64/" "bin/" ".history" ".git/" ".eshell/" ".emacs.d/" ".emacs" "../" "./")
 
  ("d:/Dropbox/" (22362 26958 0 0) "toolset/" "SHARE_FOR_VM/" "PERSONAL/" "OSP_PLATFORM/" "emacs_testfolder/" "emacs_conf/" "emacsbat/" "emacs-ori/" "desktop.ini" "BACK_UP/" "ARCHITECT/" ".dropbox.cache/" ".dropbox" "../" "./")
-
- ("d:/Dropbox/emacs_testfolder/" (22360 64032 0 0) "test_from_mac" "test_format" "test_chinese_format" "test3.txt" "test2.txt" "temp.txt" "interview.org" "emacs_manual.txt" "database.org" "2016_sprint_todo_list.org" "../" "./")
 
  ("d:/PAC/SVN_LINDX/SS_LNXvmanakvm/trunk/SS_LNXvmanakvm/src/" (22360 61545 0 0) "vmana.conf" "vmana/" "trace-config.sh" "tmp-env/" "schedtool/" "qemu-kvm/" "qemu-bin/" "pciutils/" "packages/" "makefile" "load-ehci-modules.sh" "lnx-vmanakvm-d.cfg" "libbridge/" "kvmstat/" "kvm-kmod/" "include/" "cscope.out" "cscope.files" "client/" "cli/" "bridge-config.sh" "brcfg/" "../" "./")
 
