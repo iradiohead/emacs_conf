@@ -109,8 +109,9 @@
 (setq backup-by-copying t)
 
 ;; disable auto-save and auto-backup
-;; (setq auto-save-default nil)
-;; (setq make-backup-files nil)
+;; kjin disable
+(setq auto-save-default nil)
+(setq make-backup-files nil)
 
 ;; store all backup and autosave files in the tmp dir
 ;;设置备份文件的路径
