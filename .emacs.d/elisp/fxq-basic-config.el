@@ -1,4 +1,4 @@
-;; $AIhVC13>0QUI+:MWVLeQUI+(B
+;; 设置背景颜色和字体颜色
 (setq default-frame-alist
       (append (list '(foreground-color . "white")
             '(background-color . "black")
@@ -6,9 +6,9 @@
             '(border-color . "grey")
             '(mouse-color . "mediumpurple")
             '(cursor-color . "white")
-;;          '(ime-font . (w32-logfont "$A#M#S(B $A%4%7%C%/(B"
+;;          '(ime-font . (w32-logfont "ＭＳ ゴシック"
 ;;                        0 16 400 0 nil nil nil
-;;                        128 1 3 49)) ; TrueType $A$N$_(B
+;;                        128 1 3 49)) ; TrueType のみ
 ;;          '(font . "bdf-fontset")    ; BDF
 ;;          '(font . "private-fontset"); TrueType
             '(width . 80)
@@ -17,8 +17,8 @@
             '(left .100))
           default-frame-alist))
 
-;;$A2;R*HC9b1jIAK8(B(blink-cursor-mode -1)
-;; $AIhVCAmMbR;P)QUI+#:So7(8_AAOTJ>5D13>0:MVwLb#,GxSrQ!Tq5D13>0:MVwLb#,6~4NQ!Tq5D13>0:MQ!Tq(B
+;;不要让光标闪烁(blink-cursor-mode -1)
+;; 设置另外一些颜色：语法高亮显示的背景和主题，区域选择的背景和主题，二次选择的背景和选择
 (set-face-foreground 'highlight "white")
 (set-face-background 'highlight "black")
 (set-face-foreground 'region "cyan")
@@ -35,7 +35,7 @@
 (set-default-font "Courier New-12")
 (set-face-foreground 'menu "white")
 ;;;Tab is 4
-;; $AG?VFJdHk(BTab$AJ1#:(BC-q C-i
+;; 强制输入Tab时：C-q C-i
 ;;Forced set tab width
 (setq default-tab-width 4)
 ;; 2012/06/30 Forced replace tab width with some whitespace
@@ -77,35 +77,35 @@
                                        9dired-get-filename)))))
 (setq print-region-function 'w32-print-region)
 
-;;$AIhVCHU@z5DR;P)QUI+(B
+;;设置日历的一些颜色
 (setq calendar-load-hook
 '(lambda ()
 (set-face-foreground 'diary-face "skyblue")
 (set-face-background 'holiday-face "slate blue")
 (set-face-foreground 'holiday-face "white")))
 
-;;$AMb9[IhVC(B
-;;$AH%5t9$>_@8(B
+;;外观设置
+;;去掉工具栏
 ;;(tool-bar-mode nil)
 (tool-bar-mode -1)
-;;$AH%5t2K5%@8#,NR=+(BF10$A0s6(N*OTJ>2K5%@8#,MrR;J2C46+NwM|AK#,PhR*2K5%@8AK?IRT^t(BF10$A5w3v#,TY^t(BF10$A>MH%5t2K5%(B
+;;去掉菜单栏，我将F10绑定为显示菜单栏，万一什么东西忘了，需要菜单栏了可以摁F10调出，再摁F10就去掉菜单
 ;;(menu-bar-mode nil)
 (menu-bar-mode -1)
-;;$A2;R*9v6/@8#,OVTZ6<SC9vVaJs1jAK#,?IRT2;SC9v6/@8AK(B
+;;不要滚动栏，现在都用滚轴鼠标了，可以不用滚动栏了
 ;;(scroll-bar-mode nil)
 (scroll-bar-mode -1)
 
-;;$A187]IhVC(B
-;;emacs$A;9SPR;8vWT6/1#4f9&D\#,D,HOTZ(B~/.emacs.d/auto-save-list$A@o#,Ub8v7G3#SPSC#,NRUb@oC;SP8D6/#,>_Le?IRT2N<{(BSams teach yourself emacs in 24hours($ANR<r3FN*(Bsams24)
-;;$AFtSC0f1>?XVF#,<4?IRT187]6`4N(B
+;;备份设置
+;;emacs还有一个自动保存功能，默认在~/.emacs.d/auto-save-list里，这个非常有用，我这里没有改动，具体可以参见Sams teach yourself emacs in 24hours(我简称为sams24)
+;;启用版本控制，即可以备份多次
 (setq version-control t)
-;;$A187]WnT-J<5D0f1>A=4N#,<G5ZR;4N1`<-G05DND55#,:M5Z6~4N1`<-G05DND55(B
+;;备份最原始的版本两次，记第一次编辑前的文档，和第二次编辑前的文档
 (setq kept-old-versions 2)
-;;$A187]WnPB5D0f1>Ne4N#,@m=bM,IO(B
+;;备份最新的版本五次，理解同上
 (setq kept-new-versions 5)
-;;$AI>5t2;JtSZRTIO(B7$AVP0f1>5D0f1>(B
+;;删掉不属于以上7中版本的版本
 (setq delete-old-versions t)
-;;$A187]IhVC7=7(#,V1=S?=14(B
+;;备份设置方法，直接拷贝
 (setq backup-by-copying t)
 
 ;; disable auto-save and auto-backup
@@ -113,7 +113,7 @@
 ;; (setq make-backup-files nil)
 
 ;; store all backup and autosave files in the tmp dir
-;;$AIhVC187]ND<~5DB7>6(B
+;;设置备份文件的路径
 (setq backup-directory-alist
       '((".*" . "~/.emacs.d/auto-save-list")))
 (setq auto-save-file-name-transforms
@@ -121,10 +121,10 @@
 
 (setq fast-lock-cache-directories '("~/.emacs-flc" "."))
 
-;;$AWT6/29H+9&D\#,UbJB4SMu[s5DMxU>V1=S(BCopy$A9}@45D#,R}SCR;P)K{6T4K5DK5Cw(B
-;;$ADc?IRTIhVCRTOB(B hippie-expand $A5D29H+7=J=!#K|JGR;8vSEOHAP1m#,(B hippie-expand $A;aSEOHJ9SC1mWnG0Cf5D:/J}@429H+(B
-;;$AUbJGK5#,JWOHJ9SC51G05D(Bbuffer$A29H+#,Hg9{UR2;5=#,>M5=1p5D?I<{5D40?Z@oQ0UR#,Hg9{;9UR2;5=#,DGC45=KySP4r?*5D(Bbuffer$AH%UR#,Hg9{;9!-!-DGC45=(Bkill-ring$A@o#,5=ND<~C{#,5=<r3FAP1m@o#,5=(Blist$A#,!-!-(B $A51G0J9SC5DF%Ed7=J=;aTZ(B echo $AGxSrOTJ>!#(B
-;;$ALX1pSPRbK<5DJG(B try-expand-line$A#,K|?IRT0oDc29H+U{U{R;PPNDWV!#NR:\6`J1:sSPA=PPNDWV4sVBO`M,#,V;SP<88vWV2;R;Qy#,5+JGNR@A5CH%?=14U3LyRTOB!#DGC4NR>MJdHkUbPPNDWV5DG0Cf<88vWV!#H;:s6`04<8OB(B M-/ $A>MD\5C5=DGR;PP!#(B
+;;自动补全功能，这事从王垠的网站直接Copy过来的，引用一些他对此的说明
+;;你可以设置以下 hippie-expand 的补全方式。它是一个优先列表， hippie-expand 会优先使用表最前面的函数来补全
+;;这是说，首先使用当前的buffer补全，如果找不到，就到别的可见的窗口里寻找，如果还找不到，那么到所有打开的buffer去找，如果还……那么到kill-ring里，到文件名，到简称列表里，到list，…… 当前使用的匹配方式会在 echo 区域显示。
+;;特别有意思的是 try-expand-line，它可以帮你补全整整一行文字。我很多时后有两行文字大致相同，只有几个字不一样，但是我懒得去拷贝粘贴以下。那么我就输入这行文字的前面几个字。然后多按几下 M-/ 就能得到那一行。
 (global-set-key [(meta ?/)] 'hippie-expand)
 (setq hippie-expand-try-functions-list
       '(try-expand-line
@@ -141,91 +141,91 @@
         try-complete-lisp-symbol-partially
         try-expand-whole-kill))
 
-;;$AJ1<d4AIhVC(B(time-stamp)$A#,Ih6(ND55IO4N1#4f5DPEO"(B
-;;$AV;R*@oTZDc5CND55@oSP(BTime-stamp:$A5DIhVC#,>M;aWT6/1#4fJ1<d4A(B
-;;$AFtSC(Btime-stamp
+;;时间戳设置(time-stamp)，设定文档上次保存的信息
+;;只要里在你得文档里有Time-stamp:的设置，就会自动保存时间戳
+;;启用time-stamp
 (setq time-stamp-active t)
-;;$AH%5t(Btime-stamp$A5D>/8f#?(B
+;;去掉time-stamp的警告？
 (setq time-stamp-warn-inactive t)
-;;$AIhVC(Btime-stamp$A5D8qJ=#,NRHgOB5D8qJ=Ky5C5DR;8v@}WS#:(B<hans 05/18/2004 12:01:12>
+;;设置time-stamp的格式，我如下的格式所得的一个例子：<hans 05/18/2004 12:01:12>
 (setq time-stamp-format "%:u %02m/%02d/%04y %02H02M02S")
-;;$A=+P^8DJ1<d4ALm<S5=1#4fND<~5D6/Ww@o!#(B
+;;将修改时间戳添加到保存文件的动作里。
 (add-hook 'write-file-hooks 'time-stamp)
 
-;;$AJ1<dOTJ>IhVC(B
-;;$AFtSCJ1<dOTJ>IhVC#,(B
+;;时间显示设置
+;;启用时间显示设置，
 (display-time-mode 1)
-;;$AJ1<dJ9SC(B24$AP!J1VF(B
+;;时间使用24小时制
 (setq display-time-24hr-format t)
-;;$AJ1<dOTJ>0|@(HUFZ:M>_LeJ1<d(B
+;;时间显示包括日期和具体时间
 (setq display-time-day-and-date t)
-;;$AJ1<d@8ET1_FtSCSJ<~IhVC(B
+;;时间栏旁边启用邮件设置
 (setq display-time-use-mail-icon t)
-;;$AJ1<d5D1d;/F5BJ#,5%N;6`IY@4WE#?(B
+;;时间的变化频率，单位多少来着？
 (setq display-time-interval 10)
 
-;;$AFtSC(Bminibuffer$A#,:COqJGD,HOIhVC0I(B
+;;启用minibuffer，好像是默认设置吧
 (minibuffer-electric-default-mode 1)
-;;$AFtSC2?7V29H+9&D\#,HgJdHk(BM-x q r r$AO`51SZ(BM-x query-replace-regexp
+;;启用部分补全功能，如输入M-x q r r相当于M-x query-replace-regexp
 ;; Commented by Ferry on 08/07/2012 for this command is not support in Emacs v24.1
 ;;(partial-completion-mode 1)
-;;$ATZ(Bminibuffer$A@oFtSCWT6/29H+:/J}:M1dA?(B
+;;在minibuffer里启用自动补全函数和变量
 (icomplete-mode 1)
-;;$AKySP5DNJLbSC(By/n$A7=J=#,2;SC(Byes/no$A7=J=!#SP5c@A#,V;OkJdHkR;8vWVD8(B
+;;所有的问题用y/n方式，不用yes/no方式。有点懒，只想输入一个字母
 (fset 'yes-or-no-p 'y-or-n-p)
-;;$ATJPm(Bminibuffer$AWTSI1d;/Fd4sP!#(V8?m6H#)(B
+;;允许minibuffer自由变化其大小（指宽度）
 (setq resize-mini-windows t)
-;;$A51Q0URR;8vM,C{5DND<~#,WT6/9XA*IODG8vND<~#?(B
+;;当寻找一个同名的文件，自动关联上那个文件？
 (setq uniquify-buffer-name-style 'forward)
-;;$ATZ(Bemacs$A6A(Bman$AND55J1#,J9SC51G0(Bbuffer
+;;在emacs读man文档时，使用当前buffer
 (setq Man-notify-method 'pushy)
-;;$AJs1jWT6/1\?*V8Uk#,Hg51DcJdHk5DJ1:r#,V8Uk5=AKJs1j5DN;VC#,Js1jSP5c52W!JSO_AK(B
+;;鼠标自动避开指针，如当你输入的时候，指针到了鼠标的位置，鼠标有点挡住视线了
 (mouse-avoidance-mode 'animate)
-;;$ATJPmWT6/4r?*M<F,#,Hg(Bwiki$A@oCf(B
+;;允许自动打开图片，如wiki里面
 (auto-image-file-mode t)
-;;$A?IRT2YWwQ9KuND55(B
+;;可以操作压缩文档
 (auto-compression-mode 1)
-;;$ATZ(Bminibuffer$AIOCf?IRTOTJ>AP:E(B
+;;在minibuffer上面可以显示列号
 (column-number-mode t)
-;;$AOTJ>D,HO5DND555D?m6H#,?4Fp@41H=OJf7~#?(B
+;;显示默认的文档的宽度，看起来比较舒服？
 (setq default-fill-column 60)
-;;$AV8Uk2;R*IA#,NR5CQ[>&;(AK(B
+;;指针不要闪，我得眼睛花了
 (blink-cursor-mode -1)
 (transient-mark-mode 1)
-;;$A51V8Uk5=R;8v@(:EJ1#,WT6/OTJ>KyF%Ed5DAmR;8v@(:E(B
+;;当指针到一个括号时，自动显示所匹配的另一个括号
 (show-paren-mode 1)
-;;$AJGSC9vVaJs1j(B
+;;是用滚轴鼠标
 (mouse-wheel-mode t)
-;;$AH%5t73HK5D>/8fAeIy(B
+;;去掉烦人的警告铃声
 (setq visible-bell -1)
-;;$A9v6/R3CfJ11H=OJf7~#,2;R*U{R35D9v6/(B
+;;滚动页面时比较舒服，不要整页的滚动
 (setq scroll-step 1
       scroll-margin 3
       scroll-conservatively 10000)
-;;$AIh6(>dWS=aN2#,VwR*JGUk6TVPNDIhVC(B
-(setq sentence-end "\\([?$A!j!j(B?$A!j(B?]\\|?-?-\\|[.?!][]\"')}]*\\($\\|[ \t]\\)\\)[ \t\n]*")
+;;设定句子结尾，主要是针对中文设置
+(setq sentence-end "\\([?￡￡?￡?]\\|?-?-\\|[.?!][]\"')}]*\\($\\|[ \t]\\)\\)[ \t\n]*")
 (setq sentence-end-double-space nil)
-;;$AH%5t(BEmacs$A:M(Bgnus$AFt6/J15DR}5<=gCf(B
+;;去掉Emacs和gnus启动时的引导界面
 (setq inhibit-startup-message t)
 (setq gnus-inhibit-startup-message t)
-;;$A51V8UkRF5=AmR;PP#,2;R*PBTvUbR;PP#?(B
+;;当指针移到另一行，不要新增这一行？
 (setq next-line-add-newlines nil)
-;;$ATZND55Wn:sWT6/2eHk?U0WR;PP#,:COqD3P)O5M3EdVCND<~JGPhR*UbQy5D(B
+;;在文档最后自动插入空白一行，好像某些系统配置文件是需要这样的
 (setq require-final-newline t)
 (setq track-eol t)
-;;$AJ9SC(BC-k$AI>5tV8Uk5=8CPPD)5DKySP6+Nw(B
+;;使用C-k删掉指针到该行末的所有东西
 (setq-default kill-whole-line t)
-;;$AIh6(I>3}1#4f<GB<N*(B200$A#,?IRT7=1cRT:sN^O^;V84(B
+;;设定删除保存记录为200，可以方便以后无限恢复
 (setq kill-ring-max 200)
-;;$ATv4sJ9SC2iUR:/J}:M1dA?5DQ0UR76N'(B
+;;增大使用查找函数和变量的寻找范围
 (setq apropos-do-all t)
-;;$AJ9SC(Bnarrow$A9&D\J15DR;8vIhVC(B
+;;使用narrow功能时的一个设置
 (put 'narrow-to-region 'disabled nil)
-;;$AFt6/(BEmacs$AWT6/IhVCN*A=8v40?Z(B($AIOOB8wR;8v(B)
+;;启动Emacs自动设置为两个窗口(上下各一个)
 (split-window-vertically)
-;;$A8D1d(Bemacs$A1jLb@85D1jLb(B
+;;改变emacs标题栏的标题
 (setq frame-title-format "%b@Ferry")
-;;$ATJPm(Bemacs$A:MMb2?FdK{3LPr5DU3Ly(B
+;;允许emacs和外部其他程序的粘贴
 (setq x-select-enable-clipboard t)
 
 ;;Setting for auctex start
@@ -238,8 +238,8 @@
 (setq TeX-parse-self t)
 (setq-default TeX-master nil)
 
-(setq TeX-auto-untabify t) ;; $A2;J9SC(B TAB$AWV7{Ku=x(B
-(setq LaTeX-document-regexp "document\\|CJK\\*?")  ;; CJK $A;7>3VP2;Ku=x(B
+(setq TeX-auto-untabify t) ;; 不使用 TAB字符缩进
+(setq LaTeX-document-regexp "document\\|CJK\\*?")  ;; CJK 环境中不缩进
 (add-hook 'LaTeX-mode-hook #'LaTeX-install-toolbar)
 (add-hook 'LaTeX-mode-hook 'turn-on-auto-fill)
 ;;Setting for auctex end
@@ -259,16 +259,16 @@
     (autoload 'keisen-mode "keisen-mouse" "MULE table" t)
   (autoload 'keisen-mode "keisen-mule" "MULE table" t))
 
-;;Setting fo MPG123$A8h4JM,2=OTJ>(B
+;;Setting fo MPG123歌词同步显示
 ;;(setq lrc-lyric-dir "C:\Program Files\TTPlayer\Lyrics")
 ;;(require 'mpg123)
 
 ;;Setting for code-reading
-(require 'xcscope) ;;$A<STX(Bxcscope
+(require 'xcscope) ;;加载xcscope
 (add-hook 'plm-mode-common-hook '(lambda() (require 'xcscope)))
 (add-hook 'tnsdl-mode-common-hook '(lambda() (require 'xcscope)))
 ;;---------------------------------------------------
-;;cedet $A02W0(B
+;;cedet 安装
 ;Added by Ferry on 08/07/2012 for omitting the warning in Emacs 24.1.1
 (setq byte-compile-warnings nil)
 (add-hook 'texinfo-mode-hook (lambda () (require 'sb-texinfo)))
@@ -331,7 +331,7 @@
           (list
         (expand-file-name "/")))
 (setq semanticdb-default-save-directory "~/.emacs.d/auto-save-list")
-;;$AIhVC(Bsemantic.cache$AB7>6(B
+;;设置semantic.cache路径
 
 (defun my-indent-or-complete ()
    (interactive)
@@ -363,9 +363,9 @@
 )
 
 
-(require 'doxymacs) ;; $AFt6/(Bdoxymacs
-(add-hook 'c-mode-common-hook 'doxymacs-mode) ;; $AFt6/(Bdoxymacs-mode
-(add-hook 'c++-mode-common-hook 'doxymacs-mode) ;; $AFt6/(Bdoxymacs-mode
+(require 'doxymacs) ;; 启动doxymacs
+(add-hook 'c-mode-common-hook 'doxymacs-mode) ;; 启动doxymacs-mode
+(add-hook 'c++-mode-common-hook 'doxymacs-mode) ;; 启动doxymacs-mode
 
 
 ;;Setting for autex
