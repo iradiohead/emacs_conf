@@ -1,0 +1,47 @@
+
+# bin
+# bin/addpm.exe
+# bin/cmdproxy.exe
+# bin/cs_gen.bat
+# bin/cscope-indexer
+# bin/cscope-indexer.exe
+# bin/cscope.exe
+# bin/ctags.exe
+# bin/ddeclient.exe
+# bin/digest-doc.exe
+# bin/doxymacs_parser.exe
+# bin/dump.bat
+# bin/ebrowse.exe
+# bin/emacs-24.4.exe
+# bin/emacs.exe
+# bin/emacsclient.exe
+# bin/emacsclientw.exe
+# bin/etags.exe
+# bin/find.exe
+# bin/gnu.exe
+# bin/gnuclient.exe
+# bin/gnuclientw.exe
+# bin/gnudoit.exe
+# bin/gnuserv.exe
+# bin/grep-changelog
+# bin/hexl.exe
+# bin/libXpm.dll
+# bin/movemail.exe
+# bin/ocs
+# bin/plink.exe
+# bin/profile.exe
+# bin/runemacs.exe
+# bin/sort.exe
+# bin/sorted-doc.exe
+# bin/tag_gen.bat
+# bin/temacs.exe
+# bin/xargs.exe
+# cygwin64
+# etc
+# libexec
+# share
+# var
+
+#.gitignore
+.emacs.d/ido.last
+.emacs.d/auto-save-list/*
