@@ -22,7 +22,7 @@
 ;;(load "fxq-erc")
 (load "fxq-dired")
 (load "fxq-mode")
-(load "fxq-key-bindings")
+(load "jk-key-bindings")
 (load "fxq-tnsdl")
 (load "fxq-robot-mode")
 (load "fxq-python-mode")

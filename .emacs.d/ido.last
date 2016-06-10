@@ -21,7 +21,7 @@
  ("d:/Dropbox/SHARE_FOR_VM/" . "helloword/")
  ("d:/Dropbox/ARCHITECT/" . "Architecture Doc/")
  ("c:/Users/radiohead/" . "Desktop/")
- ("d:/Dropbox/" . "emacs_conf/")
+ ("d:/Dropbox/" . "emacs_testfolder/")
  ("d:/Current_Task/Sensor/NewRequirement/MD-S820/Code/MD-S820/" . "src/")
  ("d:/Seeing/Vagrant/" . "centos/")
  ("d:/Seeing/" . "Vagrant/")
@@ -54,13 +54,14 @@
  ("d:/emacs/.emacs.d/elisp/" . "demo-it-master/")
  ("d:/emacs/.emacs.d/" . "elisp/")
  ("d:/emacs/" . ".emacs.d/")
- ("d:/" . "PAC/")
+ ("d:/" . "Dropbox/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
  "d:/Dropbox/emacs_testfolder/"
  "d:/Dropbox/emacs_conf/.emacs.d/elisp/"
+ "d:/Dropbox/emacs_conf/"
  "d:/PAC/SVN_LINDX/SS_LNXvmanakvm/trunk/SS_LNXvmanakvm/src/vmana/"
  "d:/Dropbox/emacs/"
  "d:/"
@@ -108,40 +109,47 @@
  "d:/Current_Task/14_PLM2C/linux_porting/SS_LNXm3ua/src/s3zock/"
  "d:/Current_Task/14_PLM2C/linux_porting/SS_LNXm3ua/src/ccnetm/"
  "d:/emacs/"
- "d:/emacs/share/emacs/24.5/site-lisp/auto-complete/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "temp.txt"
+ "jk-basic-config.el"
+ ".emacs"
  "database.org"
+ "2016_sprint_todo_list.org"
  "interview.org"
  "fxq-basic-config.el"
  "cli.c"
- ".emacs"
  "DISK.DATA"
  "anything.el"
- "hotswap.h"
- "configuration.c"
- "jk-basic-config.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("d:/Dropbox/emacs_testfolder/" (22362 30597 0 0) "test_from_mac" "test_format" "test_chinese_format" "test3.txt" "test2.txt" "temp.txt" "interview.org" "emacs_manual.txt" "database.org" "2016_sprint_todo_list.org" "../" "./")
+ ("d:/PAC/" (22362 26512 0 0) "XIPSTKGX.XML" "XIPIFCGX.XML" "VMATMPGX.IMG" "VMA000GX.IMG" "temp/" "SVN_LINDX/" "repo_vtas_new/" "PACSIGNALLING/" "PACSCM/" "PACRCY/" "PACOM/" "PACLDI/" "PACKERNAL/" "PACIP/" "PACIO/" "PACHCM/" "PACESW/" "PACEMBETH/" "osp17_a/" "osp17_5/" "next.cmd" "linux_eth_driver/" "linux kernel/" "IPKD/" "IMGS_virtio_sriov/" "ILLHKDGX.XML" "freebsd-master/" "BCMADPGX.XML" "../" "./")
 
- ("d:/Dropbox/emacs_conf/.emacs.d/elisp/" (22361 14963 0 0) "yasnippet-bundle.el" "webkit.el" "webkit/" "wb-line-number.el" "w32-browser.el" "TNSDL/" "themes/" "tag_gen.bat" "tabbar.el" "sshell.el" "session.el" "sdcv.el" "redo.el" "plm-mode.el" "org-protocol.vbs" "org-outlook.el" "org-freemind.el" "New Folder/" "multi-gud.el" "multi-gdb-ui.el" "msf-abbrev.el" "maxima.el" "maxima-font-lock.el" "markdown-mode.el" "magit-master/" "keisen-mule.el" "keisen-mouse.el" "ignoramus.el" "iedit/" "ibuffer.el" "highlight-symbol.el" "highlight-parentheses.el" "gnuserv_old.el" "git-emacs-master/" "gdb.el" "fxq-w3m.el" "fxq-tnsdl_BU.el" "fxq-tnsdl.el" "fxq-robot-mode.el" "fxq-python-mode.el" "fxq-psvn.el" "fxq-plm.el" "fxq-mode.el" "fxq-mew.el" "fxq-language.el" "fxq-key-bindings.el" "fxq-ipython-mode.el" "fxq-ido.el" "fxq-gnus.el" "fxq-function.el" "fxq-folding.el" "fxq-erc.el" "fxq-dired.el" "fxq-dictionary.el" "fxq-calendar.el" "fxq-basic-config.el" "find-recursive.el" "eww.el" "emaxima.sty" "emaxima.lisp" "emaxima.el" "demo-it-master/" "dbl.el" "cygwin-mount.el" "cs_gen.bat" "color-theme.el" "bookmode.el" "ascii-table.el" "anything.el" "ahk-mode.el" "../" "./")
+ ("d:/Dropbox/OSP_PLATFORM/5 - Core Service/BSP+virtualization/UT/" (22358 36050 0 0) "xu_zeng_hui/" "practise UT in your box.ppt" "notes.txt" "good.txt" "CppUTest.pptx" "cleancode/" "../" "./")
 
- ("d:/Dropbox/emacs_conf/.emacs.d/" (22362 26785 0 0) "tutorial/" "tramp" "snippets/" "samplecode.el" "regex_tnsdl.file" "regex_plm.file" "regex_plm - Copy.file" "regex_all.file" "recentf" "keymacros.txt" "ispell.el" "ido.last" "GrepTips" "FtpTips" "emacs_regrex.txt" "emacs_extensions/" "EmacsTips" "EmacsReferenceCard.pdf" "elpa/" "ElispTips" "elisp/" "ede-projects.el" "dired_mode" "dired-refcard.gnu.pdf" "Batch-File-Programming.pdf" "auto-save-list/" "ac-comphist.dat" ".emacs.desktop.lock" ".emacs.desktop" ".emacs.bmk" "%backup%~" "#d!!Dropbox!emacs_testfolder!temp.txt#" "../" "./")
+ ("d:/PAC/SVN_LINDX/SS_LNXvmanakvm/tags/SS_LNXVMANAKVM_4.48/SS_LNXvmanakvm/src/" (22359 44703 0 0) "vmana.conf" "vmana/" "trace-config.sh" "tmp-env/" "schedtool/" "qemu-kvm/" "qemu-bin/" "pciutils/" "packages/" "makefile" "load-ehci-modules.sh" "lnx-vmanakvm-d.cfg" "libbridge/" "kvmstat/" "kvm-kmod/" "include/" "cscope.out" "cscope.files" "client/" "cli/" "bridge-config.sh" "brcfg/" "../" "./")
 
- ("d:/Dropbox/emacs_conf/" (22361 25620 0 0) "var/" "share/" "README.md" "libexec/" "etc/" "en.prepl" "emacs_XBU_all" "emacs_XBU" "emacs_CBU" "diary/" "cygwin64/" "bin/" ".history" ".git/" ".eshell/" ".emacs.d/" ".emacs" "../" "./")
+ ("d:/PAC/SVN_LINDX/SS_LNXvmanakvm/trunk/SS_LNXvmanakvm/src/vmana/" (22360 63063 0 0) "vmana.h" "vmana.c" "virtprocess.h" "virtprocess.c" "utilities.h" "utilities.c" "timeout.h" "timeout.c" "testing.h" "testing.c" "networking.h" "networking.c" "monitor.h" "monitor.c" "messaging.h" "messaging.c" "irq.h" "irq.c" "hotswap.h" "hotswap.c" "environment.h" "environment.c" "cscope.out" "cscope.files" "cpu.h" "cpu.c" "configuration.h" "configuration.c" "cli.h" "cli.c" "../" "./")
 
- ("d:/Dropbox/" (22362 26958 0 0) "toolset/" "SHARE_FOR_VM/" "PERSONAL/" "OSP_PLATFORM/" "emacs_testfolder/" "emacs_conf/" "emacsbat/" "emacs-ori/" "desktop.ini" "BACK_UP/" "ARCHITECT/" ".dropbox.cache/" ".dropbox" "../" "./")
+ ("d:/Dropbox/emacs_conf/.emacs.d/elisp/" (22362 36629 0 0) "yasnippet-bundle.el" "webkit.el" "webkit/" "wb-line-number.el" "w32-browser.el" "TNSDL/" "themes/" "tag_gen.bat" "tabbar.el" "sshell.el" "session.el" "sdcv.el" "redo.el" "plm-mode.el" "org-protocol.vbs" "org-outlook.el" "org-freemind.el" "New Folder/" "multi-gud.el" "multi-gdb-ui.el" "msf-abbrev.el" "maxima.el" "maxima-font-lock.el" "markdown-mode.el" "magit-master/" "keisen-mule.el" "keisen-mouse.el" "jk-calendar.el" "jk-basic-config.el" "ignoramus.el" "iedit/" "ibuffer.el" "highlight-symbol.el" "highlight-parentheses.el" "gnuserv_old.el" "git-emacs-master/" "gdb.el" "fxq-w3m.el" "fxq-tnsdl_BU.el" "fxq-tnsdl.el" "fxq-robot-mode.el" "fxq-python-mode.el" "fxq-psvn.el" "fxq-plm.el" "fxq-mode.el" "fxq-mew.el" "fxq-language.el" "fxq-key-bindings.el" "fxq-ipython-mode.el" "fxq-ido.el" "fxq-gnus.el" "fxq-function.el" "fxq-folding.el" "fxq-erc.el" "fxq-dired.el" "fxq-dictionary.el" "find-recursive.el" "eww.el" "emaxima.sty" "emaxima.lisp" "emaxima.el" "demo-it-master/" "dbl.el" "cygwin-mount.el" "cs_gen.bat" "color-theme.el" "bookmode.el" "ascii-table.el" "anything.el" "ahk-mode.el" "../" "./")
+
+ ("d:/Dropbox/emacs_conf/.emacs.d/" (22362 50124 0 0) "tutorial/" "tramp" "snippets/" "samplecode.el" "regex_tnsdl.file" "regex_plm.file" "regex_plm - Copy.file" "regex_all.file" "recentf" "keymacros.txt" "ispell.el" "ido.last" "GrepTips" "FtpTips" "emacs_regrex.txt" "emacs_extensions/" "EmacsTips" "EmacsReferenceCard.pdf" "elpa/" "ElispTips" "elisp/" "ede-projects.el" "dired_mode" "dired-refcard.gnu.pdf" "Batch-File-Programming.pdf" "auto-save-list/" "ac-comphist.dat" ".emacs.desktop" ".emacs.bmk" "../" "./")
+
+ ("d:/Dropbox/emacs_conf/" (22362 47667 0 0) "var/" "share/" "README.md" "libexec/" "etc/" "en.prepl" "diary/" "cygwin64/" "bin/" ".ssh/" ".gitignore" ".git/" ".eshell/" ".emacs.d/" ".emacs" "../" "./")
+
+ ("d:/Dropbox/emacs_testfolder/" (22362 47859 0 0) "test_from_mac" "test_format" "test_chinese_format" "test3.txt" "test22.txt" "temp.txt" "interview.org" "emacs_manual.txt" "database.org" "2016_sprint_todo_list.org" "../" "./")
+
+ ("d:/Dropbox/" (22362 48781 0 0) "toolset/" "SHARE_FOR_VM/" "PERSONAL/" "OSP_PLATFORM/" "emacs_testfolder/" "emacs_ori/" "emacs_conf/" "emacsbat/" "desktop.ini" "BACK_UP/" "ARCHITECT/" ".dropbox.cache/" ".dropbox" "../" "./")
+
+ ("c:/Users/k1jin/" (22362 36771 0 0) "Y2_16_3_0/" "VirtualBox VMs/" "Templates/" "Start Menu/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "PrintHood/" "ntuser.pol" "ntuser.ini" "NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "No.AliasApplication#" "No.AliasApplication!" "NetHood/" "My Documents/" "Local Settings/" "Links/" "Last session k1jin.prj" "Cookies/" "Contacts/" "CMB/" "Citrix/" "Cisco Packet Tracer 6.0/" "Application Data/" "AppData/" "44" "43" "42" "41" "40" "39" "38" "37" "36" "35" "34" "33" "32" "10_23_0/" ".VirtualBox/" ".viminfo" ".vagrant.d/" ".ssh/" ".packettracer" ".lesshst" ".gitconfig" ".config/" ".bash_history" ".android/" "#d!#" "../" "./")
 
  ("d:/PAC/SVN_LINDX/SS_LNXvmanakvm/trunk/SS_LNXvmanakvm/src/" (22360 61545 0 0) "vmana.conf" "vmana/" "trace-config.sh" "tmp-env/" "schedtool/" "qemu-kvm/" "qemu-bin/" "pciutils/" "packages/" "makefile" "load-ehci-modules.sh" "lnx-vmanakvm-d.cfg" "libbridge/" "kvmstat/" "kvm-kmod/" "include/" "cscope.out" "cscope.files" "client/" "cli/" "bridge-config.sh" "brcfg/" "../" "./")
 
  ("d:/Dropbox/emacs/" (22074 49255 0 0) "var/" "share/" "libexec/" "etc/" "en.prepl" "emacs_XBU_all" "emacs_XBU" "emacs_CBU" "diary/" "cygwin64/" "bin/" ".history" ".gitignore" ".gitconfig" ".git/" ".eshell/" ".emacs.d/" ".emacs" ".config/" "../" "./")
-
- ("d:/PAC/SVN_LINDX/SS_LNXvmanakvm/trunk/SS_LNXvmanakvm/src/vmana/" (22360 61503 0 0) "vmana.h" "vmana.c" "virtprocess.h" "virtprocess.c" "utilities.h" "utilities.c" "timeout.h" "timeout.c" "testing.h" "testing.c" "networking.h" "networking.c" "monitor.h" "monitor.c" "messaging.h" "messaging.c" "irq.h" "irq.c" "hotswap.h" "hotswap.c" "environment.h" "environment.c" "cpu.h" "cpu.c" "configuration.h" "configuration.c" "cli.h" "cli.c" "../" "./")
 
  ("d:/Dropbox/emacs/.emacs.d/elisp/" (22360 56144 0 0) "yasnippet-bundle.el" "webkit.el" "webkit/" "wb-line-number.el" "w32-browser.el" "TNSDL/" "themes/" "tag_gen.bat" "tabbar.el" "sshell.el" "session.el" "sdcv.el" "redo.el" "plm-mode.el" "org-protocol.vbs" "org-outlook.el" "org-freemind.el" "New Folder/" "multi-gud.el" "multi-gdb-ui.el" "msf-abbrev.el" "maxima.el" "maxima-font-lock.el" "markdown-mode.el" "magit-master/" "keisen-mule.el" "keisen-mouse.el" "jk-basic-config.el" "ignoramus.el" "iedit/" "ibuffer.el" "highlight-symbol.el" "highlight-parentheses.el" "gnuserv_old.el" "git-emacs-master/" "gdb.el" "fxq-w3m.el" "fxq-tnsdl_BU.el" "fxq-tnsdl.el" "fxq-robot-mode.el" "fxq-python-mode.el" "fxq-psvn.el" "fxq-plm.el" "fxq-mode.el" "fxq-mew.el" "fxq-language.el" "fxq-key-bindings.el" "fxq-ipython-mode.el" "fxq-ido.el" "fxq-gnus.el" "fxq-function.el" "fxq-folding.el" "fxq-erc.el" "fxq-dired.el" "fxq-dictionary.el" "fxq-calendar.el" "fxq-basic-config.el" "find-recursive.el" "eww.el" "emaxima.sty" "emaxima.lisp" "emaxima.el" "demo-it-master/" "dbl.el" "cygwin-mount.el" "cs_gen.bat" "color-theme.el" "bookmode.el" "ascii-table.el" "anything.el" "ahk-mode.el" "../" "./")
 
@@ -153,13 +161,9 @@
 
  ("d:/PAC/SVN_LINDX/SS_LNXvmanakvm/trunk/" (22275 8740 0 0) "SS_LNXvmanakvm/" "../" "./")
 
- ("d:/PAC/SVN_LINDX/SS_LNXvmanakvm/tags/SS_LNXVMANAKVM_4.48/SS_LNXvmanakvm/src/" (22359 43718 0 0) "vmana.conf" "vmana/" "trace-config.sh" "tmp-env/" "schedtool/" "qemu-kvm/" "qemu-bin/" "pciutils/" "packages/" "makefile" "load-ehci-modules.sh" "lnx-vmanakvm-d.cfg" "libbridge/" "kvmstat/" "kvm-kmod/" "include/" "cscope.files" "client/" "cli/" "bridge-config.sh" "brcfg/" "../" "./")
-
  ("d:/PAC/SVN_LINDX/SS_LNXvmanakvm/tags/" (22333 35677 0 0) "SS_LNXVMANAKVM_4.9/" "SS_LNXVMANAKVM_4.8/" "SS_LNXVMANAKVM_4.7/" "SS_LNXVMANAKVM_4.6/" "SS_LNXVMANAKVM_4.5/" "SS_LNXVMANAKVM_4.48/" "SS_LNXVMANAKVM_4.47/" "SS_LNXVMANAKVM_4.46/" "SS_LNXVMANAKVM_4.45/" "SS_LNXVMANAKVM_4.44/" "SS_LNXVMANAKVM_4.43/" "SS_LNXVMANAKVM_4.42/" "SS_LNXVMANAKVM_4.41/" "SS_LNXVMANAKVM_4.40/" "SS_LNXVMANAKVM_4.4/" "SS_LNXVMANAKVM_4.39.1.1/" "SS_LNXVMANAKVM_4.39/" "SS_LNXVMANAKVM_4.38/" "SS_LNXVMANAKVM_4.37/" "SS_LNXVMANAKVM_4.36/" "SS_LNXVMANAKVM_4.35/" "SS_LNXVMANAKVM_4.34/" "SS_LNXVMANAKVM_4.33/" "SS_LNXVMANAKVM_4.32/" "SS_LNXVMANAKVM_4.31/" "SS_LNXVMANAKVM_4.30/" "SS_LNXVMANAKVM_4.3/" "SS_LNXVMANAKVM_4.29/" "SS_LNXVMANAKVM_4.28/" "SS_LNXVMANAKVM_4.27/" "SS_LNXVMANAKVM_4.26/" "SS_LNXVMANAKVM_4.25/" "SS_LNXVMANAKVM_4.24/" "SS_LNXVMANAKVM_4.23/" "SS_LNXVMANAKVM_4.22/" "SS_LNXVMANAKVM_4.21/" "SS_LNXVMANAKVM_4.20/" "SS_LNXVMANAKVM_4.2/" "SS_LNXVMANAKVM_4.19/" "SS_LNXVMANAKVM_4.18/" "SS_LNXVMANAKVM_4.17/" "SS_LNXVMANAKVM_4.16/" "SS_LNXVMANAKVM_4.15/" "SS_LNXVMANAKVM_4.14/" "SS_LNXVMANAKVM_4.13/" "SS_LNXVMANAKVM_4.12/" "SS_LNXVMANAKVM_4.11/" "SS_LNXVMANAKVM_4.10/" "SS_LNXVMANAKVM_4.1/" "SS_LNXVMANAKVM_3.9/" "SS_LNXVMANAKVM_3.8/" "SS_LNXVMANAKVM_3.7/" "SS_LNXVMANAKVM_3.6/" "SS_LNXVMANAKVM_3.5/" "SS_LNXVMANAKVM_3.4/" "SS_LNXVMANAKVM_3.3/" "SS_LNXVMANAKVM_3.2/" "SS_LNXVMANAKVM_3.11/" "SS_LNXVMANAKVM_3.10/" "SS_LNXVMANAKVM_3.1/" "SS_LNXVMANAKVM_2.9/" "SS_LNXVMANAKVM_2.8/" "SS_LNXVMANAKVM_2.7/" "SS_LNXVMANAKVM_2.6/" "SS_LNXVMANAKVM_2.5/" "SS_LNXVMANAKVM_2.4/" "SS_LNXVMANAKVM_2.3/" "SS_LNXVMANAKVM_2.2/" "SS_LNXVMANAKVM_2.16/" "SS_LNXVMANAKVM_2.15/" "SS_LNXVMANAKVM_2.14/" "SS_LNXVMANAKVM_2.13/" "SS_LNXVMANAKVM_2.12/" "SS_LNXVMANAKVM_2.11/" "SS_LNXVMANAKVM_2.10/" "SS_LNXVMANAKVM_2.1/" "SS_LNXVMANAKVM_1.9/" "SS_LNXVMANAKVM_1.8/" "SS_LNXVMANAKVM_1.7/" "SS_LNXVMANAKVM_1.64/" "SS_LNXVMANAKVM_1.63/" "SS_LNXVMANAKVM_1.62/" "SS_LNXVMANAKVM_1.61/" "SS_LNXVMANAKVM_1.60/" "SS_LNXVMANAKVM_1.6/" "SS_LNXVMANAKVM_1.59/" "SS_LNXVMANAKVM_1.58/" "SS_LNXVMANAKVM_1.57/" "SS_LNXVMANAKVM_1.56/" "SS_LNXVMANAKVM_1.55/" "SS_LNXVMANAKVM_1.54/" "SS_LNXVMANAKVM_1.53/" "SS_LNXVMANAKVM_1.52/" "SS_LNXVMANAKVM_1.51/" "SS_LNXVMANAKVM_1.50/" "SS_LNXVMANAKVM_1.5/" "SS_LNXVMANAKVM_1.49/" "SS_LNXVMANAKVM_1.48/" "SS_LNXVMANAKVM_1.47/" "SS_LNXVMANAKVM_1.46/" "SS_LNXVMANAKVM_1.45/" "SS_LNXVMANAKVM_1.44/" "SS_LNXVMANAKVM_1.43/" "SS_LNXVMANAKVM_1.42/" "SS_LNXVMANAKVM_1.41/" "SS_LNXVMANAKVM_1.40/" "SS_LNXVMANAKVM_1.4/" "SS_LNXVMANAKVM_1.39/" "SS_LNXVMANAKVM_1.38/" "SS_LNXVMANAKVM_1.37/" "SS_LNXVMANAKVM_1.36/" "SS_LNXVMANAKVM_1.35/" "SS_LNXVMANAKVM_1.34/" "SS_LNXVMANAKVM_1.33/" "SS_LNXVMANAKVM_1.32/" "SS_LNXVMANAKVM_1.31/" "SS_LNXVMANAKVM_1.30/" "SS_LNXVMANAKVM_1.3/" "SS_LNXVMANAKVM_1.29/" "SS_LNXVMANAKVM_1.28/" "SS_LNXVMANAKVM_1.27/" "SS_LNXVMANAKVM_1.26/" "SS_LNXVMANAKVM_1.25/" "SS_LNXVMANAKVM_1.24/" "SS_LNXVMANAKVM_1.23/" "SS_LNXVMANAKVM_1.22/" "SS_LNXVMANAKVM_1.21/" "SS_LNXVMANAKVM_1.20/" "SS_LNXVMANAKVM_1.2/" "SS_LNXVMANAKVM_1.19/" "SS_LNXVMANAKVM_1.18/" "SS_LNXVMANAKVM_1.17/" "SS_LNXVMANAKVM_1.16/" "SS_LNXVMANAKVM_1.15/" "SS_LNXVMANAKVM_1.14/" "SS_LNXVMANAKVM_1.13/" "SS_LNXVMANAKVM_1.12/" "SS_LNXVMANAKVM_1.11/" "SS_LNXVMANAKVM_1.10/" "SS_LNXVMANAKVM_1.1/" "../" "./")
 
  ("d:/PAC/SVN_LINDX/SS_LNXvmanakvm/" (22275 12978 0 0) "trunk/" "tags/" "histories/" "CCI/" "branches/" ".svn/" "../" "./")
-
- ("c:/Users/k1jin/" (22358 36034 0 0) "Y2_16_3_0/" "VirtualBox VMs/" "Templates/" "Start Menu/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "PrintHood/" "ntuser.pol" "ntuser.ini" "NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "No.AliasApplication#" "No.AliasApplication!" "NetHood/" "My Documents/" "Local Settings/" "Links/" "Last session k1jin.prj" "Cookies/" "Contacts/" "CMB/" "Citrix/" "Cisco Packet Tracer 6.0/" "Application Data/" "AppData/" "44" "43" "42" "41" "40" "39" "38" "37" "36" "35" "34" "33" "32" "10_23_0/" ".VirtualBox/" ".viminfo" ".vagrant.d/" ".ssh/" ".packettracer" ".gitconfig" ".bash_history" ".android/" "#d!#" "../" "./")
 
  ("d:/Dropbox/PERSONAL/sourcecode/CommonFiles/" (21904 36857 0 0) "XMLWrapper.h" "uArcPrintManager.lib" "RawParamPhase5.h" "RawParamExtern.h" "RawParam.h" "RawEngineAPI.h" "ProgressDlg.h" "ParamPackID.h" "ParamPack.h" "Message.h" "MagCallBackCtrl.h" "EditBoxProc.h" "DRModule.h" "DRMagicHelp.h" "DRCommon.lib" "DRCommon.h" "DRCommon.exp" "CustomDlg.h" "Commander.h" "CDialogControl.h" "ArcUserInterface.h" "ArcRect.h" "ArcPrintManager.h" "ArcPreference.h" "ArcPlugIn.h" "ArcFileMap.h" "Action.h" ".svn/" "../" "./")
 
@@ -183,8 +187,6 @@
 
  ("d:/Dropbox/SHARE_FOR_VM/helloword/" (22356 13830 0 0) "TAGS" "newhello" "makefile" "hello_fn.o" "hello_fn.c" "hello.s" "hello.o" "hello.h" "hello.c" "hello" "data_g_key.txt" "cscope.out" "cscope.files" "calc.c" "calc" "#makefile#" "../" "./")
 
- ("d:/Dropbox/OSP_PLATFORM/5 - Core Service/BSP+virtualization/UT/" (22339 46487 0 0) "xu_zeng_hui/" "practise UT in your box.ppt" "good.txt" "CppUTest.pptx" "cleancode/" "../" "./")
-
  ("d:/Dropbox/OSP_PLATFORM/5 - Core Service/BSP+virtualization/" (22357 6612 0 0) "基础知识/" "zhang xiyang/" "xiong li/" "WR guide doc/" "wangjianping/" "wang hui/" "VMU/" "virtio/" "UT/" "TAS SEE/" "SRIOV/" "PXE boot kernel.docx" "NOTES/" "NOKIA OS/" "My/" "MINIDEBUG/" "Linux_BSP_Training.pptx" "Linux Ethernet driver/" "hotswap/" "freeze and compile/" "DMX_LinuxBSP_CoDe_Topics_Guide.docx" "DEBUG/" "BSP TT/" "BSP PATCHS/" "ACPI5 - OMU VIRT/" "../" "./")
 
  ("d:/Dropbox/OSP_PLATFORM/5 - Core Service/" (22277 63293 0 0) "内存文件系统/" "XML/" "Warming/" "SYNC Document/" "MEM-SYS/" "Mass  Memory TT/" "LOG SYS/" "LINDX/" "IO_PERFORMANCE/" "IO-SYS/" "IO&&DB/" "DX200_Files/" "DMX OS/" "DB/" "CLOCK/" "BSP+virtualization/" "BOOT/" "../" "./")
@@ -198,8 +200,6 @@
  ("d:/Dropbox/SHARE_FOR_VM/C_Project/" (22327 13047 0 0) "pointeronc_1/" "../" "./")
 
  ("d:/Dropbox/SHARE_FOR_VM/" (22350 60051 0 0) "temp/" "scipts/" "interview.org" "hwcpp/" "helloword/" "emacs_lindx_conf/" "C_Project/" "bashdb-4.3-0.91.tar.gz" "bashdb-4.2-0.8 (1).tar.gz" "#interview.org#" "../" "./")
-
- ("d:/PAC/" (22283 538 0 0) "XIPSTKGX.XML" "XIPIFCGX.XML" "VMATMPGX.IMG" "VMA000GX.IMG" "temp/" "SVN_LINDX/" "repo_vtas_new/" "PACSIGNALLING/" "PACSCM/" "PACRCY/" "PACOM/" "PACLDI/" "PACKERNAL/" "PACIP/" "PACIO/" "PACHCM/" "PACESW/" "PACEMBETH/" "osp17_a/" "osp17_5/" "next.cmd" "linux_eth_driver/" "linux kernel/" "IPKD/" "ILLHKDGX.XML" "freebsd-master/" "BCMADPGX.XML" "../" "./")
 
  ("d:/Dropbox/ARCHITECT/" (22335 62953 0 0) "第5章工作量估计.ppt" "~$_200_Domain_Divisions.docx" "~$OSP_Domain.xlsx" "YDX2_SW_DXSCM_Responsibility.xlsx" "VSP_&_DX200_SW_Module_Responsibility_List.xlsx" "The INF module creating and structure guidelines.doc" "TALKO/" "Reviewed Domain analysis/" "REQUEST_ANA_DOC/" "OSP_Domain.xlsx" "OSP&VSP_Feature_All.xlsx" "MoO/" "Feature_Number_All_Focal_Point.xlsx" "DX_SW_INFO_20140702162147_all.xlsx" "DX_200_Domain_Divisions.docx" "DX200_IV_Tips_v1[1].2.chm" "Domain Name_VSP.xlsx" "Doc-template/" "DFMEA/" "controlled document training/" "Competence_matrix_DXTS_team.xlsx" "Areas_IV_teamtester.xlsx" "Architecture Doc/" "../" "./")
 
