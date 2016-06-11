@@ -1,6 +1,8 @@
 ;;统一设置键帮定，并尽量放在配置文件的最后，以免被绑定的键不小心被后面的配置文件覆盖 
+
 ;;常用习惯，F1打开帮助，常用帮助有info和woman（就是在emacs中看man） 
 (global-set-key [(f1)] 'info) 
+
 ;;恢复，常用键 
 (global-set-key [(f2)] 'undo) 
 ;;反恢复，不是很常用，但是绑定了还是方便些 
@@ -15,14 +17,18 @@
 
 ;;F4,kill键，习惯设置，关闭当前buffer 
 (global-set-key [(f4)] 'kill-this-buffer) 
+
 ;;打开一个终端，根据你的爱好可以绑定为：eshell,shell,terminal-emulator 
 (global-set-key [(ctrl f5)] 'eshell) 
 (global-set-key [(f5)] 'shell)
+
 ;;文件管理器，常用 
 (global-set-key [(f6)] 'dired-jump)
 (global-set-key [(ctrl f6)] 'dired-jump-other-window)
+
 ;;同clear相识，具体功能在fxq-functions.el讲过 
 ;;(global-set-key [(f7)] 'fxq-line-to-top-of-window) 
+
 ;;本人正在学scheme，常用 
 ;;(global-set-key [f8] 'run-scheme) 
 ;;打开我得日历 

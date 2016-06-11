@@ -1,11 +1,6 @@
+;如果快捷键失灵，可能被其他软件设置了，比如有道词典之类(f8)
 <f1>            info
-<f10>           menu-bar-mode
-<f11>           bookmark-jump
-<f12>           bookmark-set
-<f16>           clipboard-kill-ring-save
-<f18>           clipboard-yank
-<f2>            undo
-<f20>           clipboard-kill-region
+<f2>            undo                                    C-f2  redo
 <f3>            highlight-symbol-next
 <f4>            kill-this-buffer
 <f5>            shell
@@ -13,3 +8,16 @@
 <f7>            visit-tags-table
 <f8>            ispell-word
 <f9>            bookmark-bmenu-list
+<f10>           menu-bar-mode
+<f11>           bookmark-jump
+<f12>           bookmark-set
+<f16>           clipboard-kill-ring-save
+<f18>           clipboard-yank
+<f20>           clipboard-kill-region
+
+tabbar-press-home'         (C-c <C-home>)
+tabbar-backward-group'     (C-c <C-up>)
+tabbar-forward-group'      (C-c <C-down>)
+tabbar-backward'           (C-c <C-left>)
+tabbar-forward'            (C-c <C-right>)
+

@@ -1,0 +1,14 @@
+1:ELPA
+http://lewhwa.iteye.com/blog/1935925
+
+2: auto-complete
+
+3: how to define  keyboard shortcuts
+http://www.cnblogs.com/wangkangluo1/archive/2011/07/25/2115950.html
+
+4: org mode
+http://www.360doc.com/content/15/0408/20/9083600_461641288.shtml
+http://www.360doc.com/content/14/0302/22/16002580_357203601.shtml
+
+5: ispell
+https://www.emacswiki.org/emacs/InteractiveSpell
