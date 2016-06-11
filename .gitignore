@@ -1,4 +1,9 @@
+#.gitignore
+.emacs.d/ido.last
+.emacs.d/auto-save-list/*
+.emacs.d/.emacs.desktop
 
+######################################################
 # bin
 # bin/addpm.exe
 # bin/cmdproxy.exe
@@ -42,8 +47,4 @@
 # share
 # var
 
-#.gitignore
 
-.emacs.d/ido.last
-.emacs.d/auto-save-list/*
-.emacs.d/.emacs.desktop
