@@ -1,0 +1,15 @@
+<f1>            info
+<f10>           menu-bar-mode
+<f11>           bookmark-jump
+<f12>           bookmark-set
+<f16>           clipboard-kill-ring-save
+<f18>           clipboard-yank
+<f2>            undo
+<f20>           clipboard-kill-region
+<f3>            highlight-symbol-next
+<f4>            kill-this-buffer
+<f5>            shell
+<f6>            dired-jump
+<f7>            visit-tags-table
+<f8>            ispell-word
+<f9>            bookmark-bmenu-list

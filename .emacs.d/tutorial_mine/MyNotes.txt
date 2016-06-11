@@ -1,0 +1,183 @@
+1: help
+c-h k c-h i 查看c-h i的意思
+c-h f find-file 查看find file的意思
+c-h t 启动emacs教程
+
+1.5 MODE:
+比如启动“C模式”，就是M-x c-mode
+http://blog.chinaunix.net/uid-72446-id-2060678.html
+
+2: file
+buffer
+我的习惯是： c-x  c-b 显示所有名字   c-x b 输入要切换的buffer名字
+C-mouse 1：按住Ctrl并单击鼠标左键
+c-x k         kill a buffer
+如何删除buffer注 意：如果你修改了一个buffer（且该buffer和一个文件相关），则Emacs会在删除buffer前询问你是否保存所做修改；如果这个 buffer和文件不相关，则你在该buffer里所做任何修改都会丢失，Emacs认为你不在乎这些buffer因此不作任何提示。因此编辑重要的 buffer之前最好先 C-x C-w 写到文件中，或者用 C-x C-f 新建buffer。
+
+创建一个文件：
+1：C-x C-f，每次退出后提示保存
+2：C-x b 输入新的buffer，修改后退出不会提醒保存，所以需要手动C-x C-w
+c-x b 输入新的buffer，C-x C-s 可以选路径d:\
+c-x b 输入新的buffer,  C-x C-w c盘目录删不掉，可以选d：确认
+
+查看文件路径
+F5 pwd or c-x c-f
+
+C-x C-q：切换buffer的read-only和read-write状态；
+
+2.1 目录操作
+c-x c-f 目录名
+c-x d 目录名
+
+s 按时间排序
+c-n move down c-p move up
+v 查看文件只读模式
+f 编辑模式进入，c-x b回到目录
+o 编辑模式在新窗口
+s 搜索
+q 回退
+d 标记删除的文件 u撤销标记 x删除文件 （先d标记上，然后x）
+g 目录下创建了文件刷新出来
+
+m 标记文件或目录
+u  取消标记
+M-delete 取消所有标记
+
+C copy files
+R rename or move files
+D delete marked file（先m打标记，然后D ）
+
+在目录下所有子目录中查找文件
+M-x后运行find-name-dired，再次输入目录，回车(RET键)后，输入要查找的文件名，比如*.h 再次回车。找到的文件都列出来了
+
+
+3：编辑和移动光标
+剪切c-w被小强改为了c-x c-k  （c-k为删除光标到行尾的字符）
+M-w 复制
+C-y 黏贴
+M-y 用过C-y后粘贴更早的删除文本
+
+C-/  undo
+C-f2  redo
+
+移动：
+c-p/n 上下移动  C-b/f = 左右方向键    = mac terminal = mac termnial e.g man ls page up/down
+M-b/f = c-左右方向键 = 移动单词 = M - 左右方向键
+C-a C-e 行首 行尾   M-a M-e 移动句子
+M-}  M-{ 移动段落 = C-↑  C-↓ (终端不行)
+C-v  M-v  = page down page up
+M-< M->  （终端里可以）= home end 缓冲区头尾（终端里不行）
+
+重复 M-10 c-f 移动10个字符
+C-u 5 c-n 移动5行 （c-u 后面不加数字默认4次）
+
+C-l（小写L）重新绘制屏幕 ， 把正在编辑的那一行放画面中心位置
+
+
+删除：
+del  删除光标后面的字符 = C-d （not in kill ring）
+M-d删除光标后面的一个单词  -- kill ring
+C-k删除光标到行尾 --kill ring
+M-k 删除光标后面的句子 kill ring
+
+backspace 删除光标前面的字符（not in kill ring）
+M-del 删除光标到前面的单词 -kill ring
+
+
+4：查找替换
+不按return继续按C-S查询下一个地方
+
+另外，如果你退出了这次的查找，后面又想找同一个东西，那么使用C-s C-s 即可，同理C-r C-r
+
+简单查找
+C-s RET string RET
+C-r RET string RET
+
+词组查找
+c-r return c-w
+查找的过程中会忽略掉一些标点符号，比如换行符，逗号，句号之类的，查找时也是进行的增量查找，边输入边找，不过对于单词来说是全词匹配。
+http://www.cnblogs.com/robertzml/archive/2010/03/03/1675870.html
+------------------------------
+使用grep find
+
+查找字符串：
+alt-x grep-find     ---在当前文件的同级目录下所有文件里找字符串
+M-x rgrep 的交互性会更好。它会先让你输入要查找的字符串，然后让你输入文件，最后让你选择查找的目录。上面的输入都可以用正则表达式来写。（选择文件时候填*会搜索所有类型的文件）
+
+查找文件：
+M-x find-name-dired  -在一个目录中查找文件，在所有子目录下查找，不区分文件名大小写
+
+
+5: 多窗口
+http://blog.sina.com.cn/s/blog_96b8a15401012yug.html
+c-x ^ 增加窗口高度
+c-x { / } 水平方向缩放 x xzds7
+
+6: F10 / alt+` 打开菜单
+
+7：主题字体
+1：Emacs 24 comes with color themes.
+Call customize-themes to set a color theme （wombat）
+2： M-X color-theme-
+
+
+8:
+
+9: 中文字符编码问题
+在windows下用中文编辑的文件在mac上无法显示。
+solution a
+1： 先用M-x revert-buffer-with-coding-system RET    chinese-gbk显示中文
+2： 然后用M-x set-buffer-file-coding-system 保存成utf-8格式
+以后就可以正确显示了，但是windows上变不行了，所以下面的solution更好
+solution b
+在windows上用M-x set-buffer-file-coding-system 保持成utf-8格式，这样mac能看了
+如果能默认用utf-8可能更好
+
+打开文件出现乱码时，可以尝试修改字符的编码：
+M-x revert-buffer-with-coding-system RET（回车）
+然后输入对应编码，如：utf-8 或者 chinese-gbk。
+
+在保存的时候还可以指定文件的保存编码：
+M-x set-buffer-file-coding-system
+
+如果想设定默认编码，可以在配置文件中输入：
+(set-language-environment "UTF-8")
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-clipboard-coding-system 'utf-8)
+(set-buffer-file-coding-system 'utf-8)
+(set-selection-coding-system 'utf-8)
+(modify-coding-system-alist 'process "*" 'utf-8)
+
+------
+UE打开小强的配置文件中文乱码问题  因为字符编码是“iso-2022-7bit-dos”
+1：emacs打开文件，m-x  describe-coding-system 查看当前编码
+2：m-x set-buffer-file-coding-system 为UTF-8（默认）
+3：c-x c-c 保存设置
+4：打开看看m-x  describe-coding-system 查看当前编码 有没有变为utf-8
+
+10：备份文件问题
+http://blog.csdn.net/flytomysky/article/details/7096561
+
+10.1：编辑了一会发现undo操作回不去了，想恢复硬盘上的文件
+M-x revert-buffer RET
+
+10.2: 返回以前的某个版本
+EMACS会在第一次保存文件的时候自动创建一个备份文件 （test   test~， 编号备份功能~n~）  p65
+c-x c-c退出emacs，c-x c-w test RET
+fxq-basic-config.el (setq backup-directory-alist '(("." . "~/.emacs.d/auto-save-list")))
+
+10.3: 恢复丢失的编辑修改 auto-saving
+test.cpp 编辑一定的字符后，会自动创建#test.cpp#文件，c-x c-c退出不保存test.cpp（保存的话#文件会消失）
+m-x recover-file RET
+
+11：查看快捷键绑定
+M-x describe-binding
+
+12 : bookmark
+http://blog.csdn.net/pfanaya/article/details/7068710
+
+(global-set-key [(f9)] 'bookmark-bmenu-list)
+(global-set-key [(f11)] 'bookmark-jump)
+(global-set-key [(f12)] 'bookmark-set)
+

@@ -209,7 +209,7 @@
 (ac-set-trigger-key "<tab>")
 (global-auto-complete-mode t)
 
-;; added by Ferry on 07082012 for Aspell function
+;; added by Ferry on 07082012 for Aspell function ;;kjin http://aspell.net/win32/
 (add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin/")
 (setq ispell-program-name "aspell")
 (setq ispell-personal-dictionary "D:/emacs/.emacs.d/ispell.el")

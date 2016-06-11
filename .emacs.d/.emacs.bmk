@@ -2,7 +2,27 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("jk-basic-config.el"
+(("MyKeyBinding.txt"
+ (filename . "~/.emacs.d/tutorial_mine/MyKeyBinding.txt")
+ (front-context-string . "<f1>            ")
+ (rear-context-string)
+ (position . 1))
+("tutorial_mine"
+ (filename . "~/.emacs.d/tutorial_mine/")
+ (front-context-string . "Batch-File-Progr")
+ (rear-context-string . "443 2014-03-13  ")
+ (position . 269))
+("README.md"
+ (filename . "~/README.md")
+ (front-context-string . "# emacs_conf\n###")
+ (rear-context-string)
+ (position . 1))
+("MyNotes.txt"
+ (filename . "~/.emacs.d/tutorial_mine/MyNotes.txt")
+ (front-context-string)
+ (rear-context-string)
+ (position . 1))
+("jk-basic-config.el"
  (filename . "~/.emacs.d/elisp/jk-basic-config.el")
  (front-context-string . "            '(ba")
  (rear-context-string . "olor . \"black\")\n")
@@ -10,11 +30,6 @@
 (".emacs"
  (filename . "~/.emacs")
  (front-context-string . ";;设置你的全名和邮件，在发邮件")
- (rear-context-string)
- (position . 1))
-("database.org"
- (filename . "d:/Dropbox/emacs_testfolder/database.org")
- (front-context-string . "##+STARTUP: inde")
  (rear-context-string)
  (position . 1))
 )

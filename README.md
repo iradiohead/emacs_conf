@@ -50,3 +50,14 @@ ido - interactively do things with buffers and files
 打开目录浏览(C-x d 或者M-x dired)时，它会在minibuffer中列举出备选项，方便你选择（可以部分匹配，可以用左右键选择上一个/下一个备选项等等)。
 
 
+ispell.el
+https://www.emacswiki.org/emacs/AspellWindows
+安装http://aspell.net/win32/
+.emacs
+(add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin/")
+(setq ispell-program-name "aspell")
+(setq ispell-personal-dictionary "D:/emacs/.emacs.d/ispell.el")
+(require 'ispell)
+
+(global-set-key (kbd "<f8>") 'ispell-word)
+(global-set-key (kbd "C-<f8>") 'flyspell-mode)
