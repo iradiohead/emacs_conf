@@ -34,6 +34,7 @@
 ;;(set-default-font "Courier New-10")
 (set-default-font "Courier New-12")
 (set-face-foreground 'menu "white")
+
 ;;;Tab is 4
 ;; 强制输入Tab时：C-q C-i
 ;;Forced set tab width
