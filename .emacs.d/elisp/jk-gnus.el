@@ -7,8 +7,8 @@
 (set-fontset-font (frame-parameter nil 'font)
               'unicode '("AR PL KaitiM GB" . "unicode-bmp")) ;To use this font, aptitude isnatll ttf-arphic-gkai00mp
 
-(setq user-full-name "Ferry")
-(setq user-mail-address "xiaoqiang.fu@gmail.com")
+(setq user-full-name "radiohead")
+(setq user-mail-address "kjin1983@gmail.com")
 ;; SMTP
 (setq message-send-mail-function 'smtpmail-send-it)
 (setq smtpmail-default-smtp-server "smtp.gmail.com")

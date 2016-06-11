@@ -1,14 +1,20 @@
 ;;设置你的全名和邮件，在发邮件时可以用到
 (setq user-full-name "radiohead")
 (setq user-mail-address "kjin1983@gmail.com")
+
 ;;设置你的书签文件，默认是~/.emacs.bmk，我喜欢把有关emacs的文件尽量放在一个文件夹，所以就修改了。
 (setq bookmark-default-file "~/.emacs.d/.emacs.bmk")
+
 ;;load-path就同bash中的$PATH相似，emacs所需要的Elisp包都得在load-path里的文件夹中，~/.emacs.d/elisp是我自己添加的Elisp包
 (setq load-path (cons "~/.emacs.d/elisp" load-path))
-;;设置info的路径，也可通过Shell的全局变量$INFOPATH设置
-(add-to-list 'Info-default-directory-list "~/local/info/")
-;;设置gnus启动的文件。默认是为~/.gnus.el
-(setq gnus-init-file "~/.emacs.d/elisp/fxq-gnus.el")
+
+;;设置info的路径，也可通过Shell的全局变量$INFOPATH设置 ;kjin set INFOPATH=%emacs_dir%\share\info , no need to set below
+;;(add-to-list 'Info-default-directory-list "~/local/info/")
+
+;;设置gnus启动的文件。默认是为~/.gnus.el   ;kjin Emacs Gnus 是 Emacs 用来收发邮件与上新闻组的一个模式
+(setq gnus-init-file "~/.emacs.d/elisp/jk-gnus.el")
+
+
 ;;由于我的配置文件很长，所以按照分类分别放在不同的文件里，方便管理
 (load "jk-basic-config")
 (load "fxq-language")
