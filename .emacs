@@ -226,8 +226,8 @@
 ;;这个东西必须放在最后
 ;;desktop.el是一个可以保存你上次emacs关闭时的状态，下一次启动时恢复为上次关闭的状态。就和vmware的suspend一样。
 (load "desktop") 
-;; (desktop-save-mode) 
-;; (desktop-read)
+;(desktop-save-mode) 
+;(desktop-read)
 
 
 (c-set-offset 'case-label '+)
