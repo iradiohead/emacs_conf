@@ -12,7 +12,9 @@ buffer
 我的习惯是： c-x  c-b 显示所有名字   c-x b 输入要切换的buffer名字
 C-mouse 1：按住Ctrl并单击鼠标左键
 c-x k         kill a buffer
-如何删除buffer注 意：如果你修改了一个buffer（且该buffer和一个文件相关），则Emacs会在删除buffer前询问你是否保存所做修改；如果这个 buffer和文件不相关，则你在该buffer里所做任何修改都会丢失，Emacs认为你不在乎这些buffer因此不作任何提示。因此编辑重要的 buffer之前最好先 C-x C-w 写到文件中，或者用 C-x C-f 新建buffer。
+如何删除buffer注 意：如果你修改了一个buffer（且该buffer和一个文件相关），则Emacs会在删除buffer前询问你是否保存所做修改；如果这个 buffer和文件不相关
+则你在该buffer里所做任何修改都会丢失，Emacs认为你不在乎这些buffer因此不作任何提示。因此编辑重要的 buffer之前最好先 C-x C-w 写到文件中，或者用 C-x C-f
+新建buffer。
 
 创建一个文件：
 1：C-x C-f，每次退出后提示保存
@@ -180,4 +182,24 @@ http://blog.csdn.net/pfanaya/article/details/7068710
 (global-set-key [(f9)] 'bookmark-bmenu-list)
 (global-set-key [(f11)] 'bookmark-jump)
 (global-set-key [(f12)] 'bookmark-set)
+
+13: 鼠标mouse
+http://blog.sina.com.cn/s/blog_a575fb7c0100zyvl.html
+左键
+Mouse-1  左键 
+Move point to where you click (mouse-set-point).
+双击左键选取symbol
+
+Drag-Mouse-1  
+Activate the region around the text selected by dragging, and put the text in the primary selection (mouse-set-region).
+
+
+Mouse-2  点击滚轮
+Move point to where you click, and insert the contents of the primary selection there (mouse-yank-primary).
+拷贝drag的内容或者右键选取的内容
+
+Mouse-3  右键
+If the region is active, move the nearer end of the region to the click position; otherwise, set mark at the current value of point and point at the click position. Save the resulting region in the kill ring; on a second click, kill it (mouse-save-then-kill).
+一次右键是选取内容（原先的光标到现在的右键光标位置）
+2次右键是剪切内容，用点击滚轮可以拷贝
 

@@ -1,6 +1,8 @@
 ;如果快捷键失灵，可能被其他软件设置了，比如有道词典之类(f8)
+
+//jk_key_bindings.el
 <f1>            info
-<f2>            undo                                    C-f2  redo
+<f2>            undo        C-/                            C-f2  redo
 <f3>            highlight-symbol-next
 <f4>            kill-this-buffer
 <f5>            shell
@@ -15,6 +17,7 @@
 <f18>           clipboard-yank
 <f20>           clipboard-kill-region
 
+//tabbar.el
 tabbar-press-home'         (C-c <C-home>)
 tabbar-backward-group'     (C-c <C-up>)
 tabbar-forward-group'      (C-c <C-down>)
