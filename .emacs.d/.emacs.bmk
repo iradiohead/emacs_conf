@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("MyKeyBinding.txt"
+(("MyFrequentUsedNotes.txt"
+ (filename . "~/.emacs.d/tutorial_mine/MyFrequentUsedNotes.txt")
+ (front-context-string)
+ (rear-context-string . "0.144.1.10:8080\"")
+ (position . 45))
+("MyKeyBinding.txt"
  (filename . "~/.emacs.d/tutorial_mine/MyKeyBinding.txt")
  (front-context-string . "<f1>            ")
  (rear-context-string)
