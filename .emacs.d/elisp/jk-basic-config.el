@@ -51,8 +51,11 @@
 ;;  ;;
 ;; (setenv "PATH" (concat "d:/emacs/cygwin64/bin;" (getenv "PATH")))
 ;; (setq exec-path (cons "d:/emacs/cygwin64/bin" exec-path))
-(setenv "PATH" (concat "C:/APPS/cygwin/bin;" (getenv "PATH")))
-(setq exec-path (cons "C:/APPS/cygwin/bin" exec-path))
+;; kjin - set cygwin path to own path, do not rely on system's cygwin
+(setenv "PATH" (concat "d:/emacs_conf/cygwin64/bin;" (getenv "PATH")))
+(setq exec-path (cons "d:/emacs_conf/cygwin64/bin" exec-path))
+;;kjin(setenv "PATH" (concat "C:/APPS/cygwin/bin;" (getenv "PATH")))
+;;kjin(setq exec-path (cons "C:/APPS/cygwin/bin" exec-path))
 (require 'cygwin-mount)
 (cygwin-mount-activate)
 (setenv "CYGWIN" "nodosfilewarning")
