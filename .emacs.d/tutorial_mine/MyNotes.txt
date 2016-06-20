@@ -7,27 +7,28 @@ c-h t 启动emacs教程
 比如启动“C模式”，就是M-x c-mode
 http://blog.chinaunix.net/uid-72446-id-2060678.html
 
-2: file
+2: file =================================================================================================
 buffer
 我的习惯是： c-x  c-b 显示所有名字   c-x b 输入要切换的buffer名字
 C-mouse 1：按住Ctrl并单击鼠标左键
 c-x k         kill a buffer
 如何删除buffer注 意：如果你修改了一个buffer（且该buffer和一个文件相关），则Emacs会在删除buffer前询问你是否保存所做修改；如果这个 buffer和文件不相关
-则你在该buffer里所做任何修改都会丢失，Emacs认为你不在乎这些buffer因此不作任何提示。因此编辑重要的 buffer之前最好先 C-x C-w 写到文件中，或者用 C-x C-f
-新建buffer。
+则你在该buffer里所做任何修改都会丢失.
 
 创建一个文件：
 1：C-x C-f，每次退出后提示保存
 2：C-x b 输入新的buffer，修改后退出不会提醒保存，所以需要手动C-x C-w
 c-x b 输入新的buffer，C-x C-s 可以选路径d:\
 c-x b 输入新的buffer,  C-x C-w c盘目录删不掉，可以选d：确认
+C-x 4 b/f 在新窗口创建buffer或打开文件
 
 查看文件路径
 F5 pwd or c-x c-f
 
 C-x C-q：切换buffer的read-only和read-write状态；
 
-2.1 目录操作
+
+2.1 目录操作DIRED
 c-x c-f 目录名
 c-x d 目录名
 
@@ -49,11 +50,15 @@ C copy files
 R rename or move files
 D delete marked file（先m打标记，然后D ）
 
+i 列出目录下文件
+美元符号 收缩目录下文件
+M-美元符号 收缩所有目录
+
 在目录下所有子目录中查找文件
 M-x后运行find-name-dired，再次输入目录，回车(RET键)后，输入要查找的文件名，比如*.h 再次回车。找到的文件都列出来了
 
 
-3：编辑和移动光标
+3：编辑和移动光标 =====================================================================================
 剪切c-w被小强改为了c-x c-k  （c-k为删除光标到行尾的字符）
 M-w 复制
 C-y 黏贴
@@ -86,7 +91,7 @@ backspace 删除光标前面的字符（not in kill ring）
 M-del 删除光标到前面的单词 -kill ring
 
 
-4：查找替换
+4：查找替换 =================================================================================================
 不按return继续按C-S查询下一个地方
 
 另外，如果你退出了这次的查找，后面又想找同一个东西，那么使用C-s C-s 即可，同理C-r C-r
@@ -110,12 +115,12 @@ M-x rgrep 的交互性会更好。它会先让你输入要查找的字符串，然后让你输入文件，最后让
 M-x find-name-dired  -在一个目录中查找文件，在所有子目录下查找，不区分文件名大小写
 
 
-5: 多窗口
+5: 多窗口 ====================================================================================================
 http://blog.sina.com.cn/s/blog_96b8a15401012yug.html
 c-x ^ 增加窗口高度
 c-x { / } 水平方向缩放 x xzds7
 
-6: F10 / alt+` 打开菜单
+6: 
 
 7：主题字体
 1：Emacs 24 comes with color themes.
@@ -125,7 +130,7 @@ Call customize-themes to set a color theme （wombat）
 
 8:
 
-9: 中文字符编码问题
+9: 中文字符编码问题================================================================================
 在windows下用中文编辑的文件在mac上无法显示。
 solution a
 1： 先用M-x revert-buffer-with-coding-system RET    chinese-gbk显示中文
@@ -158,8 +163,9 @@ UE打开小强的配置文件中文乱码问题  因为字符编码是“iso-2022-7bit-dos”
 3：c-x c-c 保存设置
 4：打开看看m-x  describe-coding-system 查看当前编码 有没有变为utf-8
 
-10：备份文件问题
+10：备份文件问题 =======================================================================================
 http://blog.csdn.net/flytomysky/article/details/7096561
+(setq make-backup-files nil)
 
 10.1：编辑了一会发现undo操作回不去了，想恢复硬盘上的文件
 M-x revert-buffer RET
@@ -173,17 +179,17 @@ fxq-basic-config.el (setq backup-directory-alist '(("." . "~/.emacs.d/auto-save-
 test.cpp 编辑一定的字符后，会自动创建#test.cpp#文件，c-x c-c退出不保存test.cpp（保存的话#文件会消失）
 m-x recover-file RET
 
-11：查看快捷键绑定
+11：查看快捷键绑定 =======================================================================================
 M-x describe-binding
 
-12 : bookmark
+12 : bookmark =============================================================================================
 http://blog.csdn.net/pfanaya/article/details/7068710
 
 (global-set-key [(f9)] 'bookmark-bmenu-list)
 (global-set-key [(f11)] 'bookmark-jump)
 (global-set-key [(f12)] 'bookmark-set)
 
-13: 鼠标mouse
+13: 鼠标mouse =============================================================================================
 http://blog.sina.com.cn/s/blog_a575fb7c0100zyvl.html
 左键
 Mouse-1  左键 
@@ -203,3 +209,6 @@ If the region is active, move the nearer end of the region to the click position
 一次右键是选取内容（原先的光标到现在的右键光标位置）
 2次右键是剪切内容，用点击滚轮可以拷贝
 
+14: 保存上次打开的文件========================================================================================
+1:关闭前M-x desktop-save
+2:打开后M-x desktop-read

@@ -30,8 +30,8 @@
 (load "fxq-mode")
 (load "jk-key-bindings")
 (load "fxq-tnsdl")
-(load "fxq-robot-mode")
-(load "fxq-python-mode")
+;;kjin(load "fxq-robot-mode")
+;;kjin(load "fxq-python-mode")
 ;;(load "fxq-ipython-mode")
 (load "fxq-psvn");;SVN(SubVersion) plugin
 (load "fxq-plm");;PL/M highlight

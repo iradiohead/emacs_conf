@@ -24,3 +24,11 @@ tabbar-forward-group'      (C-c <C-down>)
 tabbar-backward'           (C-c <C-left>)
 tabbar-forward'            (C-c <C-right>)
 
+//
+M-o switch window
+
+//
+[(meta up)]   'goto-line) 
+[(meta down)] 'goto-line) 
+[(meta left)] 'backward-sexp) 
+[(meta right)] 'forward-sexp)

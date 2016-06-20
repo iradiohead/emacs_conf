@@ -94,7 +94,7 @@
 (menu-bar-mode -1)
 ;;不要滚动栏，现在都用滚轴鼠标了，可以不用滚动栏了
 ;;(scroll-bar-mode nil)
-(scroll-bar-mode -1)
+;;(scroll-bar-mode -1) ; kjin comment it, i need scroll bar
 
 ;;备份设置
 ;;emacs还有一个自动保存功能，默认在~/.emacs.d/auto-save-list里，这个非常有用，我这里没有改动，具体可以参见Sams teach yourself emacs in 24hours(我简称为sams24)
@@ -198,6 +198,9 @@
 (show-paren-mode 1)
 ;;是用滚轴鼠标
 (mouse-wheel-mode t)
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; kjin - one line at a time
+(setq mouse-wheel-progressive-speed nil) ;; kjin- don't accelerate scrolling
+
 ;;去掉烦人的警告铃声
 (setq visible-bell -1)
 ;;滚动页面时比较舒服，不要整页的滚动
@@ -254,7 +257,8 @@
 ;;Setting for wb-line-number
 (require 'wb-line-number)
 (setq truncate-partial-width-windows nil) ; use continuous line
-(set-scroll-bar-mode nil)                 ; no scroll bar, even in x-window system
+;(set-scroll-bar-mode nil)  ;;kjin comment it as i need scroll bar show    ; no scroll bar, even in x-window system
+;(wb-line-number-toggle);;kjin add this to show line number in left side
 
 ;;Setting for keisen-mode
 (if window-system
@@ -313,7 +317,7 @@
 '(display-time-mode t)
 '(ecb-gzip-setup (quote cons))
 '(ecb-options-version "2.40")
-'(ecb-source-path (quote ("d:/Current_Task/Source")))
+'(ecb-source-path (quote ("d:/Dropbox/emacs_testfolder/")))
 '(ecb-tar-setup (quote cons))
 '(ecb-wget-setup (quote cons))
 '(show-paren-mode t)
