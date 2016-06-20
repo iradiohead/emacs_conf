@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("Dropbox"
+(("MyNeedStudy.txt"
+ (filename . "~/.emacs.d/tutorial_mine/MyNeedStudy.txt")
+ (front-context-string . "1:ELPA\nhttp://le")
+ (rear-context-string)
+ (position . 1))
+("Dropbox"
  (filename . "d:/Dropbox/")
  (front-context-string . ".dropbox\n  drwxr")
  (rear-context-string . " 33 2015-07-22  ")
