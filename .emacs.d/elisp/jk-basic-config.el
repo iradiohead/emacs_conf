@@ -317,7 +317,7 @@
 '(display-time-mode t)
 '(ecb-gzip-setup (quote cons))
 '(ecb-options-version "2.40")
-'(ecb-source-path (quote ("d:/Current_Task/Source")))
+'(ecb-source-path (quote ("d:/Dropbox/emacs_testfolder/")))
 '(ecb-tar-setup (quote cons))
 '(ecb-wget-setup (quote cons))
 '(show-paren-mode t)
