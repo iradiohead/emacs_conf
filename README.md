@@ -1,28 +1,25 @@
-# emacs_conf
 ##################################################################################
-Materials:
-
-wangying:
+1：wangying:
 http://blog.csdn.net/superwen_go/article/details/8235185
 
-emacs mainpage
+2：emacs mainpage
 http://www.gnu.org/software/emacs/
 
-emacs wiki
+3：emacs wiki
 https://www.emacswiki.org/
 
-一个搜集 .emacs 文件的网站。你可以从这里学习怎么配置 .emacs.
+4：一个搜集 .emacs 文件的网站。你可以从这里学习怎么配置 .emacs.
 http://dotemacs.de/
 
-comp.emacs 上的一个帖子Emacs references: pointers to ports, packages, papers, lisp
+5：comp.emacs 上的一个帖子Emacs references: pointers to ports, packages, papers, lisp
 http://docs.huihoo.com/homepage/shredderyin/emacs-resource.html
 
-Richard Stallman 有关 Emacs 的论文
+6：Richard Stallman 有关 Emacs 的论文
 http://docs.huihoo.com/homepage/shredderyin/emacs-paper.html
 
 
 ##################################################################################
-config files:
+Config files meaning:
 
 ac-comphist.dat:
 auto-complete手册 
