@@ -1,1 +1,10 @@
-test
+1： 窗口快速跳转 C-x o / M-o
+.emacs
+;; add by kjin for jump between multi windows
+(require 'switch-window)
+(global-set-key (kbd "C-x o") 'switch-window)
+
+k:\.emacs.d\elisp\switch-window.el
+
+
+2:

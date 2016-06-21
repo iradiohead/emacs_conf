@@ -3,10 +3,6 @@ c-h k c-h i 查看c-h i的意思
 c-h f find-file 查看find file的意思
 c-h t 启动emacs教程
 
-1.5 MODE:
-比如启动“C模式”，就是M-x c-mode
-http://blog.chinaunix.net/uid-72446-id-2060678.html
-
 2: file =================================================================================================
 buffer
 我的习惯是： c-x  c-b 显示所有名字   c-x b 输入要切换的buffer名字
@@ -120,7 +116,9 @@ http://blog.sina.com.cn/s/blog_96b8a15401012yug.html
 c-x ^ 增加窗口高度
 c-x { / } 水平方向缩放 x xzds7
 
-6: 
+6: MODE:
+比如启动“C模式”，就是M-x c-mode
+http://blog.chinaunix.net/uid-72446-id-2060678.html
 
 7：主题字体
 1：Emacs 24 comes with color themes.
