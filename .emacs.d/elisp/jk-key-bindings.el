@@ -34,7 +34,7 @@
 ;;打开我得日历 
 ;;(global-set-key [(f8)] 'calendar)
 
-;;/* Added by Ferry for ispell and flyspell mode 20120807*/
+;;/* Added by kjin-F for ispell and flyspell mode 20120807*/
 (global-set-key (kbd "<f8>") 'ispell-word)
 (global-set-key (kbd "C-S-<f8>") 'flyspell-mode)
 (global-set-key (kbd "C-M-<f8>") 'flyspell-buffer)
@@ -47,7 +47,7 @@
   )
 (global-set-key (kbd "M-<f8>") 'flyspell-check-next-highlighted-word)
 
-;;/* Added by Ferry for adjusting font size 20130403 */
+;;/* Added by kjin-F for adjusting font size 20130403 */
 (global-set-key (kbd "<C-wheel-up>") 'text-scale-increase)
 (global-set-key (kbd "<C-wheel-down>") 'text-scale-decrease)
 
@@ -89,7 +89,7 @@
 (global-set-key (kbd "C-c l") 'hs-hide-level) 
 (global-set-key (kbd "C-c c") 'hs-toggle-hiding) 
 
-;; Add by Ferry to occur mode on 20121016
+;; Add by kjin-F to occur mode on 20121016
 (define-key occur-mode-map "n" 'next-error-no-select)
 (define-key occur-mode-map "p" 'previous-error-no-select)
 (define-key occur-mode-map " " 'occur-mode-display-occurrence)
@@ -231,11 +231,11 @@
 ; Compile
 (global-set-key "\C-x\C-y" 'compile)
 
-;; Add by Ferry to replace Alt-x method on 20120416
+;; Add by kjin-F to replace Alt-x method on 20120416
 ;(global-set-key "\C-x\C-m" 'execute-extended-command)
 (global-set-key "\C-c\C-m" 'execute-extended-command)
 
-;; Add by Ferry to modify ctrl-w on 20120416
+;; Add by kjin-F to modify ctrl-w on 20120416
 (global-set-key "\C-w" 'backward-kill-word)
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\C-c\C-k" 'kill-region)

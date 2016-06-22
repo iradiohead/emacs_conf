@@ -172,7 +172,7 @@
 ;;启用minibuffer，好像是默认设置吧
 (minibuffer-electric-default-mode 1)
 ;;启用部分补全功能，如输入M-x q r r相当于M-x query-replace-regexp
-;; Commented by Ferry on 08/07/2012 for this command is not support in Emacs v24.1
+;; Commented by kjin-F on 08/07/2012 for this command is not support in Emacs v24.1
 ;;(partial-completion-mode 1)
 ;;在minibuffer里启用自动补全函数和变量
 (icomplete-mode 1)
@@ -278,7 +278,7 @@
 (add-hook 'tnsdl-mode-common-hook '(lambda() (require 'xcscope)))
 ;;---------------------------------------------------
 ;;cedet 安装
-;Added by Ferry on 08/07/2012 for omitting the warning in Emacs 24.1.1
+;Added by kjin-F on 08/07/2012 for omitting the warning in Emacs 24.1.1
 (setq byte-compile-warnings nil)
 (add-hook 'texinfo-mode-hook (lambda () (require 'sb-texinfo)))
 (load-file "~/share/emacs/24.5/site-lisp/cedet/common/cedet.el")
@@ -297,7 +297,7 @@
   [calendar])
 ;----------------------------------------------------------
 ;;ecb
-;Added by Ferry on 08/07/2012 for omitting the warning in Emacs 24.1.1
+;Added by kjin-F on 08/07/2012 for omitting the warning in Emacs 24.1.1
 (setq stack-trace-on-error nil)
 (add-to-list 'load-path "~/share/emacs/24.5/site-lisp/ecb")
 (load-file "~/share/emacs/24.5/site-lisp/ecb/ecb.el")
