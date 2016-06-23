@@ -169,7 +169,7 @@
 ;;   hs-mouse-toggle-hiding             [(shift mouse-2)]
 ;;   hs-hide-initial-comment-block
 
-;;Add tramp plink method by Ferry on 20120412
+;;Add tramp plink method by kjin-F on 20120412
 ;;(require 'tramp)
 ;;(setq tramp-default-method "plink")
 ;;(setq tramp-auto-save-directory "~/.emacs.tmp")
@@ -196,12 +196,12 @@
 ;;        (setq my-tramp-methods (cons my-tramp-ssh-method my-tramp-methods))  
 ;;      (setq my-tramp-methods (cons elt my-tramp-methods))))))  
 
-;; add tab mode by Ferry on 20120413
+;; add tab mode by kjin-F on 20120413
 (require 'tabbar)  
 (tabbar-mode 1)  	
 (define-prefix-command 'lwindow-map)
 
-;; added by Ferry on 09072012 for adding auto-complete function
+;; added by kjin-F on 09072012 for adding auto-complete function
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/site-lisp/auto-complete/ac-dict")
 (ac-config-default)
@@ -209,17 +209,17 @@
 (ac-set-trigger-key "<tab>")
 (global-auto-complete-mode t)
 
-;; added by Ferry on 07082012 for Aspell function ;;kjin http://aspell.net/win32/
+;; added by kjin-F on 07082012 for Aspell function ;;kjin http://aspell.net/win32/
 (add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin/")
 (setq ispell-program-name "aspell")
 (setq ispell-personal-dictionary "D:/emacs/.emacs.d/ispell.el")
 (require 'ispell)
 
-;; added by Ferry on 30072013 for ignoring different directory and file in special mode
+;; added by kjin-F on 30072013 for ignoring different directory and file in special mode
 ;; (require 'ignoramus)
 ;; (ignoramus-setup)
 
-;; added by Ferry on 15112013 to use whitespace
+;; added by kjin-F on 15112013 to use whitespace
 (require 'whitespace)
 
 ;;(setq ecb-auto-activate t)
