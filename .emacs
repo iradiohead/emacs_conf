@@ -142,7 +142,7 @@
 ;;(autoload 'maxima-mode "maxima" "Maxima editing mode" t)
 
 ;;add line number for display
-(require 'wb-line-number)
+;;kjin comment it(require 'wb-line-number)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; psvn.el

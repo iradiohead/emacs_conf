@@ -258,8 +258,8 @@
 
 
 ;;Setting for wb-line-number
-(require 'wb-line-number)
-(setq truncate-partial-width-windows nil) ; use continuous line
+;;kjin comment it(require 'wb-line-number)
+;;kjin comment it(setq truncate-partial-width-windows nil) ; use continuous line
 ;(set-scroll-bar-mode nil)  ;;kjin comment it as i need scroll bar show    ; no scroll bar, even in x-window system
 ;(wb-line-number-toggle);;kjin add this to show line number in left side
 
@@ -402,3 +402,6 @@
 
 ;; turn on automatic bracket insertion by pairs. New in emacs 24
 (electric-pair-mode 1)
+
+;;kjin add line number
+(global-linum-mode t)
