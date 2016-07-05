@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("MyNotePlus.txt"
+(("人文素质讲座.txt"
+ (filename . "d:/Dropbox/emacs_docs/人文素质讲座.txt")
+ (front-context-string . "考生姓名:金柯 学号:Z1503")
+ (rear-context-string)
+ (position . 1))
+("2016_sprint_todo_list.org"
+ (filename . "d:/Dropbox/emacs_docs/2016_sprint_todo_list.org")
+ (front-context-string . "\n** vmana contin")
+ (rear-context-string . "pit interrupt)\n\n")
+ (position . 5375))
+("MyNotePlus.txt"
  (filename . "~/.emacs.d/tutorial_mine/MyNotePlus.txt")
  (front-context-string . "3：emacs wiki\nhtt")
  (rear-context-string . "oftware/emacs/\n\n")
