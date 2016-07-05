@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("人文素质讲座.txt"
+(("MyPlugin.txt"
+ (filename . "~/.emacs.d/tutorial_mine/MyPlugin.txt")
+ (front-context-string)
+ (rear-context-string . ".el\n\n\n2:\n\n3:\n\n4:")
+ (position . 195))
+("quick_notes.txt"
+ (filename . "d:/Dropbox/emacs_docs/quick_notes.txt")
+ (front-context-string . "export https_pro")
+ (rear-context-string)
+ (position . 1))
+("人文素质讲座.txt"
  (filename . "d:/Dropbox/emacs_docs/人文素质讲座.txt")
  (front-context-string . "考生姓名:金柯 学号:Z1503")
  (rear-context-string)
@@ -27,11 +37,6 @@
  (front-context-string . ".dropbox\n  drwxr")
  (rear-context-string . " 33 2015-07-22  ")
  (position . 234))
-("MyFrequentUsedNotes.txt"
- (filename . "~/.emacs.d/tutorial_mine/MyFrequentUsedNotes.txt")
- (front-context-string)
- (rear-context-string . "0.144.1.10:8080\"")
- (position . 45))
 ("MyKeyBinding.txt"
  (filename . "~/.emacs.d/tutorial_mine/MyKeyBinding.txt")
  (front-context-string . "<f1>            ")
@@ -42,11 +47,6 @@
  (front-context-string . "Batch-File-Progr")
  (rear-context-string . "443 2014-03-13  ")
  (position . 269))
-("README.md"
- (filename . "~/README.md")
- (front-context-string . "# emacs_conf\n###")
- (rear-context-string)
- (position . 1))
 ("MyNotes.txt"
  (filename . "~/.emacs.d/tutorial_mine/MyNotes.txt")
  (front-context-string)

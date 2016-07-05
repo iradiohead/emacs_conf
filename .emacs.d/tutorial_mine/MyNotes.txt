@@ -18,8 +18,12 @@ c-x b 输入新的buffer，C-x C-s 可以选路径d:\
 c-x b 输入新的buffer,  C-x C-w c盘目录删不掉，可以选d：确认
 C-x 4 b/f 在新窗口创建buffer或打开文件
 
-查看文件路径
+查看文件路径:
 F5 pwd or c-x c-f
+
+修改文件名:
+M-x dired 在所选目录中启动 Dired 文件管理器模式。然后按下 C-x C-q （或  M-x wdired-change-to-wdired-mode ）切换到可编辑 Dired 模式
+http://cn-popeye.iteye.com/blog/1198727
 
 C-x C-q：切换buffer的read-only和read-write状态；
 

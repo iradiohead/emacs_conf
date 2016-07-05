@@ -1,7 +1,0 @@
-export https_proxy="http://10.144.1.10:8080"
-
-export http_proxy="http://10.144.1.10:8080"
-
-
-
-
