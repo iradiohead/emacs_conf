@@ -28,7 +28,7 @@ http://cn-popeye.iteye.com/blog/1198727
 C-x C-q：切换buffer的read-only和read-write状态；
 
 
-2.1 目录操作DIRED
+2.1 -----目录操作DIRED----------------------------------
 c-x c-f 目录名
 c-x d 目录名
 
@@ -133,6 +133,7 @@ Call customize-themes to set a color theme （wombat）
 8:
 
 9: 中文字符编码问题================================================================================
+http://blog.waterlin.org/articles/set-emacs-default-coding-system.html
 在windows下用中文编辑的文件在mac上无法显示。
 solution a
 1： 先用M-x revert-buffer-with-coding-system RET    chinese-gbk显示中文
