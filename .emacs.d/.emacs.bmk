@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("linux_shell_cmd.org"
+(("Learning_path.org"
+ (filename . "d:/Dropbox/emacs_docs/Learning_path.org")
+ (front-context-string . "\n*** makefile\n**")
+ (rear-context-string . "nux programming ")
+ (position . 174))
+("emacs_docs"
+ (filename . "d:/Dropbox/emacs_docs/")
+ (front-context-string . "database.org\n  -")
+ (rear-context-string . "599 06-10 23:58 ")
+ (position . 398))
+("linux_shell_cmd.org"
  (filename . "d:/Dropbox/emacs_docs/linux_shell_cmd.org")
  (front-context-string . "\n2. cpio -idmv <")
  (rear-context-string . "ux_x86_64.cpioÎÄ¼þ")
