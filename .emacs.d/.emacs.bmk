@@ -4,14 +4,24 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("MyOrgMode.org"
  (filename . "~/.emacs.d/tutorial_mine/MyOrgMode.org")
- (front-context-string . "\n* 3: 轻量级标记语言===")
- (rear-context-string . "up-indented t)\n\n")
- (position . 2145))
-("org-refile-last-stored"
+ (front-context-string . "\n\n* 1: 大纲\n** 大纲相")
+ (rear-context-string . "org/orgcard.txt\n")
+ (position . 97))
+("linux_shell_cmd.org"
+ (filename . "d:/Dropbox/emacs_docs/linux_shell_cmd.org")
+ (front-context-string . "\n*  \n压缩\ntar –cvf")
+ (rear-context-string . "linux_shell_cmd\n")
+ (position . 26))
+("Learning_path.org"
  (filename . "d:/Dropbox/emacs_docs/Learning_path.org")
- (front-context-string . "** qemu\n\n* lindx")
- (rear-context-string . "\n** TODO test\n\n\n")
- (position . 472))
+ (front-context-string . "#+TITLE: Learnin")
+ (rear-context-string)
+ (position . 1))
+("emacs_docs"
+ (filename . "d:/Dropbox/emacs_docs/")
+ (front-context-string . "2016_sprint_todo")
+ (rear-context-string . "611 07-05 07:01 ")
+ (position . 238))
 ("MyPlugin.txt"
  (filename . "~/.emacs.d/tutorial_mine/MyPlugin.txt")
  (front-context-string)
