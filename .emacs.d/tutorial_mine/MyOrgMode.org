@@ -19,7 +19,7 @@ C-c C-j             切换到大纲浏览状态
 
 *** 1.2.3 基于大纲的编辑  
 快捷键                      命令	说明
-M-RET	            	插入一个同级标题              C-RET insert after current title
+M-RET	            	插入一个同级标题             C-RET insert after current title
 M-S-RET	 	            插入一个同级TODO 标题		  C-S-RET insert same level todo after current title
 M-LEFT/RIGHT	 	    将当前标题升/降级
 M-S-LEFT/RIGHT	 	    将子树升/降级                      
@@ -53,6 +53,9 @@ toggle checkbox(es) in region/entry/at point      C-c C-x C-b
 toggle checkbox at point                          C-c C-c
 update checkbox statistics (C-u : whole file)     C-c #
 
+** TODO test1
+   SCHEDULED: <2016-07-08 周五>
+   
 ** 大纲的显示方式
 默认的大纲显示没有缩进，显得有些乱。可以用 M-x org-indent-mode切换到另一种显示方式：
 如果想让某个文件默认用这种方式打开，可以在文件头部增加：
@@ -60,7 +63,8 @@ update checkbox statistics (C-u : whole file)     C-c #
 如果希望打开所有org文件都默认用这种方式，可以在.emacs中配置：
 (setq org-startup-indented t)
 
-
+** TODO test2
+   DEADLINE: <2016-07-25 周一>
 * 3: 轻量级标记语言====================================
 ** 3.1 字体
 *粗体*

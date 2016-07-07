@@ -14,9 +14,9 @@
  (position . 26))
 ("Learning_path.org"
  (filename . "d:/Dropbox/emacs_docs/Learning_path.org")
- (front-context-string . "#+TITLE: Learnin")
- (rear-context-string)
- (position . 1))
+ (front-context-string . "* linux\n** build")
+ (rear-context-string . "ing Path 2016 \n\n")
+ (position . 31))
 ("emacs_docs"
  (filename . "d:/Dropbox/emacs_docs/")
  (front-context-string . "2016_sprint_todo")
