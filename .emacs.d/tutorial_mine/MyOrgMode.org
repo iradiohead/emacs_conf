@@ -2,7 +2,7 @@ http://www.cnblogs.com/holbrook/archive/2012/04/12/2444992.html
 http://orgmode.org/orgcard.txt
 
 
-* 1: 大纲===========================================
+* 1: 大纲
 ** 1.2 大纲相关的快捷键 
 *** 1.2.1 折叠大纲
 快捷键	命令                说明
@@ -18,8 +18,8 @@ C-c C-j             切换到大纲浏览状态
 
 *** 1.2.3 基于大纲的编辑
 快捷键                      命令	说明
-M-RET	            	插入一个同级标题
-M-S-RET	 	            插入一个同级TODO 标题
+M-RET	            	插入一个同级标题              C-RET insert after current title
+M-S-RET	 	            插入一个同级TODO 标题		  C-S-RET insert same level todo after current title
 M-LEFT/RIGHT	 	    将当前标题升/降级
 M-S-LEFT/RIGHT	 	    将子树升/降级
 M-S-UP/DOWN	            将子树上/下移

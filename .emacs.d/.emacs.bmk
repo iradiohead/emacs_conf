@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("MyOrgMode.txt"
+(("org-refile-last-stored"
+ (filename . "d:/Dropbox/emacs_docs/Learning_path.org")
+ (front-context-string . "** qemu\n\n* lindx")
+ (rear-context-string . "\n** TODO test\n\n\n")
+ (position . 472))
+("MyOrgMode.txt"
  (filename . "~/.emacs.d/tutorial_mine/MyOrgMode.txt")
  (front-context-string)
  (rear-context-string)
