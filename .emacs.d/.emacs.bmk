@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("MyOrgMode.org"
+(("my_todo_list.org"
+ (filename . "d:/Dropbox/emacs_docs/my_todo_list.org")
+ (front-context-string . "\n* working\n\n\nC-c")
+ (rear-context-string)
+ (position . 1))
+("MyOrgMode.org"
  (filename . "~/.emacs.d/tutorial_mine/MyOrgMode.org")
  (front-context-string . "\n\n* 1: ¥Û∏Ÿ\n** ¥Û∏Ÿœ‡")
  (rear-context-string . "org/orgcard.txt\n")

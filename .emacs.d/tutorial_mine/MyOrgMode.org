@@ -56,9 +56,6 @@ toggle checkbox(es) in region/entry/at point      C-c C-x C-b
 toggle checkbox at point                          C-c C-c
 update checkbox statistics (C-u : whole file)     C-c #
 
-** DONE test1
-   SCHEDULED: <2016-07-08 周五>
-   
 ** 大纲的显示方式
 默认的大纲显示没有缩进，显得有些乱。可以用 M-x org-indent-mode切换到另一种显示方式：
 如果想让某个文件默认用这种方式打开，可以在文件头部增加：
@@ -68,6 +65,7 @@ update checkbox statistics (C-u : whole file)     C-c #
 
 ** TODO test2
    DEADLINE: <2016-07-25 周一>
+
 
 * 3: 轻量级标记语言====================================
 ** 3.1 字体
