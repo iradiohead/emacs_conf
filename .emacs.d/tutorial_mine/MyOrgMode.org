@@ -2,6 +2,9 @@
 http://www.cnblogs.com/holbrook/archive/2012/04/12/2444992.html
 http://orgmode.org/orgcard.txt
 
+video
+http://v.youku.com/v_show/id_XNjA2MDEyMDg0.html?from=s1.8-1-1.2
+http://v.youku.com/v_show/id_XNTc0NTUyMDU2.html?from=s1.8-1-1.2
 
 * 1: 大纲
 ** 大纲相关的快捷键 
@@ -53,7 +56,7 @@ toggle checkbox(es) in region/entry/at point      C-c C-x C-b
 toggle checkbox at point                          C-c C-c
 update checkbox statistics (C-u : whole file)     C-c #
 
-** TODO test1
+** DONE test1
    SCHEDULED: <2016-07-08 周五>
    
 ** 大纲的显示方式
@@ -65,6 +68,7 @@ update checkbox statistics (C-u : whole file)     C-c #
 
 ** TODO test2
    DEADLINE: <2016-07-25 周一>
+
 * 3: 轻量级标记语言====================================
 ** 3.1 字体
 *粗体*
