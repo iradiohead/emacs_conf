@@ -63,8 +63,8 @@ update checkbox statistics (C-u : whole file)     C-c #
 如果希望打开所有org文件都默认用这种方式，可以在.emacs中配置：
 (setq org-startup-indented t)
 
-** TODO test2
-   DEADLINE: <2016-07-25 周一>
+** test2
+  
 
 
 * 3: 轻量级标记语言====================================
