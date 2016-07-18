@@ -7,11 +7,6 @@
  (front-context-string . "\n* working\n\n\nC-c")
  (rear-context-string)
  (position . 1))
-("MyOrgMode.org"
- (filename . "~/.emacs.d/tutorial_mine/MyOrgMode.org")
- (front-context-string . "\n\n* 1: ¥Û∏Ÿ\n** ¥Û∏Ÿœ‡")
- (rear-context-string . "org/orgcard.txt\n")
- (position . 97))
 ("linux_shell_cmd.org"
  (filename . "d:/Dropbox/emacs_docs/linux_shell_cmd.org")
  (front-context-string . "\n*  \n—πÀı\ntar ®Ccvf")
@@ -27,11 +22,6 @@
  (front-context-string . "2016_sprint_todo")
  (rear-context-string . "611 07-05 07:01 ")
  (position . 238))
-("MyPlugin.txt"
- (filename . "~/.emacs.d/tutorial_mine/MyPlugin.txt")
- (front-context-string)
- (rear-context-string . ".el\n\n\n2:\n\n3:\n\n4:")
- (position . 195))
 ("quick_notes.txt"
  (filename . "d:/Dropbox/emacs_docs/quick_notes.txt")
  (front-context-string . "export https_pro")
@@ -47,36 +37,16 @@
  (front-context-string . "\n** vmana contin")
  (rear-context-string . "pit interrupt)\n\n")
  (position . 5375))
-("MyNotePlus.txt"
- (filename . "~/.emacs.d/tutorial_mine/MyNotePlus.txt")
- (front-context-string . "3£∫emacs wiki\nhtt")
- (rear-context-string . "oftware/emacs/\n\n")
- (position . 223))
-("MyNeedStudy.txt"
- (filename . "~/.emacs.d/tutorial_mine/MyNeedStudy.txt")
- (front-context-string . "1:ELPA\nhttp://le")
- (rear-context-string)
- (position . 1))
 ("Dropbox"
  (filename . "d:/Dropbox/")
  (front-context-string . ".dropbox\n  drwxr")
  (rear-context-string . " 33 2015-07-22  ")
  (position . 234))
-("MyKeyBinding.txt"
- (filename . "~/.emacs.d/tutorial_mine/MyKeyBinding.txt")
- (front-context-string . "<f1>            ")
- (rear-context-string)
- (position . 1))
 ("tutorial_mine"
  (filename . "~/.emacs.d/tutorial_mine/")
  (front-context-string . "Batch-File-Progr")
  (rear-context-string . "443 2014-03-13  ")
  (position . 269))
-("MyNotes.txt"
- (filename . "~/.emacs.d/tutorial_mine/MyNotes.txt")
- (front-context-string)
- (rear-context-string)
- (position . 1))
 ("jk-basic-config.el"
  (filename . "~/.emacs.d/elisp/jk-basic-config.el")
  (front-context-string . "            '(ba")
