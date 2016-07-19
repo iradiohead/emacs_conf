@@ -2,7 +2,32 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("my_todo_list.org"
+(("BSP+virtualization"
+ (filename . "d:/Dropbox/OSP_PLATFORM/5 - Core Service/BSP+virtualization/")
+ (front-context-string . "BSP PATCHS\n  drw")
+ (rear-context-string . "  0 05-21 13:28 ")
+ (position . 351))
+("redhat7_note.org"
+ (filename . "d:/Dropbox/emacs_docs/redhat7_note.org")
+ (front-context-string . "* putty\n\n\n* gnom")
+ (rear-context-string)
+ (position . 1))
+("MyOrgMode.org"
+ (filename . "d:/Dropbox/emacs_docs/tutorial_mine/MyOrgMode.org")
+ (front-context-string . "\nhttp://www.cnbl")
+ (rear-context-string)
+ (position . 1))
+("MyNotes.txt"
+ (filename . "d:/Dropbox/emacs_docs/tutorial_mine/MyNotes.txt")
+ (front-context-string . "1: help\nc-h k c-")
+ (rear-context-string)
+ (position . 1))
+("tutorial_mine"
+ (filename . "d:/Dropbox/emacs_docs/tutorial_mine/")
+ (front-context-string . "Batch-File-Progr")
+ (rear-context-string . "443 07-16 12:59 ")
+ (position . 260))
+("my_todo_list.org"
  (filename . "d:/Dropbox/emacs_docs/my_todo_list.org")
  (front-context-string . "\n* working\n\n\nC-c")
  (rear-context-string)
@@ -42,11 +67,6 @@
  (front-context-string . ".dropbox\n  drwxr")
  (rear-context-string . " 33 2015-07-22  ")
  (position . 234))
-("tutorial_mine"
- (filename . "~/.emacs.d/tutorial_mine/")
- (front-context-string . "Batch-File-Progr")
- (rear-context-string . "443 2014-03-13  ")
- (position . 269))
 ("jk-basic-config.el"
  (filename . "~/.emacs.d/elisp/jk-basic-config.el")
  (front-context-string . "            '(ba")
