@@ -239,3 +239,4 @@
 
 
 (c-set-offset 'case-label '+)
+(put 'upcase-region 'disabled nil)

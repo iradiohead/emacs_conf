@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("BSP+virtualization"
+(("MyNotes.org"
+ (filename . "d:/Dropbox/emacs_docs/tutorial_mine/MyNotes.org")
+ (front-context-string . "1: help\nc-h k c-")
+ (rear-context-string)
+ (position . 1))
+("BSP+virtualization"
  (filename . "d:/Dropbox/OSP_PLATFORM/5 - Core Service/BSP+virtualization/")
  (front-context-string . "BSP PATCHS\n  drw")
  (rear-context-string . "  0 05-21 13:28 ")
@@ -17,16 +22,11 @@
  (front-context-string . "\nhttp://www.cnbl")
  (rear-context-string)
  (position . 1))
-("MyNotes.txt"
- (filename . "d:/Dropbox/emacs_docs/tutorial_mine/MyNotes.txt")
- (front-context-string . "1: help\nc-h k c-")
- (rear-context-string)
- (position . 1))
 ("tutorial_mine"
  (filename . "d:/Dropbox/emacs_docs/tutorial_mine/")
- (front-context-string . "Batch-File-Progr")
- (rear-context-string . "443 07-16 12:59 ")
- (position . 260))
+ (front-context-string . "MyNotes.txt\n  -r")
+ (rear-context-string . "460 07-16 12:59 ")
+ (position . 1189))
 ("my_todo_list.org"
  (filename . "d:/Dropbox/emacs_docs/my_todo_list.org")
  (front-context-string . "\n* working\n\n\nC-c")
