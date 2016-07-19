@@ -2,9 +2,11 @@
 ;;(setq org-agenda-files (list "~/diary/TimeQuadrant.org"))
 
 ;;kjin add here
-(setq org-agenda-files (list "~/diary/TimeQuadrant.org"
-                             "~/.emacs.d/tutorial_mine/"
+(setq org-agenda-files (list 
+							 ;;"~/diary/TimeQuadrant.org"
+                             ;;"~/.emacs.d/tutorial_mine/"
                              "d:/Dropbox/emacs_docs/"
+							 "d:/Dropbox/emacs_docs/tutorial_mine/"
                            ))
 
 (global-set-key "\C-cl" 'org-store-link)
