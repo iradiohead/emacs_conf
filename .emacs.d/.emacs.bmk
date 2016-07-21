@@ -17,11 +17,6 @@
  (front-context-string . "* putty\n\n\n* gnom")
  (rear-context-string)
  (position . 1))
-("MyOrgMode.org"
- (filename . "d:/Dropbox/emacs_docs/tutorial_mine/MyOrgMode.org")
- (front-context-string . "\nhttp://www.cnbl")
- (rear-context-string)
- (position . 1))
 ("tutorial_mine"
  (filename . "d:/Dropbox/emacs_docs/tutorial_mine/")
  (front-context-string . "MyNotes.txt\n  -r")
