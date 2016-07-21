@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("MyNotes.org"
+(("jk-key-bindings.el"
+ (filename . "~/.emacs.d/elisp/jk-key-bindings.el")
+ (front-context-string . "(global-set-key ")
+ (rear-context-string . "就是在emacs中看man） \n")
+ (position . 93))
+("MyNotes.org"
  (filename . "d:/Dropbox/emacs_docs/tutorial_mine/MyNotes.org")
  (front-context-string . "1: help\nc-h k c-")
  (rear-context-string)
