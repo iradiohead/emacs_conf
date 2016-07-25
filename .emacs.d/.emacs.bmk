@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("jk-key-bindings.el"
+(("linux_kernel.org"
+ (filename . "d:/Dropbox/emacs_docs/linux_kernel.org")
+ (front-context-string . "\n\n* 构建内核需要的工具\n**")
+ (rear-context-string)
+ (position . 2))
+("git.org"
+ (filename . "d:/Dropbox/emacs_docs/git.org")
+ (front-context-string . "\n** 查看已经commit但没")
+ (rear-context-string . "push \n\n* 常见的使用问题")
+ (position . 1149))
+("jk-key-bindings.el"
  (filename . "~/.emacs.d/elisp/jk-key-bindings.el")
  (front-context-string . "(global-set-key ")
  (rear-context-string . "就是在emacs中看man） \n")
