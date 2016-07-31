@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("MyPlugin.org"
+(("C_C++_projects"
+ (filename . "d:/Dropbox/SHARE_FOR_VM/C_C++_projects/")
+ (front-context-string . "helloword\n  drwx")
+ (rear-context-string . "096 07-31 18:13 ")
+ (position . 256))
+("MyPlugin.org"
  (filename . "d:/Dropbox/emacs_docs/tutorial_mine/MyPlugin.org")
  (front-context-string . "* 窗口快速跳转 C-x o /")
  (rear-context-string)
