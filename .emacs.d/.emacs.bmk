@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("C_C++_projects"
+(("jk-basic-config.el"
+ (filename . "~/.emacs.d/elisp/jk-basic-config.el")
+ (front-context-string . ";; 设置背景颜色和字体颜色\n(")
+ (rear-context-string)
+ (position . 1))
+("C_C++_projects"
  (filename . "d:/Dropbox/SHARE_FOR_VM/C_C++_projects/")
  (front-context-string . "helloword\n  drwx")
  (rear-context-string . "096 07-31 18:13 ")
