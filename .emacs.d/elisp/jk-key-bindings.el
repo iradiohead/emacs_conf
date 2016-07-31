@@ -304,3 +304,31 @@
 ;; (define-key global-map [(control f12)] 'cscope-prev-file)
 ;; (define-key global-map [(meta f9)]  'cscope-display-buffer)
 ;; (define-key global-map [(meta f10)] 'cscope-display-buffer-toggle)
+
+;;kjin
+(global-linum-mode t) ;; buildin 
+
+;;kjin copy line if no region selected
+;; copy region or whole line
+(global-set-key "\M-w"
+(lambda ()
+  (interactive)
+  (if mark-active
+      (kill-ring-save (region-beginning)
+      (region-end))
+    (progn
+     (kill-ring-save (line-beginning-position)
+     (line-end-position))
+     (message "copied line")))))
+
+;;kjin --this have some issue so comment it(C-c C-c / C-c C-v)  kill region or whole line
+;; (global-set-key "\C-x\C-k"
+;; (lambda ()
+;;   (interactive)
+;;   (if mark-active
+;;       (kill-region (region-beginning)
+;;    (region-end))
+;;     (progn
+;;      (kill-region (line-beginning-position)
+;;   (line-end-position))
+;;      (message "killed line")))))

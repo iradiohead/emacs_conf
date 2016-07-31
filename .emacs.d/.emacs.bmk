@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("linux_kernel.org"
+(("MyPlugin.org"
+ (filename . "d:/Dropbox/emacs_docs/tutorial_mine/MyPlugin.org")
+ (front-context-string . "* 窗口快速跳转 C-x o /")
+ (rear-context-string)
+ (position . 1))
+("linux_kernel.org"
  (filename . "d:/Dropbox/emacs_docs/linux_kernel.org")
  (front-context-string . "\n\n* 构建内核需要的工具\n**")
  (rear-context-string)
@@ -77,11 +82,6 @@
  (front-context-string . ".dropbox\n  drwxr")
  (rear-context-string . " 33 2015-07-22  ")
  (position . 234))
-("jk-basic-config.el"
- (filename . "~/.emacs.d/elisp/jk-basic-config.el")
- (front-context-string . "            '(ba")
- (rear-context-string . "olor . \"black\")\n")
- (position . 134))
 (".emacs"
  (filename . "~/.emacs")
  (front-context-string . ";;设置你的全名和邮件，在发邮件")
