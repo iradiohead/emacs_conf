@@ -229,6 +229,9 @@
 (find-file "D:/Dropbox/emacs_docs/temp.txt")
 (find-file "D:/Dropbox/emacs_docs/my_todo_list.org")
 
+;;kjin
+(require 'bm)
+
 ;;这个东西必须放在最后
 ;;desktop.el是一个可以保存你上次emacs关闭时的状态，下一次启动时恢复为上次关闭的状态。就和vmware的suspend一样。
 (load "desktop") 

@@ -1,12 +1,19 @@
 ;;统一设置键帮定，并尽量放在配置文件的最后，以免被绑定的键不小心被后面的配置文件覆盖 
 
 ;;常用习惯，F1打开帮助，常用帮助有info和woman（就是在emacs中看man） 
-(global-set-key [(f1)] 'info) 
+;;kjin
+;;(global-set-key [(f1)] 'info) 
 
+;;kjin 
 ;;恢复，常用键 
-(global-set-key [(f2)] 'undo) 
+(global-set-key [(f1)] 'undo) 
 ;;反恢复，不是很常用，但是绑定了还是方便些 
-(global-set-key [(ctrl f2)] 'redo)
+(global-set-key [(ctrl f1)] 'redo)
+
+;;kjin add for bm
+(global-set-key (kbd "<C-f2>") 'bm-toggle)
+(global-set-key (kbd "<f2>")   'bm-next)
+(global-set-key (kbd "<S-f2>") 'bm-previous)
 
 ;;高亮highlight
 (global-set-key [(control f3)] 'highlight-symbol-at-point-2)

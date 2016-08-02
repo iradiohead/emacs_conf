@@ -1,0 +1,79 @@
+cd d:\PAC\SVN_LINDX\nokia_os\rootfs_output\
+ls
+tar -xzvf acpi5-rootfs.tar.gz 
+ls
+unzip x86_64-linux-gnu.zip 
+y
+y
+y
+yn
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+A
+  inflating: x86_64-linux-gnu/usr/bin/wall  
+  inflating: x86_64-linux-gnu/usr/bin/traceroute6  
+   creating: x86_64-linux-gnu/var/ 
+   creating: x86_64-linux-gnu/var/db/
+  inflating: x86_64-linux-gnu/var/db/Makefile  
+   creating: x86_64-linux-gnu/var/log/
+ extracting: x86_64-linux-gnu/var/log/wtmp  
+
+d:\PAC\SVN_LINDX\nokia_os\rootfs_output>
+ls
+cd acpi5-rootfs/
+find . -name *python*
+find . -name *python* -exec ls -l {}\;
+find . -name "*python* -exec ls -l {} \;
+find . -name "*python* -exec ls -l {}\;
+find . -name "*python*" -exec ls -l {}\;
+find . -name "*python*" -exec ls -ld {}\;
+find . -name "*python*" -exec ls -l {} \;
+find . -name "*python*" -exec ls -l {} \;
+find . -name python* -exec ls -l {} \;
+find . -name python* -exec ls -l {} \;
+find . -name python* | xargs ls -l
+find . -name python* 
+ls -l /usr/bin/python2.7
+ls -l usr/bin/python2.7
+ls -l usr/bin
+ls
+history
+ls
+man
+man 1
+man ls
+who
+which ls
+pwd
+ls
+ls -l usr/bin/python2.7
+find .
+cccc
+cccccccccccccc
+c
+gvccccc
+ccc
+cc
+.
+c
+c
+c
+c
+gccccccc
