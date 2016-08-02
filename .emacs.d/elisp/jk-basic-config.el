@@ -5,7 +5,7 @@
             '(background-color . "gray")
             '(border-color . "grey")
             '(mouse-color . "mediumpurple")
-            '(cursor-color . "white")
+            '(cursor-color . "green")
 ;;          '(ime-font . (w32-logfont "ＭＳ ゴシック"
 ;;                        0 16 400 0 nil nil nil
 ;;                        128 1 3 49)) ; TrueType のみ
@@ -19,12 +19,17 @@
 
 ;;不要让光标闪烁(blink-cursor-mode -1)
 ;; 设置另外一些颜色：语法高亮显示的背景和主题，区域选择的背景和主题，二次选择的背景和选择
-(set-face-foreground 'highlight "white")
-(set-face-background 'highlight "black")
-(set-face-foreground 'region "cyan")
-(set-face-background 'region "black")
+
+;; (set-face-foreground 'highlight "white")
+;; (set-face-background 'highlight "black")
+;; (set-face-foreground 'region "cyan")
+;; (set-face-background 'region "black")
 (set-face-foreground 'secondary-selection "skyblue")
 (set-face-background 'secondary-selection "darkblue")
+;;kjin
+;;(set-face-foreground 'region "green")
+;;(set-face-background 'region "blue")
+
 
 ;;Other spcified color-theme
 ;;(require 'color-theme)
@@ -34,13 +39,18 @@
 ;;(set-default-font "Courier New-10")
 (set-default-font "Courier New-12")
 (set-face-foreground 'menu "white")
+;;(set-default-font "-unknown-DejaVu Sans Mono-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1")  ;;个人感觉Mono系字体适合程序（对普通青年）  
+;;(set-default-font "WenQuanYi Zen Hei Mono-22")
+
 
 ;;;Tab is 4
 ;; 强制输入Tab时：C-q C-i
 ;;Forced set tab width
 (setq default-tab-width 4)
-;; 2012/06/30 Forced replace tab width with some whitespace
-(setq-default indent-tabs-mode nil)
+
+;;kjin comment it;; 2012/06/30 Forced replace tab width with some whitespace
+;;(setq-default indent-tabs-mode nil)
+
 ;; 2012/07/02 Set default TAGS file
 ;;(setq tags-file-name "D:/Current_Task/Source/RCY/ALL/TAGS_ALL")
 
@@ -101,16 +111,16 @@
 
 ;;备份设置
 ;;emacs还有一个自动保存功能，默认在~/.emacs.d/auto-save-list里，这个非常有用，我这里没有改动，具体可以参见Sams teach yourself emacs in 24hours(我简称为sams24)
-;;启用版本控制，即可以备份多次
-(setq version-control t)
-;;备份最原始的版本两次，记第一次编辑前的文档，和第二次编辑前的文档
-(setq kept-old-versions 2)
-;;备份最新的版本五次，理解同上
-(setq kept-new-versions 5)
+;;kjin cmt it;;启用版本控制，即可以备份多次
+;;(setq version-control t)
+;;kjin cmt it;;备份最原始的版本两次，记第一次编辑前的文档，和第二次编辑前的文档
+;;(setq kept-old-versions 2)
+;;kjin cmt it 备份最新的版本五次，理解同上
+;;(setq kept-new-versions 5)
 ;;删掉不属于以上7中版本的版本
 (setq delete-old-versions t)
-;;备份设置方法，直接拷贝
-(setq backup-by-copying t)
+;;kjin cmt it;;备份设置方法，直接拷贝
+;;(setq backup-by-copying t)
 
 ;; disable auto-save and auto-backup
 ;; kjin disable
@@ -229,8 +239,8 @@
 (setq apropos-do-all t)
 ;;使用narrow功能时的一个设置
 (put 'narrow-to-region 'disabled nil)
-;;启动Emacs自动设置为两个窗口(上下各一个)
-(split-window-vertically)
+;;kjin cmt it启动Emacs自动设置为两个窗口(上下各一个)
+;;(split-window-vertically)
 ;;改变emacs标题栏的标题
 (setq frame-title-format "%b@RADIOHEAD")
 ;;允许emacs和外部其他程序的粘贴
@@ -246,16 +256,14 @@
 (setq TeX-parse-self t)
 (setq-default TeX-master nil)
 
-(setq TeX-auto-untabify t) ;; 不使用 TAB字符缩进
+;;kjin cmt it (setq TeX-auto-untabify t) ;; 不使用 TAB字符缩进
 (setq LaTeX-document-regexp "document\\|CJK\\*?")  ;; CJK 环境中不缩进
 (add-hook 'LaTeX-mode-hook #'LaTeX-install-toolbar)
 (add-hook 'LaTeX-mode-hook 'turn-on-auto-fill)
 ;;Setting for auctex end
 
-
 ;;Setting for ibuffer
 (require 'ibuffer)
-
 
 ;;Setting for wb-line-number
 ;;kjin comment it(require 'wb-line-number)
@@ -320,7 +328,7 @@
 '(display-time-mode t)
 '(ecb-gzip-setup (quote cons))
 '(ecb-options-version "2.40")
-'(ecb-source-path (quote ("d:/Dropbox/emacs_testfolder/")))
+'(ecb-source-path (quote ("d:/Dropbox/emacs_doc/")))
 '(ecb-tar-setup (quote cons))
 '(ecb-wget-setup (quote cons))
 '(show-paren-mode t)
@@ -406,7 +414,7 @@
 ;;kjin add line number
 (global-linum-mode t)
 
-;;kjin add for 字符编码
+;;kjin add - can not be put to jk-language.el, no time to investigate why.
 (set-language-environment "UTF-8")
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)

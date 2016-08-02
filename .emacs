@@ -17,7 +17,7 @@
 
 ;;由于我的配置文件很长，所以按照分类分别放在不同的文件里，方便管理
 (load "jk-basic-config")
-(load "fxq-language")
+(load "jk-language")
 (load "jk-calendar")
 (load "fxq-folding")
 ;;(load "fxq-ido")
@@ -63,7 +63,7 @@
 ;;(require 'webkit)
 
 (add-to-list 'load-path
-              "~/.emacs.d/elisp/iedit")
+   "~/.emacs.d/elisp/iedit")
 (load "iedit")
 (require 'iedit)
 
@@ -212,7 +212,7 @@
 ;; added by kjin-F on 07082012 for Aspell function ;;kjin http://aspell.net/win32/
 (add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin/")
 (setq ispell-program-name "aspell")
-(setq ispell-personal-dictionary "D:/emacs/.emacs.d/ispell.el")
+(setq ispell-personal-dictionary "D:/emacs_conf/.emacs.d/ispell.el")
 (require 'ispell)
 
 ;; added by kjin-F on 30072013 for ignoring different directory and file in special mode

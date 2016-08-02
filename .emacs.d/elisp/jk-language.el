@@ -46,3 +46,4 @@
 ;;("MuleArabic-0" (arabic-digit . 0)) 
 ;;("MuleArabic-1" (arabic-1-column . 0)) 
 ;;("MuleArabic-2" (arabic-2-column . 0))) font-encoding-alist))
+
