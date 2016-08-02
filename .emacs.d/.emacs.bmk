@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("jk-basic-config.el"
+(("emacs_conf"
+ (filename . "~/")
+ (front-context-string . ".emacs.d\n  -rw-r")
+ (rear-context-string . "192 08-02 14:50 ")
+ (position . 290))
+("jk-basic-config.el"
  (filename . "~/.emacs.d/elisp/jk-basic-config.el")
  (front-context-string . ";; 设置背景颜色和字体颜色\n(")
  (rear-context-string)

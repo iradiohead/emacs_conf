@@ -226,8 +226,9 @@
 
 ;;(find-file "D:/emacs/diary/TimeQuadrant.org")
 ;;(find-file "D:/Current_Task/Source/Preprocessor_Source/PPLIST_SPM/pplist.var")
-(find-file "D:/Dropbox/emacs_docs/temp.txt")
-(find-file "D:/Dropbox/emacs_docs/my_todo_list.org")
+;;(find-file "D:/Dropbox/emacs_docs/temp.txt")
+;;(find-file "D:/Dropbox/emacs_docs/my_todo_list.org")
+;;(find-file "D:/emacs_conf/.emacs.d/.emacs.bmk")
 
 ;;kjin
 (require 'bm)
