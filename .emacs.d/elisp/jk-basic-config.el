@@ -1,13 +1,12 @@
-
 ;; 设置背景颜色和字体颜色
 (setq default-frame-alist
       (append (list
-		   ;; '(foreground-color . "white")
-           ;; '(background-color . "black")
-           ;; '(background-color . "gray")
-            '(border-color . "grey")
+		  ;;  '(foreground-color . "white")
+          ;;  '(background-color . "black")
+          ;;  '(background-color . "gray")
+          ;;  '(border-color . "grey")
           ;;  '(mouse-color . "mediumpurple")
-         ;;   '(cursor-color . "green")
+          ;;  '(cursor-color . "green")
 ;;          '(ime-font . (w32-logfont "ＭＳ ゴシック"
 ;;                        0 16 400 0 nil nil nil
 ;;                        128 1 3 49)) ; TrueType のみ
@@ -26,8 +25,8 @@
 ;; (set-face-background 'highlight "black")
 ;; (set-face-foreground 'region "cyan")
 ;; (set-face-background 'region "black")
-(set-face-foreground 'secondary-selection "skyblue")
-(set-face-background 'secondary-selection "darkblue")
+;;(set-face-foreground 'secondary-selection "skyblue")
+;;(set-face-background 'secondary-selection "darkblue")
 ;;kjin
 ;;(set-face-foreground 'region "green")
 ;;(set-face-background 'region "blue")
@@ -40,7 +39,7 @@
 ;;(set-face-font 'menu "7x14")
 ;;(set-default-font "Courier New-10")
 ;;(set-default-font "Courier New-12")
-(set-face-foreground 'menu "white")
+;;kjin cmt it(set-face-foreground 'menu "white")
 ;;(set-default-font "-unknown-DejaVu Sans Mono-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1")  ;;个人感觉Mono系字体适合程序（对普通青年）  
 ;;(set-default-font "WenQuanYi Zen Hei Mono-22")
 ;; Setting English Font

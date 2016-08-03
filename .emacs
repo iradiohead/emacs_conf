@@ -15,6 +15,39 @@
 (setq gnus-init-file "~/.emacs.d/elisp/jk-gnus.el")
 
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;kjin put to here because it can be overlapped by jk-basic-config.el later
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
+ '(column-number-mode t)
+ '(custom-enabled-themes (quote (tango-dark)))
+ '(display-time-mode t)
+ '(ecb-gzip-setup (quote cons))
+ '(ecb-options-version "2.40")
+ '(ecb-source-path (quote ("d:/Dropbox/emacs_doc/")))
+ '(ecb-tar-setup (quote cons))
+ '(ecb-wget-setup (quote cons))
+ '(show-paren-mode t)
+ '(tabbar-buffer-groups-function (quote tabbar-buffer-ignore-groups) t)
+ '(tabbar-buffer-list-function (quote tabbar-buffer-list) t)
+ '(tabbar-cycling-scope nil)
+ '(tabbar-mode t nil (tabbar))
+ '(transient-mark-mode t))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;;由于我的配置文件很长，所以按照分类分别放在不同的文件里，方便管理
 (load "jk-basic-config")
 (load "jk-language")
@@ -196,10 +229,7 @@
 ;;        (setq my-tramp-methods (cons my-tramp-ssh-method my-tramp-methods))  
 ;;      (setq my-tramp-methods (cons elt my-tramp-methods))))))  
 
-;; add tab mode by kjin-F on 20120413
-(require 'tabbar)  
-(tabbar-mode 1)  	
-(define-prefix-command 'lwindow-map)
+
 
 ;; added by kjin-F on 09072012 for adding auto-complete function
 (require 'auto-complete-config)
@@ -242,4 +272,33 @@
 (c-set-offset 'case-label '+)
 (put 'upcase-region 'disabled nil)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;; add tab mode by kjin-F on 20120413
+(require 'tabbar)  
+(tabbar-mode 1)  	
+(define-prefix-command 'lwindow-map)
+;;kjin add for tabbar color, this needed if customize-theme choosed!
+(setq tabbar-buffer-list-function
+    (lambda ()
+        (remove-if
+          (lambda(buffer)
+             (find (aref (buffer-name buffer) 0) " *"))
+          (buffer-list))))
+(setq tabbar-buffer-groups-function
+      (lambda()(list "All")))
+(set-face-attribute 'tabbar-button nil)
+
+;;set tabbar's backgroud color
+(set-face-attribute 'tabbar-default nil
+                    :background "gray"
+                    :foreground "gray30")
+(set-face-attribute 'tabbar-selected nil
+                    :inherit 'tabbar-default
+                    :background "green"
+                    :box '(:line-width 3 :color "DarkGoldenrod") )
+(set-face-attribute 'tabbar-unselected nil
+                    :inherit 'tabbar-default
+                    :box '(:line-width 3 :color "gray"))
+;; USEFUL: set tabbar's separator gap
+(custom-set-variables '(tabbar-separator (quote (1.5))))
