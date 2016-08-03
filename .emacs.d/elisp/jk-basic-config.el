@@ -1,19 +1,21 @@
+
 ;; 设置背景颜色和字体颜色
 (setq default-frame-alist
-      (append (list '(foreground-color . "white")
-            '(background-color . "black")
-            '(background-color . "gray")
+      (append (list
+		   ;; '(foreground-color . "white")
+           ;; '(background-color . "black")
+           ;; '(background-color . "gray")
             '(border-color . "grey")
-            '(mouse-color . "mediumpurple")
-            '(cursor-color . "green")
+          ;;  '(mouse-color . "mediumpurple")
+         ;;   '(cursor-color . "green")
 ;;          '(ime-font . (w32-logfont "ＭＳ ゴシック"
 ;;                        0 16 400 0 nil nil nil
 ;;                        128 1 3 49)) ; TrueType のみ
 ;;          '(font . "bdf-fontset")    ; BDF
 ;;          '(font . "private-fontset"); TrueType
-            '(width . 80)
+            '(width . 140)
             '(height . 35)
-            '(top . 50)
+            '(top . 0)
             '(left .100))
           default-frame-alist))
 
@@ -37,11 +39,18 @@
 ;;set the menu colors and font using the menu face.
 ;;(set-face-font 'menu "7x14")
 ;;(set-default-font "Courier New-10")
-(set-default-font "Courier New-12")
+;;(set-default-font "Courier New-12")
 (set-face-foreground 'menu "white")
 ;;(set-default-font "-unknown-DejaVu Sans Mono-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1")  ;;个人感觉Mono系字体适合程序（对普通青年）  
 ;;(set-default-font "WenQuanYi Zen Hei Mono-22")
-
+;; Setting English Font
+(set-face-attribute
+ 'default nil :font "DejaVu Sans Mono 11")
+;; Setting Chinese Font
+(dolist (charset '(kana han symbol cjk-misc bopomofo))
+  (set-fontset-font (frame-parameter nil 'font)
+            charset
+            (font-spec :family "Microsoft Yahei" :size 18)))
 
 ;;;Tab is 4
 ;; 强制输入Tab时：C-q C-i

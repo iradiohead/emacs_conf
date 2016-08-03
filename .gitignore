@@ -1,5 +1,5 @@
 #.gitignore
-.emacs.elc
+#.emacs.elc
 .emacs.d/ido.last
 .emacs.d/auto-save-list/*
 .emacs.d/.emacs.desktop
