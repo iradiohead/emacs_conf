@@ -17,11 +17,6 @@
  (front-context-string . "helloword\n  drwx")
  (rear-context-string . "096 07-31 18:13 ")
  (position . 256))
-("MyPlugin.org"
- (filename . "d:/Dropbox/emacs_docs/tutorial_mine/MyPlugin.org")
- (front-context-string . "* 窗口快速跳转 C-x o /")
- (rear-context-string)
- (position . 1))
 ("linux_kernel.org"
  (filename . "d:/Dropbox/emacs_docs/linux_kernel.org")
  (front-context-string . "\n\n* 构建内核需要的工具\n**")

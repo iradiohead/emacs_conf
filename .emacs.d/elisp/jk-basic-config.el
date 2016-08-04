@@ -44,12 +44,12 @@
 ;;(set-default-font "WenQuanYi Zen Hei Mono-22")
 ;; Setting English Font
 (set-face-attribute
- 'default nil :font "DejaVu Sans Mono 11")
+ 'default nil :font "DejaVu Sans Mono 10")
 ;; Setting Chinese Font
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
   (set-fontset-font (frame-parameter nil 'font)
             charset
-            (font-spec :family "Microsoft Yahei" :size 18)))
+            (font-spec :family "Microsoft Yahei" :size 16)))
 
 ;;;Tab is 4
 ;; 强制输入Tab时：C-q C-i
