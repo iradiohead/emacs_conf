@@ -239,6 +239,9 @@
 (ac-set-trigger-key "<tab>")
 (global-auto-complete-mode t)
 
+
+;;(require 'auto-complete-clang)  
+
 ;; added by kjin-F on 07082012 for Aspell function ;;kjin http://aspell.net/win32/
 (add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin/")
 (setq ispell-program-name "aspell")
