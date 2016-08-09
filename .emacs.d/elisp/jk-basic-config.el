@@ -311,6 +311,16 @@
   '("Speedbar" .
     speedbar-frame-mode)
   [calendar])
+
+;; (ede-cpp-root-project "Kernel"
+;;                 :name "Kernel Project"
+;;                 :file "d:/Dropbox/SHARE_FOR_VM/C_C++_projects/hwcpp/calc.c"
+;;                 :include-path '("/"
+;;                                 "/include"
+;;                                )
+;;                 :system-include-path '("/usr/include")    )
+
+
 ;----------------------------------------------------------
 ;;ecb
 ;Added by kjin-F on 08/07/2012 for omitting the warning in Emacs 24.1.1

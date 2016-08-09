@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("emacs_conf"
+(("fxq-function.el"
+ (filename . "~/.emacs.d/elisp/fxq-function.el")
+ (front-context-string . ";;如果你正在编辑一个东西（在位")
+ (rear-context-string)
+ (position . 1))
+("emacs_conf"
  (filename . "~/")
  (front-context-string . ".emacs.d\n  -rw-r")
  (rear-context-string . "192 08-02 14:50 ")
