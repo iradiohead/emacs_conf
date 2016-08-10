@@ -1,2 +1,9 @@
-Jun 17, 2016 test
-Jul 4, 2016 test2
+/* very bad
+/** uncomfortable
+/*** normal
+/**** good
+/*****  very good
+
+Aug 8, 2016 ****
+Aug 9, 2016 ****
+Aug 6, 2016 **

@@ -440,3 +440,8 @@
 (set-buffer-file-coding-system 'utf-8)
 (set-selection-coding-system 'utf-8)
 (modify-coding-system-alist 'process "*" 'utf-8)
+
+
+;; org mode 换行问题  
+(add-hook 'org-mode-hook   
+      (lambda () (setq truncate-lines nil)))  

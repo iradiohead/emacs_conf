@@ -14,6 +14,17 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 
+;;kjin  org-capture
+;;http://blog.csdn.net/jiluben/article/details/39532273
+;;然后在emacs中按下C-c c即可出现选择界面，选择“j”，就会出现文字输入框，输入日记的内容，
+;;按C-c C-c，日记就自动保存在了我们的文件中，按照上面的配置，我的日记会保存在journal.org
+;;文件中。并且日记是按时间分类的，非常方便。
+;; kjin - 不起作用,不知道为啥!!
+(setq org-capture-templates
+      '(("t" "Todo" entry (file+headline "d:/Dropbox/emacs_docs/task.org" "Tasks")
+         "* TODO %?\n %i\n %a")
+        ("j" "Journal" entry (file+datetree "d:/Dropbox/emacs_docs/journal.org")
+         "* %?\nEntered on %U\n %i\n %a")))
 						   
 ;;日历基本配置
 ;;设置我所在地方的经纬度，calendar里有个功能是日月食的预测，和你的经纬度相联系的。
@@ -83,3 +94,29 @@
 ["甲" "乙" "丙" "丁" "戊" "己" "庚" "辛" "壬" "癸"])
 (setq chinese-calendar-terrestrial-branch
 ["子" "丑" "寅" "卯" "辰" "巳" "戊" "未" "申" "酉" "戌" "亥"])
+
+;;kjin;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Here is some code to make your calendar and diary display fancier:
+ (setq view-diary-entries-initially t
+       mark-diary-entries-in-calendar t
+       number-of-diary-entries 7)
+ (add-hook 'diary-display-hook 'fancy-diary-display)
+ (add-hook 'today-visible-calendar-hook 'calendar-mark-today)
+
+
+;;Here is some code to get rid of the ugly equal signs under the date
+ (add-hook 'fancy-diary-display-mode-hook
+	   '(lambda ()
+              (alt-clean-equal-signs)))
+  
+ (defun alt-clean-equal-signs ()
+   "This function makes lines of = signs invisible."
+   (goto-char (point-min))
+   (let ((state buffer-read-only))
+     (when state (setq buffer-read-only nil))
+     (while (not (eobp))
+       (search-forward-regexp "^=+$" nil 'move)
+       (add-text-properties (match-beginning 0) 
+	                    (match-end 0) 
+			    '(invisible t)))
+     (when state (setq buffer-read-only t))))

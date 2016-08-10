@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("fxq-function.el"
+(("working_log.org"
+ (filename . "d:/Dropbox/emacs_docs/working_log.org")
+ (front-context-string . "\n\n* nokia linux ")
+ (rear-context-string)
+ (position . 1))
+("elisp"
+ (filename . "~/.emacs.d/elisp/")
+ (front-context-string . "fxq-dictionary.e")
+ (rear-context-string . "238 2013-10-07  ")
+ (position . 1367))
+("fxq-function.el"
  (filename . "~/.emacs.d/elisp/fxq-function.el")
  (front-context-string . ";;如果你正在编辑一个东西（在位")
  (rear-context-string)
