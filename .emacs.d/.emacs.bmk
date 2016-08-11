@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("working_log.org"
+(("src"
+ (filename . "d:/Dropbox/OSP_PLATFORM/16 - PRB-SRC-CODE/SS_LNXVMANAKVM_4.43/SS_LNXvmanakvm/src/")
+ (front-context-string . "cli\n  drwxrwxrwx")
+ (rear-context-string . "  0 04-28 16:41 ")
+ (position . 432))
+("working_log.org"
  (filename . "d:/Dropbox/emacs_docs/working_log.org")
  (front-context-string . "\n\n* nokia linux ")
  (rear-context-string)

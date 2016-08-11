@@ -333,40 +333,41 @@
           ecb-tree-indent 4
           ecb-windows-height 0.5
           ecb-windows-width 0.2
-          ecb-auto-compatibility-check nil
-          ecb-version-check nil
-          inhibit-startup-message t)
+;;          ecb-auto-compatibility-check nil
+;;          ecb-version-check nil
+;;          inhibit-startup-message t
+		  )
 ;--------------------------------------------
-(custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
-'(column-number-mode t)
-'(display-time-mode t)
-'(ecb-gzip-setup (quote cons))
-'(ecb-options-version "2.40")
-'(ecb-source-path (quote ("d:/Dropbox/emacs_doc/")))
-'(ecb-tar-setup (quote cons))
-'(ecb-wget-setup (quote cons))
-'(show-paren-mode t)
-'(tabbar-buffer-groups-function (quote tabbar-buffer-ignore-groups))
-'(tabbar-buffer-list-function (quote tabbar-buffer-list))
-'(tabbar-cycling-scope nil)
-'(tabbar-mode t)
-'(transient-mark-mode t))
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
-)
-;----------------------------------------------
-(setq semanticdb-project-roots
-          (list
-        (expand-file-name "/")))
-(setq semanticdb-default-save-directory "~/.emacs.d/auto-save-list")
-;;设置semantic.cache路径
+;; (custom-set-variables
+;;   ;; custom-set-variables was added by Custom.
+;;   ;; If you edit it by hand, you could mess it up, so be careful.
+;;   ;; Your init file should contain only one such instance.
+;;   ;; If there is more than one, they won't work right.
+;; '(column-number-mode t)
+;; '(display-time-mode t)
+;; '(ecb-gzip-setup (quote cons))
+;; '(ecb-options-version "2.40")
+;; '(ecb-source-path (quote ("d:/Dropbox/emacs_doc/")))
+;; '(ecb-tar-setup (quote cons))
+;; '(ecb-wget-setup (quote cons))
+;; '(show-paren-mode t)
+;; '(tabbar-buffer-groups-function (quote tabbar-buffer-ignore-groups))
+;; '(tabbar-buffer-list-function (quote tabbar-buffer-list))
+;; '(tabbar-cycling-scope nil)
+;; '(tabbar-mode t)
+;; '(transient-mark-mode t))
+;; (custom-set-faces
+;;   ;; custom-set-faces was added by Custom.
+;;   ;; If you edit it by hand, you could mess it up, so be careful.
+;;   ;; Your init file should contain only one such instance.
+;;   ;; If there is more than one, they won't work right.
+;; )
+;; ;----------------------------------------------
+;; (setq semanticdb-project-roots
+;;           (list
+;;         (expand-file-name "/")))
+;; (setq semanticdb-default-save-directory "~/.emacs.d/auto-save-list")
+;; ;;设置semantic.cache路径
 
 (defun my-indent-or-complete ()
    (interactive)
