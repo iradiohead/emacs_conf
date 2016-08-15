@@ -2,11 +2,16 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("src"
- (filename . "d:/Dropbox/OSP_PLATFORM/16 - PRB-SRC-CODE/SS_LNXVMANAKVM_4.43/SS_LNXvmanakvm/src/")
- (front-context-string . "cli\n  drwxrwxrwx")
- (rear-context-string . "  0 04-28 16:41 ")
- (position . 432))
+(("linux_shell_cmd.org"
+ (filename . "d:/Dropbox/emacs_docs/linux/linux_shell_cmd.org")
+ (front-context-string . "#+TITLE: linux_s")
+ (rear-context-string)
+ (position . 1))
+("linux"
+ (filename . "d:/Dropbox/emacs_docs/linux/")
+ (front-context-string . "..\n  -rw-rw-rw- ")
+ (rear-context-string . "192 08-15 08:54 ")
+ (position . 188))
 ("working_log.org"
  (filename . "d:/Dropbox/emacs_docs/working_log.org")
  (front-context-string . "\n\n* nokia linux ")
@@ -37,11 +42,6 @@
  (front-context-string . "helloword\n  drwx")
  (rear-context-string . "096 07-31 18:13 ")
  (position . 256))
-("linux_kernel.org"
- (filename . "d:/Dropbox/emacs_docs/linux_kernel.org")
- (front-context-string . "\n\n* 构建内核需要的工具\n**")
- (rear-context-string)
- (position . 2))
 ("git.org"
  (filename . "d:/Dropbox/emacs_docs/git.org")
  (front-context-string . "\n** 查看已经commit但没")
@@ -77,11 +77,6 @@
  (front-context-string . "\n* working\n\n\nC-c")
  (rear-context-string)
  (position . 1))
-("linux_shell_cmd.org"
- (filename . "d:/Dropbox/emacs_docs/linux_shell_cmd.org")
- (front-context-string . "\n*  \n压缩\ntar –cvf")
- (rear-context-string . "linux_shell_cmd\n")
- (position . 26))
 ("Learning_path.org"
  (filename . "d:/Dropbox/emacs_docs/Learning_path.org")
  (front-context-string . "* linux\n** build")

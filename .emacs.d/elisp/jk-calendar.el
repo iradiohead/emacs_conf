@@ -74,7 +74,9 @@
 
 ;;Diary
 
-(setq diary-file "~/diary/diary")
+;;(setq diary-file "~/diary/diary")
+
+(setq diary-file "d:/Dropbox/emacs_docs/diary")
 (setq diary-mail-addr "kjin1983@gmail.com")
 
 ;;其他的一些设置
