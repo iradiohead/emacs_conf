@@ -97,11 +97,6 @@
  (front-context-string . "export https_pro")
  (rear-context-string)
  (position . 1))
-("人文素质讲座.txt"
- (filename . "d:/Dropbox/emacs_docs/人文素质讲座.txt")
- (front-context-string . "考生姓名:金柯 学号:Z1503")
- (rear-context-string)
- (position . 1))
 ("2016_sprint_todo_list.org"
  (filename . "d:/Dropbox/emacs_docs/2016_sprint_todo_list.org")
  (front-context-string . "\n** vmana contin")
