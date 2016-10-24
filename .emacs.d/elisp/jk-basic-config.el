@@ -446,3 +446,14 @@
 ;; org mode 换行问题  
 (add-hook 'org-mode-hook   
       (lambda () (setq truncate-lines nil)))  
+
+
+;;Replace all freakin' ^M chars in the current buffer(if 0xD 0xA, it will show M)
+(defun remove-dos-eol ()
+  "Removes the disturbing '^M' showing up in files containing mixed UNIX and DOS line endings."
+  (interactive)
+  (setq buffer-display-table (make-display-table))
+  (aset buffer-display-table ?\^M []))
+
+(global-set-key "\C-cm" 'remove-dos-eol)
+(add-hook 'text-mode-hook (lambda () (remove-dos-eol)))

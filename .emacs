@@ -305,3 +305,9 @@
                     :box '(:line-width 3 :color "gray"))
 ;; USEFUL: set tabbar's separator gap
 (custom-set-variables '(tabbar-separator (quote (1.5))))
+
+
+;;python support 2016-10-24
+(require 'python-mode)
+(add-to-list 'auto-mode-alist '("\\.py'" . python-mode))
+
