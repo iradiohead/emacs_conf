@@ -316,20 +316,6 @@
 (setq org-latex-pdf-process '("xelatex -interaction nonstopmode %f"
 							  "xelatex -interaction nonstopmode %f"))
 
-(setq org-latex-to-pdf-process
-'("xelatex -interaction nonstopmode %f"
-"xelatex -interaction nonstopmode %f"))
-;; (require 'org-latex)
-;; (add-to-list 'org-export-latex-classes
-;;              '("yivanus"
-;;                "\\documentclass{ctexart}"
-;;                ("\\section{%s}" . "\\section*{%s}")
-;;                ("\\subsection{%s}" . "\\subsection*{%s}")
-;;                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
-;;                ("\\paragraph{%s}" . "\\paragraph*{%s}")
-;;                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
-
-
 (require 'ox-latex)
 (unless (boundp 'org-latex-classes)
   (setq org-latex-classes nil))
@@ -346,3 +332,14 @@
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+;; org mode use ctexart
+(add-hook 'org-mode-hook
+  (lambda () 
+  (add-to-list 'org-latex-classes
+  '("ctexart"
+  "\\documentclass{ctexart}"
+  ("\\section{%s}" . "\\section*{%s}")
+  ("\\subsection{%s}" . "\\subsection*{%s}")
+  ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+  ("\\paragraph{%s}" . "\\paragraph*{%s}")
+  ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))))
