@@ -311,3 +311,38 @@
 (require 'python-mode)
 (add-to-list 'auto-mode-alist '("\\.py'" . python-mode))
 
+
+;;kjin org mode export chinese pdf xelatex
+(setq org-latex-pdf-process '("xelatex -interaction nonstopmode %f"
+							  "xelatex -interaction nonstopmode %f"))
+
+(setq org-latex-to-pdf-process
+'("xelatex -interaction nonstopmode %f"
+"xelatex -interaction nonstopmode %f"))
+;; (require 'org-latex)
+;; (add-to-list 'org-export-latex-classes
+;;              '("yivanus"
+;;                "\\documentclass{ctexart}"
+;;                ("\\section{%s}" . "\\section*{%s}")
+;;                ("\\subsection{%s}" . "\\subsection*{%s}")
+;;                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+;;                ("\\paragraph{%s}" . "\\paragraph*{%s}")
+;;                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+
+(require 'ox-latex)
+(unless (boundp 'org-latex-classes)
+  (setq org-latex-classes nil))
+(add-to-list 'org-latex-classes
+             '("article"
+               "\\documentclass{article}"
+               ("\\section{%s}" . "\\section*{%s}")))
+
+(add-to-list 'org-latex-classes
+             '("article"
+               "\\documentclass{article}"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))

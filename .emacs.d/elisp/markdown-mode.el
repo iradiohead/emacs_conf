@@ -762,7 +762,7 @@ Any changes to the output buffer made by this hook will be saved.")
   :group 'wp
   :link '(url-link "http://jblevins.org/projects/markdown-mode/"))
 
-(defcustom markdown-command "markdown"
+(defcustom markdown-command "pandoc -f markdown -t html --ascii --highlight-style pygments --mathjax"
   "Command to run markdown."
   :group 'markdown
   :type 'string)

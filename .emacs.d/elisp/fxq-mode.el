@@ -98,3 +98,6 @@
   (imenu-add-menubar-index)
   (which-function-mode)
   )
+
+;; org -mode huan hang issue
+(add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))

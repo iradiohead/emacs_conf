@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("temp.txt"
+(("face_detection"
+ (filename . "d:/Dropbox/SHARE_FOR_VM/python_projects/face_detection/")
+ (front-context-string . "..\n  drwxrwxrwx ")
+ (rear-context-string . "096 11-10 08:53 ")
+ (position . 213))
+("digital_image_process.org"
+ (filename . "d:/Dropbox/SHARE_FOR_VM/python_projects/document/digital_image_process.org")
+ (front-context-string . "#+TITLE: DIGITAL")
+ (rear-context-string)
+ (position . 1))
+("temp.txt"
  (filename . "d:/Dropbox/emacs_docs/temp.txt")
  (front-context-string . "1.	Ethical busin")
  (rear-context-string)
