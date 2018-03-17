@@ -2,12 +2,7 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("face_detection"
- (filename . "d:/Dropbox/SHARE_FOR_VM/python_projects/face_detection/")
- (front-context-string . "..\n  drwxrwxrwx ")
- (rear-context-string . "096 11-10 08:53 ")
- (position . 213))
-("digital_image_process.org"
+(("digital_image_process.org"
  (filename . "d:/Dropbox/SHARE_FOR_VM/python_projects/document/digital_image_process.org")
  (front-context-string . "#+TITLE: DIGITAL")
  (rear-context-string)
@@ -22,24 +17,9 @@
  (front-context-string . "16 - PRB-SRC-COD")
  (rear-context-string . "  0 09-10 16:26 ")
  (position . 233))
-("PAC"
- (filename . "d:/PAC/")
- (front-context-string . "PACEMBETH\n  drwx")
- (rear-context-string . "096 08-24 10:33 ")
- (position . 275))
 ("linux_shell_cmd.org"
  (filename . "d:/Dropbox/emacs_docs/linux/linux_shell_cmd.org")
  (front-context-string . "#+TITLE: linux_s")
- (rear-context-string)
- (position . 1))
-("linux"
- (filename . "d:/Dropbox/emacs_docs/linux/")
- (front-context-string . "..\n  -rw-rw-rw- ")
- (rear-context-string . "192 08-15 08:54 ")
- (position . 188))
-("working_log.org"
- (filename . "d:/Dropbox/emacs_docs/working_log.org")
- (front-context-string . "\n\n* nokia linux ")
  (rear-context-string)
  (position . 1))
 ("elisp"
@@ -77,46 +57,16 @@
  (front-context-string . "1: help\nc-h k c-")
  (rear-context-string)
  (position . 1))
-("BSP+virtualization"
- (filename . "d:/Dropbox/OSP_PLATFORM/5 - Core Service/BSP+virtualization/")
- (front-context-string . "wang hui\n  drwxr")
- (rear-context-string . "096 04-07 09:31 ")
- (position . 1663))
-("redhat7_note.org"
- (filename . "d:/Dropbox/emacs_docs/redhat7_note.org")
- (front-context-string . "* putty\n\n\n* gnom")
- (rear-context-string)
- (position . 1))
 ("tutorial_mine"
  (filename . "d:/Dropbox/emacs_docs/tutorial_mine/")
  (front-context-string . "MyNotes.txt\n  -r")
  (rear-context-string . "460 07-16 12:59 ")
  (position . 1189))
-("my_todo_list.org"
- (filename . "d:/Dropbox/emacs_docs/my_todo_list.org")
- (front-context-string . "\n* working\n\n\nC-c")
- (rear-context-string)
- (position . 1))
-("Learning_path.org"
- (filename . "d:/Dropbox/emacs_docs/Learning_path.org")
- (front-context-string . "* linux\n** build")
- (rear-context-string . "ing Path 2016 \n\n")
- (position . 31))
 ("emacs_docs"
  (filename . "d:/Dropbox/emacs_docs/")
  (front-context-string . "2016_sprint_todo")
  (rear-context-string . "611 07-05 07:01 ")
  (position . 238))
-("quick_notes.txt"
- (filename . "d:/Dropbox/emacs_docs/quick_notes.txt")
- (front-context-string . "export https_pro")
- (rear-context-string)
- (position . 1))
-("2016_sprint_todo_list.org"
- (filename . "d:/Dropbox/emacs_docs/2016_sprint_todo_list.org")
- (front-context-string . "\n** vmana contin")
- (rear-context-string . "pit interrupt)\n\n")
- (position . 5375))
 ("Dropbox"
  (filename . "d:/Dropbox/")
  (front-context-string . ".dropbox\n  drwxr")

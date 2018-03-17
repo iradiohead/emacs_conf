@@ -27,19 +27,22 @@
  '(ansi-color-names-vector
    ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
  '(column-number-mode t)
- '(custom-enabled-themes (quote (tango-dark)))
+ '(custom-enabled-themes (quote (wombat)))
  '(display-time-mode t)
  '(ecb-gzip-setup (quote cons))
  '(ecb-options-version "2.40")
  '(ecb-source-path (quote ("d:/Dropbox/emacs_doc/")))
  '(ecb-tar-setup (quote cons))
  '(ecb-wget-setup (quote cons))
+ '(menu-bar-mode nil)
  '(show-paren-mode t)
  '(tabbar-buffer-groups-function (quote tabbar-buffer-ignore-groups) t)
  '(tabbar-buffer-list-function (quote tabbar-buffer-list) t)
  '(tabbar-cycling-scope nil)
  '(tabbar-mode t nil (tabbar))
- '(transient-mark-mode t))
+ '(tabbar-separator (quote (1.5)))
+ '(transient-mark-mode t)
+ '(truncate-lines t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -74,6 +77,12 @@
 
 (load "highlight-symbol")
 (require 'highlight-symbol)
+;; (global-set-key [(control f3)] 'highlight-symbol-at-point-2)
+;; (global-set-key [f3] 'highlight-symbol-next)
+;; (global-set-key [(shift f3)] 'highlight-symbol-prev)
+;; (global-set-key [(meta f3)] 'highlight-symbol-prev)
+;; (global-set-key [(control meta f3)] 'highlight-symbol-query-replace)
+
 (add-hook 'text-mode-hook 'highlight-symbol-mode)
 (add-hook 'c-mode-hook 'highlight-symbol-mode)
 (add-hook 'c++-mode-hook 'highlight-symbol-mode)
@@ -304,7 +313,7 @@
                     :inherit 'tabbar-default
                     :box '(:line-width 3 :color "gray"))
 ;; USEFUL: set tabbar's separator gap
-(custom-set-variables '(tabbar-separator (quote (1.5))))
+
 
 
 ;;python support 2016-10-24
@@ -343,3 +352,11 @@
   ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
   ("\\paragraph{%s}" . "\\paragraph*{%s}")
   ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))))
+
+;;for
+(load "graphviz-dot-mode")
+
+;;for starup show agenda - jk
+(setq inhibit-splash-screen t)
+(org-agenda-list)
+(delete-other-windows)
