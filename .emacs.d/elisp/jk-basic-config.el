@@ -12,8 +12,8 @@
 ;;                        128 1 3 49)) ; TrueType のみ
 ;;          '(font . "bdf-fontset")    ; BDF
 ;;          '(font . "private-fontset"); TrueType
-            '(width . 140)
-            '(height . 35)
+            '(width . 100)
+            '(height . 36)
             '(top . 0)
             '(left .100))
           default-frame-alist))
@@ -32,24 +32,24 @@
 ;;(set-face-background 'region "blue")
 
 
-;;Other spcified color-theme
-;;(require 'color-theme)
-;;(color-theme-dark-laptop)
-;;set the menu colors and font using the menu face.
-;;(set-face-font 'menu "7x14")
-;;(set-default-font "Courier New-10")
-;;(set-default-font "Courier New-12")
-;;kjin cmt it(set-face-foreground 'menu "white")
-;;(set-default-font "-unknown-DejaVu Sans Mono-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1")  ;;个人感觉Mono系字体适合程序（对普通青年）  
-;;(set-default-font "WenQuanYi Zen Hei Mono-22")
 ;; Setting English Font
-(set-face-attribute
- 'default nil :font "DejaVu Sans Mono 10")
-;; Setting Chinese Font
-(dolist (charset '(kana han symbol cjk-misc bopomofo))
-  (set-fontset-font (frame-parameter nil 'font)
-            charset
-            (font-spec :family "Microsoft Yahei" :size 16)))
+;; (set-face-attribute
+;;  'default nil :font "DejaVu Sans Mono 10")
+;; ;; Setting Chinese Font
+;; (dolist (charset '(kana han symbol cjk-misc bopomofo))
+;;   (set-fontset-font (frame-parameter nil 'font)
+;;             charset
+;;             (font-spec :family "Microsoft Yahei" :size 18)))
+;; 2018 -3- 18 (need install WenQuanYi Micro Hei Mono from internet  )
+;;中文与外文字体设置
+(defun set-font (english chinese english-size chinese-size)
+  (set-face-attribute 'default nil :font
+                      (format   "%s:pixelsize=%d"  english english-size))
+  (dolist (charset '(kana han symbol cjk-misc bopomofo))
+    (set-fontset-font (frame-parameter nil 'font) charset
+                      (font-spec :family chinese :size chinese-size))))
+
+(set-font   "WenQuanYi Micro Hei Mono" "WenQuanYi Micro Hei Mono" 18 18)
 
 ;;;Tab is 4
 ;; 强制输入Tab时：C-q C-i
@@ -87,7 +87,6 @@
 ;;;Cancel mouse setting
 (setq w32-hide-mouse-on-key t)
 (setq w32-hide-mouse-timeout 5000)
-
 
 (require 'w32-browser)
 (eval-after-load "dire"
@@ -434,18 +433,30 @@
 (global-linum-mode t)
 
 ;;kjin add - can not be put to jk-language.el, no time to investigate why.
-(set-language-environment "UTF-8")
-(set-terminal-coding-system 'utf-8)
-(set-keyboard-coding-system 'utf-8)
-(set-clipboard-coding-system 'utf-8)
-(set-buffer-file-coding-system 'utf-8)
-(set-selection-coding-system 'utf-8)
-(modify-coding-system-alist 'process "*" 'utf-8)
+;; (set-language-environment "UTF-8")
+;; (set-terminal-coding-system 'utf-8)
+;; (set-keyboard-coding-system 'utf-8)
+;; (set-clipboard-coding-system 'utf-8)
+;; (set-buffer-file-coding-system 'utf-8)
+;; (set-selection-coding-system 'utf-8)
+;; (modify-coding-system-alist 'process "*" 'utf-8)
+
+;;org mode 导出中文显示问题  by kjin 2018-3-18
+(set-language-environment 'Chinese-GB)                                                                                             
+(set-keyboard-coding-system 'euc-cn)                                                                                               
+(set-clipboard-coding-system 'euc-cn)                                                                                               
+(set-terminal-coding-system 'euc-cn)                                                                                               
+(set-buffer-file-coding-system 'euc-cn)                                                                                             
+(set-selection-coding-system 'euc-cn)                                                                                               
+(modify-coding-system-alist 'process "*" 'euc-cn)                                                                                   
+(setq default-process-coding-system                                                                                                 
+            '(euc-cn . euc-cn))                                                                                                     
+(setq-default pathname-coding-system 'euc-cn)
 
 
 ;; org mode 换行问题  
 (add-hook 'org-mode-hook   
-      (lambda () (setq truncate-lines nil)))  
+      (lambda () (setq truncate-lines t)))  
 
 
 ;;Replace all freakin' ^M chars in the current buffer(if 0xD 0xA, it will show M)

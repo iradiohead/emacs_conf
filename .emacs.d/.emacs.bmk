@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("digital_image_process.org"
+(("interview.org"
+ (filename . "d:/Dropbox/emacs_docs/agenda/interview_technique_questions.org")
+ (front-context-string . "** ç¨‹åºçš„å±€éƒ¨å˜é‡å­˜åœ¨äºå“ªé‡Œï¼Œ")
+ (rear-context-string . "åŸºç¡€çš„ç¼–ç¨‹ç»éªŒï¼Œå¯¹å†…å­˜çš„ç†è§£\n\n")
+ (position . 1770))
+("digital_image_process.org"
  (filename . "d:/Dropbox/SHARE_FOR_VM/python_projects/document/digital_image_process.org")
  (front-context-string . "#+TITLE: DIGITAL")
  (rear-context-string)
@@ -34,7 +39,7 @@
  (position . 290))
 ("jk-basic-config.el"
  (filename . "~/.emacs.d/elisp/jk-basic-config.el")
- (front-context-string . ";; ÉèÖÃ±³¾°ÑÕÉ«ºÍ×ÖÌåÑÕÉ«\n(")
+ (front-context-string . ";; è®¾ç½®èƒŒæ™¯é¢œè‰²å’Œå­—ä½“é¢œè‰²\n(")
  (rear-context-string)
  (position . 1))
 ("C_C++_projects"
@@ -44,13 +49,13 @@
  (position . 256))
 ("git.org"
  (filename . "d:/Dropbox/emacs_docs/git.org")
- (front-context-string . "\n** ²é¿´ÒÑ¾­commitµ«Ã»")
- (rear-context-string . "push \n\n* ³£¼ûµÄÊ¹ÓÃÎÊÌâ")
+ (front-context-string . "\n** æŸ¥çœ‹å·²ç»commitä½†æ²¡")
+ (rear-context-string . "push \n\n* å¸¸è§çš„ä½¿ç”¨é—®é¢˜")
  (position . 1149))
 ("jk-key-bindings.el"
  (filename . "~/.emacs.d/elisp/jk-key-bindings.el")
  (front-context-string . "(global-set-key ")
- (rear-context-string . "¾ÍÊÇÔÚemacsÖĞ¿´man£© \n")
+ (rear-context-string . "å°±æ˜¯åœ¨emacsä¸­çœ‹manï¼‰ \n")
  (position . 93))
 ("MyNotes.org"
  (filename . "d:/Dropbox/emacs_docs/tutorial_mine/MyNotes.org")
@@ -74,7 +79,7 @@
  (position . 234))
 (".emacs"
  (filename . "~/.emacs")
- (front-context-string . ";;ÉèÖÃÄãµÄÈ«ÃûºÍÓÊ¼ş£¬ÔÚ·¢ÓÊ¼ş")
+ (front-context-string . ";;è®¾ç½®ä½ çš„å…¨åå’Œé‚®ä»¶ï¼Œåœ¨å‘é‚®ä»¶")
  (rear-context-string)
  (position . 1))
 )

@@ -1,17 +1,17 @@
-;;½«Ä¬ÈÏÄ£Ê½´Ófundemental-mode¸ÄÎªtext-mode 
+;;å°†é»˜è®¤æ¨¡å¼ä»fundemental-modeæ”¹ä¸ºtext-mode 
 (setq default-major-mode 'text-mode) 
-;;Æô¶¯Óï·¨¸ßÁÁÄ£Ê½ 
+;;å¯åŠ¨è¯­æ³•é«˜äº®æ¨¡å¼ 
 (global-font-lock-mode t) 
-;;Ò»Ğ©¾ßÌåµÄÉèÖÃ£¬´Ó±ğµÄµØ·½¿½¹ıÀ´µÄ£¬Ä¿Ç°±à³Ì½ÏÉÙ£¬ËùÒÔÒ²Ã»¾ßÌå¸ÄÁË£¬¸Ğ¾õÄ¿Ç°ÅäÖÃ»¹ÊÇ·Ç³£²»´íµÄ 
-;;Èç¹ûÄãÊÇÒ»¸ö³ÌĞòÔ±£¬Õâ¿éÄã¿ÉÒÔ×ĞÏ¸¸Ä¸Ä 
+;;ä¸€äº›å…·ä½“çš„è®¾ç½®ï¼Œä»åˆ«çš„åœ°æ–¹æ‹·è¿‡æ¥çš„ï¼Œç›®å‰ç¼–ç¨‹è¾ƒå°‘ï¼Œæ‰€ä»¥ä¹Ÿæ²¡å…·ä½“æ”¹äº†ï¼Œæ„Ÿè§‰ç›®å‰é…ç½®è¿˜æ˜¯éå¸¸ä¸é”™çš„ 
+;;å¦‚æœä½ æ˜¯ä¸€ä¸ªç¨‹åºå‘˜ï¼Œè¿™å—ä½ å¯ä»¥ä»”ç»†æ”¹æ”¹ 
 (setq font-lock-maximum-decoration t) 
 (setq font-lock-global-modes '(not text-mode)) 
 (setq font-lock-verbose t) 
 (setq font-lock-maximum-size '((t . 1048576) (vm-mode . 5250000))) 
 
-;;¶ÔÏàÓ¦µÄÎÄ¼şÉè¶¨ÏàÓ¦µÄÄ£Ê½£¬ÒÔ±ãÕıÈ·µÄÓï·¨ÏÔÁÁ 
-;;ÎÄ¼şÃûÓÃÕıÔò±í´ïÊ½±íÊ¾£¬×¢Òâ²»ÒªºóÃæ¸²¸ÇÁËÇ°ÃæµÄ¶øÒıÆğµÄÎó»á 
-;;ĞŞ¸ÄÕâ¸öÖ®Ç°ÏÈC-h v auto-mode-alist²é²éÒÑÓĞµÄÉèÖÃ 
+;;å¯¹ç›¸åº”çš„æ–‡ä»¶è®¾å®šç›¸åº”çš„æ¨¡å¼ï¼Œä»¥ä¾¿æ­£ç¡®çš„è¯­æ³•æ˜¾äº® 
+;;æ–‡ä»¶åç”¨æ­£åˆ™è¡¨è¾¾å¼è¡¨ç¤ºï¼Œæ³¨æ„ä¸è¦åé¢è¦†ç›–äº†å‰é¢çš„è€Œå¼•èµ·çš„è¯¯ä¼š 
+;;ä¿®æ”¹è¿™ä¸ªä¹‹å‰å…ˆC-h v auto-mode-alistæŸ¥æŸ¥å·²æœ‰çš„è®¾ç½® 
 (mapcar 
 (function (lambda (setting) 
          (setq auto-mode-alist 
@@ -66,24 +66,24 @@
 
 (add-hook 'c-mode-hook 'linux-c-mode)
 (add-hook 'c++-mode-hook 'linux-cpp-mode)
-;; ÉèÖÃimenuµÄÅÅĞò·½Ê½Îª°´Ãû³ÆÅÅĞò
+;; è®¾ç½®imenuçš„æ’åºæ–¹å¼ä¸ºæŒ‰åç§°æ’åº
 (setq imenu-sort-function 'imenu--sort-by-name)
 (defun linux-c-mode()
-;; ½«»Ø³µ´úÌæC-jµÄ¹¦ÄÜ£¬»»ĞĞµÄÍ¬Ê±¶ÔÆë
+;; å°†å›è½¦ä»£æ›¿C-jçš„åŠŸèƒ½ï¼Œæ¢è¡Œçš„åŒæ—¶å¯¹é½
   (define-key c-mode-map [return] 'newline-and-indent)
   (interactive)
-;; ×Ô¶¯Ä£Ê½£¬ÔÚ´ËÖÖÄ£Ê½ÏÂµ±Äã¼üÈë{Ê±£¬»á×Ô¶¯¸ù¾İÄãÉèÖÃµÄ¶ÔÆë·ç¸ñ¶ÔÆë
+;; è‡ªåŠ¨æ¨¡å¼ï¼Œåœ¨æ­¤ç§æ¨¡å¼ä¸‹å½“ä½ é”®å…¥{æ—¶ï¼Œä¼šè‡ªåŠ¨æ ¹æ®ä½ è®¾ç½®çš„å¯¹é½é£æ ¼å¯¹é½
   (c-toggle-auto-state)
-;; Ñ¡ÔñC¶ÔÆëÄ£Ê½
+;; é€‰æ‹©Cå¯¹é½æ¨¡å¼
   (c-set-style "bsd")
 ;;(c-set-style "K&R")
-;; ´ËÄ£Ê½ÏÂ£¬µ±°´BackspaceÊ±»áÉ¾³ı×î¶àµÄ¿Õ¸ñ
+;; æ­¤æ¨¡å¼ä¸‹ï¼Œå½“æŒ‰Backspaceæ—¶ä¼šåˆ é™¤æœ€å¤šçš„ç©ºæ ¼
   (c-toggle-hungry-state)
-;; TAB¼üµÄ¿í¶ÈÉèÖÃÎª8
+;; TABé”®çš„å®½åº¦è®¾ç½®ä¸º8
   (setq c-basic-offset 4)
-;; ÔÚ²Ëµ¥ÖĞ¼ÓÈëµ±Ç°BufferµÄº¯ÊıË÷Òı
+;; åœ¨èœå•ä¸­åŠ å…¥å½“å‰Bufferçš„å‡½æ•°ç´¢å¼•
   (imenu-add-menubar-index)
-;; ÔÚ×´Ì¬ÌõÉÏÏÔÊ¾µ±Ç°¹â±êÔÚÄÄ¸öº¯ÊıÌåÄÚ²¿
+;; åœ¨çŠ¶æ€æ¡ä¸Šæ˜¾ç¤ºå½“å‰å…‰æ ‡åœ¨å“ªä¸ªå‡½æ•°ä½“å†…éƒ¨
   (which-function-mode)
  )
 (defun linux-cpp-mode()
@@ -99,5 +99,5 @@
   (which-function-mode)
   )
 
-;; org -mode huan hang issue
-(add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
+;; org -mode huan hang issue  ;; modify to t by kjin on 2018-3-18
+(add-hook 'org-mode-hook (lambda () (setq truncate-lines t)))
